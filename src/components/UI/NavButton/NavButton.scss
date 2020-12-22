@@ -1,0 +1,28 @@
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 14px;
+  width: 156px;
+  height: 52px;
+  border-radius: 60px;
+  border: 2px solid black;
+  font-family: Ogg;
+  font-size: 24px;
+  font-weight: 700;
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.light {
+  color: black;
+  background-color: white;
+}
+
+.dark {
+  color: white;
+  background-color: black;
+}

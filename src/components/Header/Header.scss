@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  h1 {
+    font-family: Ogg;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+
+    text-align: center;
+    letter-spacing: -0.0041em;
+
+    color: #000000;
+
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+  p {
+    font-family: "Akagi Pro Light";
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    width: 760px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+
+    margin: 36px 0 84px 0; 
+  }
+
+  .header-img {
+    position: relative;
+    .header-mask {
+      position: absolute;
+      height: 600px;
+      width: 288px;
+      border: 1px solid white;
+      z-index: 2;
+      top: 0;
+    }
+
+    width: 100%;
+    img {
+      height: 860px;
+      width: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+  }
+}

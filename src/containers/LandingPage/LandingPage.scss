@@ -1,0 +1,147 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // border: 1px solid blue;
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .right {
+      align-self: flex-start;
+    }
+    .left {
+      align-self: flex-end;
+    }
+    width: 45%;
+    // border: 1px solid red;
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 48px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-family: "Akagi Pro Light";
+      font-size: 32px;
+      width: 580px;
+    }
+  }
+}
+
+.fresh-images {
+  display: flex;
+  flex-direction: row;
+  img {
+    max-width: 300px;
+    height: 600px;
+    margin: 0;
+    border-radius: 8px;
+  }
+  img:nth-child(2) {
+    margin-left: 12px;
+  }
+}
+
+.color {
+  background-color: rgba(255, 153, 0, 0.06);
+}
+
+.white {
+  background-color: white;
+}
+
+.hours-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 588px;
+    max-height: 588px;
+  }
+}
+
+.address {
+  h2 {
+    max-width: 516px;
+    font-size: 60px;
+  }
+}
+
+.hours-of-operation {
+  h2 {
+    max-width: 516px;
+    font-size: 60px;
+  }
+
+  .days {
+    font-size: 48px;
+    font-family: Ogg !important;
+    font-weight: 700;
+  }
+
+  .hours {
+    font-size: 40px;
+    font-family: 'Akagi Pro Light';
+  }
+}
+
+.carousel {
+  // border: 1px solid red;
+  width: 80vw;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  img {
+    height: 292px;
+    width: 292px;
+    object-fit: cover;
+    margin: 0 24px;
+  }
+}
+
+.insta {
+  margin: 100px 0 100px 0;
+  h2 {
+    font-size: 60px;
+    line-height: 72px;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,0.5);
+  }
+  .insta-link {
+    color: #CE6924;
+    a {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+}
+
+.social-links {
+  // border: 1px solid green;
+  width: 68%;
+  margin: 100px auto;
+
+  p {
+    color: #666;
+    font-size: 32px;
+    line-height: 72px;
+    font-weight: 700;
+    font-family: Ogg;
+    padding: 0;
+    margin: 0;
+  }
+}
