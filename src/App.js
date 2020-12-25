@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import LandingPage from "./containers/LandingPage/LandingPage";
 import MenuPage from "./containers/MenuPage/MenuPage";
-import ProductCard from './components/ProductCard/ProductCard';
+import ProductCard from "./components/ProductCard/ProductCard";
 
 import "./App.scss";
 
@@ -13,7 +13,11 @@ function App() {
       <Router>
         <Switch>
           <Route path="/products">
-            <ProductCard/>
+            <div style={{ display: 'flex'}}>
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+            </div>
           </Route>
           <Route path="/menu" exact>
             <MenuPage />
