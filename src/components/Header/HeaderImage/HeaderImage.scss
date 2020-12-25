@@ -1,0 +1,19 @@
+.header-img {
+  position: relative;
+  .header-mask {
+    position: absolute;
+    height: 600px;
+    width: 288px;
+    border: 1px solid white;
+    z-index: 2;
+    top: 0;
+  }
+
+  width: 100%;
+  img {
+    height: 860px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+}

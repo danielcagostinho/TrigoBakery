@@ -1,11 +1,10 @@
 import React from "react";
 
+import HeaderImage from './HeaderImage/HeaderImage';
 import NavButton from "../UI/NavButton/NavButton";
 import Logo from "../UI/Logo/Logo";
 
 import "./Header.scss";
-
-import headerImage from "../../assets/headerImage.JPG";
 
 const Header = () => {
   // let masks = [];
@@ -33,11 +32,6 @@ const Header = () => {
         <NavButton className="link" variant="dark" url="/menu">
           Visit Us
         </NavButton>
-      </div>
-
-      <div className="header-img">
-        <img src={headerImage} alt="Assorted Breads" />
-        {/* {masks} */}
       </div>
     </div>
   );

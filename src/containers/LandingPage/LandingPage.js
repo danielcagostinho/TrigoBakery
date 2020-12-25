@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "../../components/Header/Header";
+import HeaderImage from '../../components/Header/HeaderImage/HeaderImage';
 
 import "./LandingPage.scss";
 
@@ -17,6 +18,7 @@ const LandingPage = () => {
   return (
     <div>
       <Header />
+      <HeaderImage/>
       <div className="section color">
         <div className="column">
           <div className="left">

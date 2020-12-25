@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  background-color: #fff9f1;
+  border: 2px solid #f5dcc8;
+  border-radius: 8px;
+
+  .card-title {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.41%;
+    line-height: 140%;
+    margin: 0;
+    // border: 1px solid red;
+    padding: 0;
+  }
+
+  .card-image-container {
+    width: 252px;
+    height: 252px;
+    background-color: black;
+    border-radius: 50%;
+    border: 8px solid #eecdb3;
+
+    .card-image img {
+      object-fit: cover;
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .card-description {
+    font-size: 20px;
+    font-family: "Akagi Pro Light";
+    color: #8c4e1c;
+    font-weight: 500;
+  }
+}
