@@ -1,0 +1,46 @@
+.products-page {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-info {
+  width: 1248px;
+  text-align: left;
+  margin-bottom: 68px;
+  margin-top: 84px;
+  h1 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Ogg;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+    text-transform: capitalize;
+  }
+
+  p {
+    letter-spacing: -0.41%;
+    width: 820px;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Akagi Pro Light";
+  }
+  .section-name {
+    color: #666;
+    font-family: Ogg;
+    font-size: 20px;
+  }
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 1400px;
+}

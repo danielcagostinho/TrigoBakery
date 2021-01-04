@@ -1,0 +1,103 @@
+$cardHeightLarge: 600px;
+$cardHeightCakeLarge: 480px;
+$cardWidthLarge: 400px;
+
+$cardImageContainerSizeLarge: 252px;
+$cardImageSizeLarge: 150px;
+$cardCaptionHeight: 120px;
+$cardBorderRadius: 8px;
+
+$cardImageBorderColor: #eecdb3;
+$cardDescriptionColor: #8c4e1c;
+$cardBackgroundColor: #fff9f1;
+$cardBorderColor: #f5dcc8;
+
+$cardTitleSize: 40px;
+$cardDescriptionSize: 20px;
+
+.more-card {
+  width: $cardWidthLarge;
+  height: $cardHeightLarge;
+}
+
+.more-card-cakes {
+  width: $cardWidthLarge;
+  height: $cardHeightCakeLarge;
+}
+
+.more-card-content {
+  width: 100%;
+  height: 100%;
+  margin: 12px;
+  border-radius: $cardBorderRadius;
+
+  .more-image {
+    width: $cardWidthLarge;
+    height: $cardHeightLarge;
+    border: 2px solid $cardBorderColor;
+    border-radius: $cardBorderRadius;
+  }
+  
+  .more-image-cakes {
+    width: $cardWidthLarge;
+    height: $cardHeightCakeLarge;
+    border: 2px solid $cardBorderColor;
+    border-radius: $cardBorderRadius;
+  }
+
+  .more-caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: $cardCaptionHeight;
+    padding: 0 28px;
+    margin: 0;
+
+    position: relative;
+    z-index: 2;
+    top: -$cardCaptionHeight;
+
+    background-color: $cardBackgroundColor;
+    border: 2px solid $cardBorderColor;
+    border-top: none;
+    border-bottom-left-radius: $cardBorderRadius;
+    border-bottom-right-radius: $cardBorderRadius;
+
+    .more-title {
+      padding: 0;
+      margin: 0;
+      font-family: var(--font-family-primary);
+      font-weight: var(--font-weight);
+      font-size: 28px;
+      line-height: 140%;
+      color: black;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-family: var(--font-family-secondary);
+      font-weight: 400;
+      font-size: $cardDescriptionSize;
+      color: #666;
+      text-transform: capitalize;
+    }
+
+    .more-button {
+      height: 60px;
+      width: 60px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: black;
+      border-radius: 50%;
+    }
+  }
+}
+
+

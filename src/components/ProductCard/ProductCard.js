@@ -2,24 +2,34 @@ import React from "react";
 
 import "./ProductCard.scss";
 
-import broaWhite from '../../assets/products/breads/broa-white.jpg';
+const ProductCard = ({ productName, imgSrc, description, productType }) => {
+  let cardStyles = "card";
+  let imageStyles ="card-image";
+  let imageContainerStyles = "card-image-container";
 
-const ProductCard = () => {
+  if (productType === "cakes") {
+    cardStyles = "card-cakes";
+    imageContainerStyles += " container-cakes"
+  } else if (productType === "pastries") {
+    imageStyles += " image-pastries";
+  } 
+
   return (
-    <div className="card">
-      <div className="card-title-container">
-        <p className="card-title">Broa White</p>
-      </div>
-      <div className="card-image-container">
-        <div className="card-image">
-          <img src={broaWhite} alt="White Cornbread"/>
+    <div className={cardStyles}>
+      <div className="card-content">
+        <div className="card-title-container">
+          <p className="card-title">{productName}</p>
         </div>
-      </div>
-      <div className="card-description-container">
-        <p className="card-description">
-          Traditional Portuguese Corn bread, typical from the northern region of
-          Portugal.
-        </p>
+        <div className={imageContainerStyles}>
+          <div className={imageStyles}>
+            <img src={imgSrc} alt="White Cornbread" />
+          </div>
+        </div>
+        {productType === "cakes" ? null : (
+          <div className="card-description-container">
+            <p className="card-description">{description}</p>
+          </div>
+        )}
       </div>
     </div>
   );

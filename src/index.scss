@@ -1,34 +1,37 @@
+@import "./design-tokens/scss-variables.scss";
+@import "./design-tokens/css-variables.scss";
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.41%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 @font-face {
-  font-family: 'Ogg';
+  font-family: "Ogg";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/Ogg-Roman.ttf');
+  src: url("./assets/fonts/Ogg-Roman.ttf");
 }
 
 @font-face {
-  font-family: 'Akagi Pro';
+  font-family: "Akagi Pro";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/AkagiPro-Black.ttf');
+  src: url("./assets/fonts/AkagiPro-Black.ttf");
 }
 
 @font-face {
-  font-family: 'Akagi Pro Light';
+  font-family: "Akagi Pro Light";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/AkagiPro-Light.ttf');
+  src: url("./assets/fonts/AkagiPro-Light.ttf");
 }

@@ -1,20 +1,22 @@
-.section {
+.landing-section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  // border: 1px solid blue;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 100px;
+  }
+
   .column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    .right {
-      align-self: flex-start;
-    }
-    .left {
-      align-self: flex-end;
-    }
-    width: 45%;
-    // border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    // justify-content: center;
 
     img {
       width: 100%;
@@ -38,19 +40,31 @@
       width: 580px;
     }
   }
+
+  .left {
+    margin-right: 34px;
+    // border: 1px solid green;
+  }
+  
+  .right {
+    // border: 1px solid blue;
+    margin-left: 34px;
+  }
 }
 
 .fresh-images {
   display: flex;
   flex-direction: row;
   img {
-    max-width: 300px;
+    width: 292px; // TODO Delete
+    max-width: 292px;
     height: 600px;
     margin: 0;
     border-radius: 8px;
   }
   img:nth-child(2) {
     margin-left: 12px;
+    margin-top: 94px
   }
 }
 
@@ -94,14 +108,14 @@
 
   .hours {
     font-size: 40px;
-    font-family: 'Akagi Pro Light';
+    font-family: "Akagi Pro Light";
   }
 }
 
 .carousel {
   // border: 1px solid red;
   width: 80vw;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   img {
@@ -119,10 +133,10 @@
     line-height: 72px;
     margin: 0;
     padding: 0;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
   }
   .insta-link {
-    color: #CE6924;
+    color: #ce6924;
     a {
       text-decoration: underline;
       color: inherit;
