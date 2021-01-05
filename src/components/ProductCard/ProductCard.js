@@ -6,7 +6,8 @@ const ProductCard = ({ productName, imgSrc, description, productType }) => {
   let cardStyles = "card";
   let imageStyles ="card-image";
   let imageContainerStyles = "card-image-container";
-
+  
+  console.log(productType)
   if (productType === "cakes") {
     cardStyles = "card-cakes";
     imageContainerStyles += " container-cakes"

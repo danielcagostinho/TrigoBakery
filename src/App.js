@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import LandingPage from "./containers/LandingPage/LandingPage";
 import MenuPage from "./containers/MenuPage/MenuPage";
 import ProductPage from "./containers/ProductPage/ProductPage";
 import NavBar from "./components/UI/NavBar/NavBar";
+import ScrollToTop from "./containers/ScrollToTop/ScrollToTop";
 
 import "./App.scss";
 
@@ -304,42 +305,44 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar />
-        <Switch>
-          <Route path="/breads" exact>
-            <ProductPage
-              products={breads}
-              productType="breads"
-              productDescription={
-                "Trigo’s a local family-run bakery specializing in Portuguese bread, cake, and pastries. Located in Mississuaga, Ontario."
-              }
-            />
-          </Route>
-          <Route path="/pastries" exact>
-            <ProductPage
-              products={pastries}
-              productType="pastries"
-              productDescription={
-                "Trigo’s a local family-run bakery specializing in Portuguese bread, cake, and pastries. Located in Mississuaga, Ontario."
-              }
-            />
-          </Route>
-          <Route path="/cakes" exact>
-            <ProductPage
-              products={cakes}
-              productType="cakes"
-              productDescription={
-                "Trigo’s a local family-run bakery specializing in Portuguese bread, cake, and pastries. Located in Mississuaga, Ontario."
-              }
-            />
-          </Route>
-          <Route path="/menu" exact>
-            <MenuPage />
-          </Route>
-          <Route path="/" exact>
-            <LandingPage />
-          </Route>
-        </Switch>
+        <ScrollToTop>
+          <NavBar />
+          <Switch>
+            <Route path="/breads" exact>
+              <ProductPage
+                products={breads}
+                productType="breads"
+                productDescription={
+                  "Trigo’s a local family-run bakery specializing in Portuguese bread, cake, and pastries. Located in Mississuaga, Ontario."
+                }
+              />
+            </Route>
+            <Route path="/pastries" exact>
+              <ProductPage
+                products={pastries}
+                productType="pastries"
+                productDescription={
+                  "Trigo’s a local family-run bakery specializing in Portuguese bread, cake, and pastries. Located in Mississuaga, Ontario."
+                }
+              />
+            </Route>
+            <Route path="/cakes" exact>
+              <ProductPage
+                products={cakes}
+                productType="cakes"
+                productDescription={
+                  "Trigo’s a local family-run bakery specializing in Portuguese bread, cake, and pastries. Located in Mississuaga, Ontario."
+                }
+              />
+            </Route>
+            <Route path="/menu" exact>
+              <MenuPage />
+            </Route>
+            <Route path="/" exact>
+              <LandingPage />
+            </Route>
+          </Switch>
+        </ScrollToTop>
       </Router>
     </div>
   );

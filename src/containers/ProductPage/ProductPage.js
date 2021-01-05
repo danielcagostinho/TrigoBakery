@@ -9,6 +9,8 @@ const ProductPage = ({ products, productType, productDescription }) => {
   const productsGrid = products.map((product) => {
     return (
       <ProductCard
+      productType={productType}
+        key={product.imgSrc}
         productName={product.name}
         imgSrc={product.imgSrc}
         description={product.description}

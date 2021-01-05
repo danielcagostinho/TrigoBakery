@@ -21,8 +21,8 @@ const LandingPage = () => {
       <Header />
       <HeaderImage />
       <div className="landing-section color">
-        <div className="content">
-          <div className="column left">
+        <div className="content" id="bread-row">
+          <div className="column left " id="bread-description">
             <h1>Bread</h1>
             <p>
               Bread may be leavened by naturally occurring microbes, chemicals,
@@ -32,7 +32,7 @@ const LandingPage = () => {
               production.
             </p>
           </div>
-          <div className="column right">
+          <div className="column right" id="ingredients">
             <img src={ingredientsImage} alt="Various Baker's Ingredients" />
           </div>
         </div>
@@ -53,7 +53,7 @@ const LandingPage = () => {
               />
             </div>
           </div>
-          <div className="column right">
+          <div className="column right fresh-images-text">
             <h2>Made fresh every morning.</h2>
             <p>
               Bread may be leavened by naturally occurring microbes, chemicals,
@@ -69,17 +69,20 @@ const LandingPage = () => {
         <div className="content">
           <div className="column address">
             <div className="left">
-              <p>Where to find us</p>
+              <p className="address-title">Where to find us</p>
               <h2>289 Dundas St E. Mississauga, ON L5A 1X1</h2>
-              <p>or call us at (905) 896-7245</p>
+              <hr />
+              <p>
+                or call us at <span>(905) 896-7245</span>
+              </p>
             </div>
           </div>
           <div className="column">
-            <div class="map">
+            <div className="map">
               <iframe
                 title="Trigo on Google Maps"
-                width="600"
-                height="450"
+                width="595"
+                height="694"
                 frameborder="0"
                 // style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJncRCmQFHK4gRGzsBpoT5mW8&key=AIzaSyC0iarw2tL_5dhFdhdMb87BO97VkxePfe8"
@@ -102,7 +105,7 @@ const LandingPage = () => {
           </div>
           <div className="column hours-of-operation">
             <div className="right">
-              <h2>We're up bright and early.</h2>
+              <h2>We're up <br/> bright and early.</h2>
               <p className="hours">6:00AM - 7:00PM</p>
               <p className="days">Monday - Friday</p>
               <p className="hours">6:00AM - 5:00PM</p>
@@ -137,7 +140,7 @@ const LandingPage = () => {
         <div></div>
       </div>
       <div className="landing-section white">
-        <Footer/>
+        <Footer landing={true} />
       </div>
     </div>
   );

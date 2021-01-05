@@ -2,21 +2,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 62px;
-  width: 100%;
-  
-  margin-top: 20px;
+  justify-content: center;
+
+  width: 100vw;
+  height: 120px;
   margin-bottom: 84px;
+
+  position: fixed;
+  background-color: white;
+  
+  z-index: 3;
 
   .nav-logo-container {
     position: relative;
     z-index: 2;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 106px;
     height: 62px;
+    
     border: 2px solid black;
     border-radius: 4px;
     box-sizing: content-box;
@@ -57,7 +64,7 @@
   }
   .nav-gradient {
     position: absolute;
-    top: 54px;
+    top: 64px;
     z-index: 1;
     width: 782px;
     height: 2px;

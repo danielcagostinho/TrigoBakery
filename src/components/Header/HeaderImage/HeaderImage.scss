@@ -1,19 +1,24 @@
+// $i: 5;
 .header-img {
   position: relative;
-  .header-mask {
-    position: absolute;
-    height: 600px;
-    width: 288px;
-    border: 1px solid white;
-    z-index: 2;
-    top: 0;
-  }
-
-  width: 100%;
-  img {
-    height: 860px;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 860px;
+  width: 1440px;
+  margin: 0 auto;
+  @for $i from 1 through 5 {
+    .header-mask:nth-child(#{$i}) {
+      position: absolute;
+      // top: 0;
+      width: 1440px;
+      height: 860px;
+      clip-path: polygon(
+        calc((18% * (#{$i} - 1)) + (#{$i} -1) * 2%) 0,
+        calc((18% * #{$i}) + #{$i} * 2%) 0,
+        calc((18% * #{$i}) + #{$i} * 2%) 100%,
+        calc((18% * (#{$i} - 1)) + (#{$i} -1) * 2%) 100%
+      );
+    }
   }
 }

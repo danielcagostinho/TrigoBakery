@@ -6,17 +6,20 @@
   .content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
     width: 100%;
     max-width: 1440px;
     padding: 0 100px;
+    // border: 1px solid blue;
   }
 
   .column {
     display: flex;
     flex-direction: column;
     margin: 0;
+    // border: 1px solid green;
     padding: 0;
-    // justify-content: center;
 
     img {
       width: 100%;
@@ -40,23 +43,45 @@
       width: 580px;
     }
   }
+}
 
-  .left {
-    margin-right: 34px;
-    // border: 1px solid green;
-  }
-  
-  .right {
-    // border: 1px solid blue;
-    margin-left: 34px;
+#bread-row {
+  display: block;
+  position: relative;
+  padding: 0;
+  height: 735px;
+}
+
+#bread-description {
+  position: absolute;
+  top: 108px;
+  left: 100px;
+  margin-bottom: 240px;
+  z-index: 2;
+}
+
+#ingredients {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1000px;
+  img {
+    // max-width: 100%;
+    // position: relative;
+
+    width: 1000px;
+    // margin-right: -300px;
   }
 }
 
 .fresh-images {
+  position: relative;
+  top: -145px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 120px;
   img {
-    width: 292px; // TODO Delete
     max-width: 292px;
     height: 600px;
     margin: 0;
@@ -64,12 +89,17 @@
   }
   img:nth-child(2) {
     margin-left: 12px;
-    margin-top: 94px
+    margin-top: 94px;
   }
 }
 
 .color {
   background-color: rgba(255, 153, 0, 0.06);
+}
+
+.map {
+  position: relative;
+  top: -145px;
 }
 
 .white {
@@ -78,56 +108,93 @@
 
 .hours-img-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   img {
     max-width: 588px;
     max-height: 588px;
+    position: relative;
+    top: -40px;
   }
+}
+
+
+.fresh-images-text {
+  margin-top: 44px !important;
 }
 
 .address {
+  .address-title {
+    font-family: Ogg !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-weight: bold;
+    margin-top: 88px;
+    margin-bottom: 12px;
+  }
   h2 {
-    max-width: 516px;
+    max-width: 450px;
     font-size: 60px;
+    line-height: 72px;
+    padding-bottom: 95px !important;
+  }
+  span {
+    font-family: "Akagi Pro Light";
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  hr {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
   }
 }
 
-.hours-of-operation {
+.hours-of-operation .right {
+  margin-top: 88px;
   h2 {
     max-width: 516px;
     font-size: 60px;
+    margin-bottom: 76px;
   }
-
+  
   .days {
     font-size: 48px;
     font-family: Ogg !important;
     font-weight: 700;
+    color:rgba(0, 0, 0, 0.75);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
   }
 
   .hours {
     font-size: 40px;
     font-family: "Akagi Pro Light";
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
   }
 }
 
 .carousel {
-  // border: 1px solid red;
-  width: 80vw;
+  width: 1240px;
   margin: 0 auto;
+  margin-bottom: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   img {
     height: 292px;
     width: 292px;
     object-fit: cover;
-    margin: 0 24px;
+    margin-right: 24px;
   }
 }
 
 .insta {
   margin: 100px 0 100px 0;
+  width: 1240px;
   h2 {
     font-size: 60px;
     line-height: 72px;
@@ -145,7 +212,6 @@
 }
 
 .social-links {
-  // border: 1px solid green;
   width: 68%;
   margin: 100px auto;
 

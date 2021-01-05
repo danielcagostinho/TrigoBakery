@@ -2,11 +2,11 @@ import React from "react";
 
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer = ({landing}) => {
   return (
     <div className="footer">
       <div className="footer-content">
-        <h1>Check out Trigo on...</h1>
+       { !landing ? <h1>Check out Trigo on...</h1> : null}
         <div className="footer-links">
           <p>
             <span>-</span>{" "}
