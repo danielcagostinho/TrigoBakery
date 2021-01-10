@@ -5,9 +5,11 @@ import "./HeaderButton.scss";
 
 const HeaderButton = ({ url, variant, ...props }) => {
   return (
-    <div className={`header-button ${variant}`}>
-      <Link className="link" to={url}>{props.children}</Link>
-    </div>
+    <Link className="link" to={url}>
+      <div className={`header-button ${variant}`}>
+        <div className="link-text">{props.children}</div>
+      </div>
+    </Link>
   );
 };
 

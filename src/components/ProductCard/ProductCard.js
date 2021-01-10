@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./ProductCard.scss";
+import cardTexture from '../../assets/Card-Texture.png';
 
 const ProductCard = ({ productName, imgSrc, description, productType }) => {
   let cardStyles = "card";
@@ -17,6 +18,7 @@ const ProductCard = ({ productName, imgSrc, description, productType }) => {
 
   return (
     <div className={cardStyles}>
+      <img src={cardTexture} alt="grains" className="card-texture"/>
       <div className="card-content">
         <div className="card-title-container">
           <p className="card-title">{productName}</p>

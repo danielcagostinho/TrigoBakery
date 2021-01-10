@@ -1,3 +1,7 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+}
 .header-button {
   display: flex;
   align-items: center;
@@ -10,7 +14,7 @@
   border-radius: 60px;
   border: 2px solid black;
 
-  .link {
+  .link-text {
     text-decoration: none;
     color: inherit;
     font-family: var(--font-family-primary);

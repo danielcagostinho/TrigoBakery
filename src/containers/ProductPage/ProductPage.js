@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
 import "./ProductPage.scss";
@@ -26,6 +27,7 @@ const ProductPage = ({ products, productType, productDescription }) => {
         <p>{productDescription}</p>
       </div>
       <div className="products-container">{productsGrid}</div>
+      <Footer/>
     </div>
   );
 };

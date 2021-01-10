@@ -5,7 +5,7 @@ import HeaderImage from "../../components/Header/HeaderImage/HeaderImage";
 
 import "./LandingPage.scss";
 
-import ingredientsImage from "../../assets/ingredients.png";
+import ingredientsImage from "../../assets/Ingredients.png";
 import landingImage1 from "../../assets/landing1.png";
 import landingImage2 from "../../assets/landing2.png";
 import trigoOutside from "../../assets/trigoOutside.png";
@@ -14,6 +14,7 @@ import carousel2 from "../../assets/carousel/carousel2.png";
 import carousel3 from "../../assets/carousel/carousel3.png";
 import carousel4 from "../../assets/carousel/carousel4.png";
 import Footer from "../../components/Footer/Footer";
+import grains from '../../assets/Grains.png';
 
 const LandingPage = () => {
   return (
@@ -23,6 +24,7 @@ const LandingPage = () => {
       <div className="landing-section color">
         <div className="content" id="bread-row">
           <div className="column left " id="bread-description">
+            <img src={grains} alt="grains" />
             <h1>Bread</h1>
             <p>
               Bread may be leavened by naturally occurring microbes, chemicals,

@@ -26,6 +26,12 @@ $cardDescriptionSize: 20px;
   margin: 12px;
 }
 
+.card-texture {
+  position: absolute;
+  z-index: -1;
+  width: $cardWidthLarge;
+}
+
 .card-content {
   display: flex;
   flex-direction: column;
@@ -37,7 +43,7 @@ $cardDescriptionSize: 20px;
 
   border: 2px solid $cardBorderColor;
   border-radius: $cardBorderRadius;
-  background-color: $cardBackgroundColor;
+  background-color: inherit;
 
   .card-title {
     padding: 42px 0 0 0;
