@@ -5,7 +5,7 @@ import HeaderImage from "../../components/Header/HeaderImage/HeaderImage";
 
 import "./LandingPage.scss";
 
-import ingredientsImage from "../../assets/Ingredients.png";
+import ingredientsImage from "../../assets/bakersIngredients.png";
 import landingImage1 from "../../assets/landing1.png";
 import landingImage2 from "../../assets/landing2.png";
 import trigoOutside from "../../assets/trigoOutside.png";
