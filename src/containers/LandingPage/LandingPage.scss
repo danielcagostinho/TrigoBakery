@@ -142,18 +142,6 @@
   background-color: white;
 }
 
-.hours-img-container {
-  width: 100%;
-  img {
-    max-width: 588px;
-    max-height: 588px;
-    position: relative;
-    top: -40px;
-  }
-}
-
-
-
 .address {
   padding-bottom: 100px !important;
   .address-title {
@@ -194,26 +182,42 @@
   }
 }
 
-.hours-of-operation .right {
-  margin-top: 88px;
+#hours-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hours-img-container {
+  width: 100% !important;
+  img {
+    max-width: 588px;
+    max-height: 588px;
+    position: relative;
+    top: -40px;
+  }
+}
+
+.hours-of-operation {
+  width: 100% !important;
   h2 {
-    max-width: 516px;
-    font-size: 60px;
-    margin-bottom: 76px;
+    max-width: 300px !important;
+    margin-bottom: 32px !important;
+    font-size: 32px !important;
   }
 
   .days {
-    font-size: 48px;
+    font-size: 24px !important;
     font-family: Ogg !important;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.75);
     padding: 0;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 32px !important;
   }
 
   .hours {
-    font-size: 40px;
+    font-size: 20px !important;
     font-family: "Akagi Pro Light";
     padding: 0;
     margin: 0;
@@ -274,232 +278,232 @@
 
 @media (min-width: 1201px) {
   .landing-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  .content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 100px;
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      width: 100%;
+      max-width: 1440px;
+      padding: 0 100px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+
+      img {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        font-size: 48px;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-family: "Akagi Pro Light";
+        font-size: 32px;
+        width: 580px;
+      }
+    }
   }
 
-  .column {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  #bread-row {
+    display: block;
+    position: relative;
     padding: 0;
+    height: 735px;
+    width: 1440px;
+  }
+
+  #bread-description {
+    position: absolute;
+    top: 88px;
+    left: 100px;
+    margin-bottom: 240px;
+    z-index: 2;
 
     img {
-      width: 100%;
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 1440px;
+      z-index: 1;
     }
+  }
 
-    h1 {
-      font-size: 60px;
+  #ingredients {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 800px;
+    img {
+      width: 800px;
+    }
+  }
+
+  .fresh-images {
+    position: relative;
+    top: -145px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 120px;
+    img {
+      max-width: 292px;
+      height: 600px;
       margin: 0;
-      padding: 0;
+      border-radius: 8px;
     }
+    img:nth-child(2) {
+      margin-left: 12px;
+      margin-top: 94px;
+    }
+  }
 
+  .color {
+    background-color: rgba(255, 153, 0, 0.06);
+  }
+
+  .map {
+    position: relative;
+    top: -145px;
+  }
+
+  .white {
+    background-color: white;
+  }
+
+  .hours-img-container {
+    width: 100%;
+    img {
+      max-width: 588px;
+      max-height: 588px;
+      position: relative;
+      top: -40px;
+    }
+  }
+
+  .fresh-images-text {
+    margin-top: 44px !important;
+  }
+
+  .address {
+    .address-title {
+      font-family: Ogg !important;
+      color: rgba(0, 0, 0, 0.5) !important;
+      font-weight: bold;
+      margin-top: 88px;
+      margin-bottom: 12px;
+    }
     h2 {
+      max-width: 450px;
+      font-size: 60px;
+      line-height: 72px;
+      padding-bottom: 95px !important;
+    }
+    span {
+      font-family: "Akagi Pro Light";
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.75);
+    }
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    hr {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 32px;
+    }
+  }
+
+  .hours-of-operation .right {
+    margin-top: 88px;
+    h2 {
+      max-width: 516px;
+      font-size: 60px;
+      margin-bottom: 76px;
+    }
+
+    .days {
       font-size: 48px;
+      font-family: Ogg !important;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.75);
+      padding: 0;
+      margin: 0;
+      margin-bottom: 32px;
+    }
+
+    .hours {
+      font-size: 40px;
+      font-family: "Akagi Pro Light";
+      padding: 0;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  .carousel {
+    width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-start;
+    img {
+      height: 292px;
+      width: 292px;
+      object-fit: cover;
+      margin-right: 24px;
+    }
+  }
+
+  .insta {
+    margin: 100px 0 100px 0;
+    width: 1240px;
+    h2 {
+      font-size: 60px;
+      line-height: 72px;
       margin: 0;
       padding: 0;
+      color: rgba(0, 0, 0, 0.5);
     }
+    .insta-link {
+      color: #ce6924;
+      a {
+        text-decoration: underline;
+        color: inherit;
+      }
+    }
+  }
+
+  .social-links {
+    width: 68%;
+    margin: 100px auto;
 
     p {
-      font-family: "Akagi Pro Light";
+      color: #666;
       font-size: 32px;
-      width: 580px;
+      line-height: 72px;
+      font-weight: 700;
+      font-family: Ogg;
+      padding: 0;
+      margin: 0;
     }
   }
-}
-
-#bread-row {
-  display: block;
-  position: relative;
-  padding: 0;
-  height: 735px;
-  width: 1440px;
-}
-
-#bread-description {
-  position: absolute;
-  top: 88px;
-  left: 100px;
-  margin-bottom: 240px;
-  z-index: 2;
-
-  img {
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 1440px;
-    z-index: 1;
-  }
-}
-
-#ingredients {
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  right: 0;
-  width: 800px;
-  img {
-    width: 800px;
-  }
-}
-
-.fresh-images {
-  position: relative;
-  top: -145px;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 120px;
-  img {
-    max-width: 292px;
-    height: 600px;
-    margin: 0;
-    border-radius: 8px;
-  }
-  img:nth-child(2) {
-    margin-left: 12px;
-    margin-top: 94px;
-  }
-}
-
-.color {
-  background-color: rgba(255, 153, 0, 0.06);
-}
-
-.map {
-  position: relative;
-  top: -145px;
-}
-
-.white {
-  background-color: white;
-}
-
-.hours-img-container {
-  width: 100%;
-  img {
-    max-width: 588px;
-    max-height: 588px;
-    position: relative;
-    top: -40px;
-  }
-}
-
-.fresh-images-text {
-  margin-top: 44px !important;
-}
-
-.address {
-  .address-title {
-    font-family: Ogg !important;
-    color: rgba(0, 0, 0, 0.5) !important;
-    font-weight: bold;
-    margin-top: 88px;
-    margin-bottom: 12px;
-  }
-  h2 {
-    max-width: 450px;
-    font-size: 60px;
-    line-height: 72px;
-    padding-bottom: 95px !important;
-  }
-  span {
-    font-family: "Akagi Pro Light";
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.75);
-  }
-  p {
-    padding: 0;
-    margin: 0;
-  }
-  hr {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 32px;
-  }
-}
-
-.hours-of-operation .right {
-  margin-top: 88px;
-  h2 {
-    max-width: 516px;
-    font-size: 60px;
-    margin-bottom: 76px;
-  }
-
-  .days {
-    font-size: 48px;
-    font-family: Ogg !important;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 0;
-    margin: 0;
-    margin-bottom: 32px;
-  }
-
-  .hours {
-    font-size: 40px;
-    font-family: "Akagi Pro Light";
-    padding: 0;
-    margin: 0;
-    margin-bottom: 8px;
-  }
-}
-
-.carousel {
-  width: 1240px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: flex-start;
-  img {
-    height: 292px;
-    width: 292px;
-    object-fit: cover;
-    margin-right: 24px;
-  }
-}
-
-.insta {
-  margin: 100px 0 100px 0;
-  width: 1240px;
-  h2 {
-    font-size: 60px;
-    line-height: 72px;
-    margin: 0;
-    padding: 0;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  .insta-link {
-    color: #ce6924;
-    a {
-      text-decoration: underline;
-      color: inherit;
-    }
-  }
-}
-
-.social-links {
-  width: 68%;
-  margin: 100px auto;
-
-  p {
-    color: #666;
-    font-size: 32px;
-    line-height: 72px;
-    font-weight: 700;
-    font-family: Ogg;
-    padding: 0;
-    margin: 0;
-  }
-}
 }

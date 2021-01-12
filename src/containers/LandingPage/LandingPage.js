@@ -97,7 +97,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="landing-section white">
-        <div className="content">
+        <div className="content" id="hours-row">
           <div className="column hours-img-container">
             <div className="left">
               <img
