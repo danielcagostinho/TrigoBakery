@@ -72,7 +72,7 @@
   display: block;
   position: absolute;
   bottom: 0px;
-  right: -60px;
+  right: -80px;
   width: 160px;
   overflow: hidden;
   img {
@@ -103,13 +103,29 @@
 
 #fresh-images-text {
   margin-top: 20px !important;
-  margin-left: 120px;
+  margin-left: 110px;
+  padding-right: 24px;
 
   h2 {
-    width: 160px;
+    width: 150px;
   }
   p {
-    width: 160px;
+    width: 150px;
+  }
+}
+
+#map-row {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  display: flex;
+  align-items: center;
+
+  .column {
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -139,18 +155,24 @@
 
 
 .address {
+  padding-bottom: 100px !important;
   .address-title {
     font-family: Ogg !important;
     color: rgba(0, 0, 0, 0.5) !important;
     font-weight: bold;
-    margin-top: 88px;
+    margin-top: 24px;
     margin-bottom: 12px;
   }
   h2 {
-    max-width: 450px;
-    font-size: 60px;
-    line-height: 72px;
-    padding-bottom: 95px !important;
+    padding: 0;
+    margin: 0;
+    width: 200px !important;
+    align-self: flex-end;
+    font-size: 22px !important;
+    line-height: 40px;
+    text-align: right;
+    padding-right: 24px !important;
+    padding-bottom: 20px !important;
   }
   span {
     font-family: "Akagi Pro Light";
@@ -160,10 +182,14 @@
   p {
     padding: 0;
     margin: 0;
+    align-self: flex-end;
+    width: auto !important;
+    padding-right: 24px;
   }
   hr {
     padding: 0;
     margin: 0;
+    display: none;
     margin-bottom: 32px;
   }
 }

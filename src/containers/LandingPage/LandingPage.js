@@ -17,6 +17,10 @@ import Footer from "../../components/Footer/Footer";
 import grains from '../../assets/Grains.png';
 
 const LandingPage = () => {
+  console.log(window.innerWidth)
+  let mapWidth = window.innerWidth < 681 ? "300" :"595"
+  let mapHeight = window.innerWidth < 681 ? "352" :"694"
+  
   return (
     <div>
       <Header />
@@ -66,28 +70,27 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      {/* <div className="landing-section color">
-        <div className="content">
+      
+      <div className="landing-section color">
+        <div className="content" id="map-row">
           <div className="column address">
-            <div className="left">
               <p className="address-title">Where to find us</p>
               <h2>289 Dundas St E. Mississauga, ON L5A 1X1</h2>
               <hr />
               <p>
                 or call us at <span>(905) 896-7245</span>
               </p>
-            </div>
           </div>
           <div className="column">
             <div className="map">
               <iframe
                 title="Trigo on Google Maps"
-                width="595"
-                height="694"
-                frameborder="0"
+                width={mapWidth}
+                height={mapHeight}
+                frameBorder="0"
                 // style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJncRCmQFHK4gRGzsBpoT5mW8&key=AIzaSyC0iarw2tL_5dhFdhdMb87BO97VkxePfe8"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -114,7 +117,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* <div className="landing-section white">
         <div className="insta">
           <h2>Check out</h2>
