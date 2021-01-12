@@ -5,13 +5,12 @@
   width: 100%;
   padding-top: 134px;
 
-
   h1 {
     font-family: Ogg;
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 72px;
+    font-size: 20px;
+    line-height: 22px;
 
     text-align: center;
     letter-spacing: -0.0041em;
@@ -24,19 +23,40 @@
 
   p {
     font-family: "Akagi Pro Light";
-    font-size: 32px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    width: 760px;
+    width: 300px;
+    text-align: center;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
-    align-items: space-between;
+    justify-content: center;
+    align-items: center;
 
-    margin: 36px 0 84px 0; 
+    margin: 20px 0 40px 0;
   }
+}
 
-  
+@media (min-width: 681px) {
+}
+
+@media (min-width: 1201px) {
+  .header {
+    h1 {
+      font-size: 60px;
+      line-height: 72px;
+    }
+
+    p {
+      font-size: 32px;
+      width: 760px;
+    }
+
+    .nav-links {
+      margin: 36px 0 84px 0;
+    }
+  }
 }
