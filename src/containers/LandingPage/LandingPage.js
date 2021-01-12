@@ -18,7 +18,7 @@ import grains from '../../assets/Grains.png';
 
 const LandingPage = () => {
   console.log(window.innerWidth)
-  let mapWidth = window.innerWidth < 681 ? "300" :"595"
+  let mapWidth = window.innerWidth < 681 ? "360" :"595"
   let mapHeight = window.innerWidth < 681 ? "352" :"694"
   
   return (
@@ -118,7 +118,8 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      {/* <div className="landing-section white">
+      
+      <div className="landing-section white">
         <div className="insta">
           <h2>Check out</h2>
           <h2 className="insta-link">
@@ -133,8 +134,9 @@ const LandingPage = () => {
           </h2>
         </div>
         <div></div>
-      </div> */}
-      {/* <div className="landing-section white">
+      </div>
+
+      <div className="landing-section white">
         <div className="carousel">
           <img src={carousel1} alt="pastries" />
           <img src={carousel2} alt="pastries" />
@@ -142,10 +144,11 @@ const LandingPage = () => {
           <img src={carousel4} alt="pastries" />
         </div>
         <div></div>
-      </div> */}
-      {/* <div className="landing-section white">
+      </div>
+
+      <div className="landing-section white">
         <Footer landing={true} />
-      </div> */}
+      </div>
     </div>
   );
 };

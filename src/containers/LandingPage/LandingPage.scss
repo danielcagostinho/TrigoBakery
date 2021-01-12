@@ -226,25 +226,27 @@
 }
 
 .carousel {
-  width: 1240px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: flex-start;
+  width: 100%;
+  // margin: 0 auto;
+  // margin-bottom: 100px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 180px 180px;
+  grid-template-rows: 180px 180px;
   img {
-    height: 292px;
-    width: 292px;
+    height: 168px;
+    width: 168px;
     object-fit: cover;
-    margin-right: 24px;
   }
 }
 
 .insta {
-  margin: 100px 0 100px 0;
-  width: 1240px;
+  margin: 100px 24px 60px 24px;
+  width: 360px;
   h2 {
-    font-size: 60px;
-    line-height: 72px;
+    font-size: 36px;
+    line-height: 40px;
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.5);
