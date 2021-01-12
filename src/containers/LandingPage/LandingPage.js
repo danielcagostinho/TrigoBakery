@@ -23,7 +23,7 @@ const LandingPage = () => {
       <HeaderImage />
       <div className="landing-section color">
         <div className="content" id="bread-row">
-          <div className="column left " id="bread-description">
+          <div className="column" id="bread-description">
             <img src={grains} alt="grains" />
             <h1>Bread</h1>
             <p>
@@ -41,7 +41,7 @@ const LandingPage = () => {
       </div>
       <div className="landing-section white">
         <div className="content">
-          <div className="column left">
+          <div className="column">
             <div className="fresh-images">
               <img
                 className="fresh-img"
@@ -55,19 +55,18 @@ const LandingPage = () => {
               />
             </div>
           </div>
-          <div className="column right fresh-images-text">
+          <div className="column" id="fresh-images-text">
             <h2>Made fresh every morning.</h2>
             <p>
               Bread may be leavened by naturally occurring microbes, chemicals,
               industrially produced yeast, or high-pressure aeration. In many
               countries, commercial bread often contains additives to improve
-              flavor, texture, color, shelf life, nutrition, and ease of
-              production.
+              flavor
             </p>
           </div>
         </div>
       </div>
-      <div className="landing-section color">
+      {/* <div className="landing-section color">
         <div className="content">
           <div className="column address">
             <div className="left">
@@ -115,8 +114,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="landing-section white">
+      </div> */}
+      {/* <div className="landing-section white">
         <div className="insta">
           <h2>Check out</h2>
           <h2 className="insta-link">
@@ -131,8 +130,8 @@ const LandingPage = () => {
           </h2>
         </div>
         <div></div>
-      </div>
-      <div className="landing-section white">
+      </div> */}
+      {/* <div className="landing-section white">
         <div className="carousel">
           <img src={carousel1} alt="pastries" />
           <img src={carousel2} alt="pastries" />
@@ -140,10 +139,10 @@ const LandingPage = () => {
           <img src={carousel4} alt="pastries" />
         </div>
         <div></div>
-      </div>
-      <div className="landing-section white">
+      </div> */}
+      {/* <div className="landing-section white">
         <Footer landing={true} />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 .landing-section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  // justify-content: center;
 
   .content {
     display: flex;
@@ -9,38 +9,37 @@
     justify-content: space-between;
 
     width: 100%;
-    max-width: 1440px;
-    padding: 0 100px;
-    // border: 1px solid blue;
+    // max-width: 300px;
+    padding: 0 24px;
   }
 
   .column {
     display: flex;
     flex-direction: column;
     margin: 0;
-    // border: 1px solid green;
     padding: 0;
+    width: 50%;
 
     img {
       width: 100%;
     }
 
     h1 {
-      font-size: 60px;
+      font-size: 22px;
       margin: 0;
       padding: 0;
     }
 
     h2 {
-      font-size: 48px;
+      font-size: 20px;
       margin: 0;
       padding: 0;
     }
 
     p {
       font-family: "Akagi Pro Light";
-      font-size: 32px;
-      width: 580px;
+      font-size: 16px;
+      width: 300px;
     }
   }
 }
@@ -49,22 +48,22 @@
   display: block;
   position: relative;
   padding: 0;
-  height: 735px;
-  width: 1440px;
+  height: 300px;
+  width: 300px;
 }
 
 #bread-description {
   position: absolute;
-  top: 88px;
-  left: 100px;
+  top: 24px;
+  left: 24px;
   margin-bottom: 240px;
   z-index: 2;
 
   img {
     position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 1440px;
+    top: -20px;
+    left: -20px;
+    width: 400px;
     z-index: 1;
   }
 }
@@ -73,32 +72,44 @@
   display: block;
   position: absolute;
   bottom: 0px;
-  right: 0;
-  width: 800px;
+  right: -60px;
+  width: 160px;
+  overflow: hidden;
   img {
-    // max-width: 100%;
-    // position: relative;
-
-    width: 800px;
-    // margin-right: -300px;
+    width: 260px;
+    opacity: 0.3;
   }
 }
 
 .fresh-images {
   position: relative;
-  top: -145px;
+  top: -45px;
   display: flex;
   flex-direction: row;
   margin-bottom: 120px;
+  width: 80px;
   img {
-    max-width: 292px;
-    height: 600px;
+    width: 80px;
+    height: 240px;
     margin: 0;
     border-radius: 8px;
+    object-fit: cover;
   }
   img:nth-child(2) {
     margin-left: 12px;
-    margin-top: 94px;
+    margin-top: 30px;
+  }
+}
+
+#fresh-images-text {
+  margin-top: 20px !important;
+  margin-left: 120px;
+
+  h2 {
+    width: 160px;
+  }
+  p {
+    width: 160px;
   }
 }
 
@@ -108,7 +119,7 @@
 
 .map {
   position: relative;
-  top: -145px;
+  top: -45px;
 }
 
 .white {
@@ -126,9 +137,6 @@
 }
 
 
-.fresh-images-text {
-  margin-top: 44px !important;
-}
 
 .address {
   .address-title {
@@ -167,12 +175,12 @@
     font-size: 60px;
     margin-bottom: 76px;
   }
-  
+
   .days {
     font-size: 48px;
     font-family: Ogg !important;
     font-weight: 700;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     padding: 0;
     margin: 0;
     margin-bottom: 32px;
@@ -233,4 +241,239 @@
     padding: 0;
     margin: 0;
   }
+}
+
+@media (min-width: 681px) {
+}
+
+@media (min-width: 1201px) {
+  .landing-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 100px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 48px;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-family: "Akagi Pro Light";
+      font-size: 32px;
+      width: 580px;
+    }
+  }
+}
+
+#bread-row {
+  display: block;
+  position: relative;
+  padding: 0;
+  height: 735px;
+  width: 1440px;
+}
+
+#bread-description {
+  position: absolute;
+  top: 88px;
+  left: 100px;
+  margin-bottom: 240px;
+  z-index: 2;
+
+  img {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 1440px;
+    z-index: 1;
+  }
+}
+
+#ingredients {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 800px;
+  img {
+    width: 800px;
+  }
+}
+
+.fresh-images {
+  position: relative;
+  top: -145px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 120px;
+  img {
+    max-width: 292px;
+    height: 600px;
+    margin: 0;
+    border-radius: 8px;
+  }
+  img:nth-child(2) {
+    margin-left: 12px;
+    margin-top: 94px;
+  }
+}
+
+.color {
+  background-color: rgba(255, 153, 0, 0.06);
+}
+
+.map {
+  position: relative;
+  top: -145px;
+}
+
+.white {
+  background-color: white;
+}
+
+.hours-img-container {
+  width: 100%;
+  img {
+    max-width: 588px;
+    max-height: 588px;
+    position: relative;
+    top: -40px;
+  }
+}
+
+.fresh-images-text {
+  margin-top: 44px !important;
+}
+
+.address {
+  .address-title {
+    font-family: Ogg !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-weight: bold;
+    margin-top: 88px;
+    margin-bottom: 12px;
+  }
+  h2 {
+    max-width: 450px;
+    font-size: 60px;
+    line-height: 72px;
+    padding-bottom: 95px !important;
+  }
+  span {
+    font-family: "Akagi Pro Light";
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  hr {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.hours-of-operation .right {
+  margin-top: 88px;
+  h2 {
+    max-width: 516px;
+    font-size: 60px;
+    margin-bottom: 76px;
+  }
+
+  .days {
+    font-size: 48px;
+    font-family: Ogg !important;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  .hours {
+    font-size: 40px;
+    font-family: "Akagi Pro Light";
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.carousel {
+  width: 1240px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: flex-start;
+  img {
+    height: 292px;
+    width: 292px;
+    object-fit: cover;
+    margin-right: 24px;
+  }
+}
+
+.insta {
+  margin: 100px 0 100px 0;
+  width: 1240px;
+  h2 {
+    font-size: 60px;
+    line-height: 72px;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .insta-link {
+    color: #ce6924;
+    a {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+}
+
+.social-links {
+  width: 68%;
+  margin: 100px auto;
+
+  p {
+    color: #666;
+    font-size: 32px;
+    line-height: 72px;
+    font-weight: 700;
+    font-family: Ogg;
+    padding: 0;
+    margin: 0;
+  }
+}
 }
