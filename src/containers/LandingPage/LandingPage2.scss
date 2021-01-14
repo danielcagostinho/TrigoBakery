@@ -19,6 +19,11 @@ $fontSizeP2Large: 32px;
 /* Colors */
 $addressTextColor: rgba(0, 0, 0, 0.5);
 $daysTextColor: rgba(0, 0, 0, 0.75);
+$instaLinkTextColor: #ce6924;
+
+$imageTopOffsetMobile: -60px;
+$imageTopOffsetMedium: -80px;
+$imageTopOffsetLarge: -120px;
 
 .color {
   /* Other */
@@ -46,6 +51,7 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 
       /* Other */
       font-size: $fontSizeH2Mobile;
+      line-height: $fontSizeH2Mobile * 1.5;
     }
 
     h3 {
@@ -82,7 +88,7 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 
 #bread {
   /* Display & Box Model */
-  padding: 40px 0;
+  padding: 80px 0;
 
   h2 {
     /* Display and Box Model */
@@ -92,14 +98,19 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 
 #fresh {
   /* Display & Box Model */
-  padding: 40px 0;
+  padding-bottom: 80px;
 
   h2 {
+    /* Display & Box Model */
     margin-bottom: 8px;
   }
 }
 
 #fresh-images {
+  /* Positioning */
+  position: relative;
+  top: $imageTopOffsetMobile;
+
   /* Display & Box Model */
   display: flex;
   flex-direction: row;
@@ -110,9 +121,19 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
   img {
     /* Display & Box Model */
     width: 40%;
-    height: 100%;
-    margin-right: 8px;
+    height: 100%; // TODO change to px
+    height: 200px; // TODO change to px
+    margin: 0 4px;
     border-radius: 8px;
+
+    /* Other */
+    object-fit: cover;
+
+    &:nth-child(2) {
+      /* Positioning */
+      position: relative;
+      top: 32px;
+    }
   }
 }
 
@@ -120,7 +141,7 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
   /* Display & Box Model */
   display: flex;
   flex-direction: column-reverse;
-  padding: 40px 0;
+  padding-bottom: 120px;
 
   .column {
     /* Display & Box Model */
@@ -150,8 +171,7 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 
 #address-title {
   /* Display & Box Model */
-  margin-top: 24px;
-  margin-bottom: 8px;
+  margin: 8px 0;
 
   /* Other */
   font-family: var(--font-family-primary);
@@ -160,16 +180,23 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 }
 
 #map {
+  /* Positioning */
+  position: relative;
+  top: $imageTopOffsetMobile;
+
   /* Display & Box Model */
   width: 100%;
   height: 100%;
 }
 
 #hours-of-operation {
+  /* Positioning */
+  position: relative;
+  top: $imageTopOffsetMobile;
+
   /* Display & Box Model */
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
 
   /* Other */
   text-align: right;
@@ -207,17 +234,53 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
   }
 }
 
+#insta {
+  /* Display & Box Model */
+  width: 80%;
+  padding: 0 0 10px 0;
+
+  h2 {
+    /* Other */
+    color: $addressTextColor;
+  }
+
+  #insta-link {
+    /* Other */
+    color: $instaLinkTextColor;
+
+    a {
+      /* Other */
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+}
+
+#carousel {
+  /* Display & Box Model */
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px 0 40px 0;
+  img {
+    /* Display & Box Model */
+    width: 23%;
+  }
+}
+
 @media (min-width: 681px) {
   .content {
     .section {
       h2 {
         /* Other */
         font-size: $fontSizeH2Medium;
+        line-height: $fontSizeH2Medium * 1.5;
       }
 
       h3 {
         /* Other */
         font-size: $fontSizeH3Medium;
+        line-height: $fontSizeH3Medium * 1.5;
       }
 
       p {
@@ -229,12 +292,12 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 
   #bread {
     /* Display & Box Model */
-    padding: 80px 0;
+    padding: 120px 0;
   }
 
   #fresh {
     /* Display & Box Model */
-    padding: 80px 0;
+    padding-bottom: 80px; // TODO DELETE
 
     h3 {
       /* Display & Box Model */
@@ -243,9 +306,18 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
   }
 
   #fresh-images {
+    /* Positioning */
+    top: $imageTopOffsetMedium;
+
     img {
       /* Display & Box Model */
-      margin-right: 12px;
+      height: 360px; // TODO change to px
+      margin: 0 6px;
+
+      &:nth-child(2) {
+        /* Positioning */
+        top: 60px;
+      }
     }
   }
 
@@ -253,6 +325,7 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
     /* Display & Box Model */
     display: flex;
     flex-direction: row;
+    padding-bottom: 120px;
 
     .column {
       /* Display & Box Model */
@@ -264,13 +337,23 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
       margin-top: 40px;
       margin-bottom: 20px;
     }
+
+    #address-title {
+      /* Display & Box Model */
+      margin-top: 120px;
+    }
+  }
+
+  #map {
+    /* Positioning */
+    top: calc(#{$imageTopOffsetMedium} - 60px);
   }
 
   #hours-of-operation {
     /* Display & Box Model */
     display: flex;
     flex-direction: row;
-    padding: 80px 0;
+    padding-top: 80px;
 
     /* Other */
     text-align: left;
@@ -297,6 +380,24 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
       /* Other */
       font-size: 24px;
     }
+
+    img {
+      /* Positioning */
+      position: relative;
+      top: $imageTopOffsetMedium;
+    }
+  }
+
+  #insta {
+    /* Display & Box Model */
+    width: 90%;
+    padding: 80px 0 20px 0;
+  }
+
+  #carousel {
+    /* Display & Box Model */
+    width: 90%;
+    padding: 20px 0 40px 0;
   }
 }
 
@@ -306,11 +407,13 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
       h2 {
         /* Other */
         font-size: $fontSizeH2Large;
+        line-height: $fontSizeH2Large * 1.2;
       }
 
       h3 {
         /* Other */
         font-size: $fontSizeH3Large;
+        line-height: $fontSizeH3Large * 1.2;
       }
 
       p {
@@ -327,7 +430,7 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 
   #bread {
     /* Display & Box Model */
-    padding: 160px 0;
+    padding: 240px 0;
 
     h2 {
       /* Display & Box Model */
@@ -337,7 +440,7 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 
   #fresh {
     /* Display & Box Model */
-    padding: 160px 0;
+    padding-bottom: 160px;
 
     h2 {
       /* Display & Box Model */
@@ -347,16 +450,26 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
 
   #fresh-images {
     img {
+      /* Positioning */
+      position: relative;
+      top: $imageTopOffsetLarge;
+
       /* Display & Box Model */
-      margin-right: 24px;
+      height: 600px; // TODO change to px
+      margin: 0 12px;
+
+      &:nth-child(2) {
+        /* Positioning */
+        top: 45px;
+      }
     }
   }
 
   #location {
     /* Display & Box Model */
-    display: flex;
     flex-direction: row;
     width: 100%;
+    padding-bottom: 160px;
 
     .column {
       /* Display & Box Model */
@@ -369,11 +482,24 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
     }
   }
 
+  #address-title {
+    /* Display & Box Model */
+    align-self: center;
+  }
+
+  #map {
+    /* Positioning */
+    top: $imageTopOffsetLarge;
+  }
   #hours-of-operation {
+    /* Positioning */
+    position: relative;
+    top: $imageTopOffsetMedium;
+
     /* Display & Box Model */
     display: flex;
     flex-direction: row;
-    padding: 160px 0;
+    padding-top: 80px;
 
     .column {
       /* Display & Box Model */
@@ -398,5 +524,20 @@ $daysTextColor: rgba(0, 0, 0, 0.75);
       /* Other */
       font-size: $fontSizeH3Large;
     }
+
+    img {
+      /* Positioning */
+      top: $imageTopOffsetLarge;
+    }
+  }
+
+  #insta {
+    /* Display & Box Model */
+    padding: 40px 0;
+  }
+
+  #carousel {
+    /* Display & Box Model */
+    padding: 40px 0;
   }
 }
