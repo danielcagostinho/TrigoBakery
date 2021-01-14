@@ -1,0 +1,402 @@
+/* Mobile Variables */
+$fontSizeH2Mobile: 24px;
+$fontSizeH3Mobile: 20px;
+$fontSizeP1Mobile: 18px;
+$fontSizeP2Mobile: 14px;
+
+/* Medium Screen Variables */
+$fontSizeH2Medium: 36px;
+$fontSizeH3Medium: 30px;
+$fontSizeP1Medium: 26px;
+$fontSizeP2Medium: 20px;
+
+/* Large Screen Variables */
+$fontSizeH2Large: 60px;
+$fontSizeH3Large: 48px;
+$fontSizeP1Large: 40px;
+$fontSizeP2Large: 32px;
+
+/* Colors */
+$addressTextColor: rgba(0, 0, 0, 0.5);
+$daysTextColor: rgba(0, 0, 0, 0.75);
+
+.color {
+  /* Other */
+  background-color: var(--color-bg-primary);
+}
+
+.white {
+  /* Other */
+  background-color: white;
+}
+
+.content {
+  /* Display and Box Model */
+  width: 100%;
+  padding-top: 200px; // TODO Edit to be nav height
+
+  .section {
+    /* Display and Box Model */
+    width: 100%;
+
+    h2 {
+      /* Display & Box Model */
+      padding: 0;
+      margin: 0;
+
+      /* Other */
+      font-size: $fontSizeH2Mobile;
+    }
+
+    h3 {
+      /* Other */
+      font-size: $fontSizeH3Mobile;
+    }
+
+    p {
+      /* Display and Box Model */
+      padding: 0;
+      margin: 0;
+
+      /* Other */
+      font-size: $fontSizeP2Mobile;
+      font-family: var(--font-family-secondary);
+    }
+
+    .row {
+      /* Display & Box Model */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+
+      .column {
+        /* Display and Box Model */
+        width: 40%;
+      }
+    }
+  }
+}
+
+#bread {
+  /* Display & Box Model */
+  padding: 40px 0;
+
+  h2 {
+    /* Display and Box Model */
+    margin-bottom: 8px;
+  }
+}
+
+#fresh {
+  /* Display & Box Model */
+  padding: 40px 0;
+
+  h2 {
+    margin-bottom: 8px;
+  }
+}
+
+#fresh-images {
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  img {
+    /* Display & Box Model */
+    width: 40%;
+    height: 100%;
+    margin-right: 8px;
+    border-radius: 8px;
+  }
+}
+
+#location {
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40px 0;
+
+  .column {
+    /* Display & Box Model */
+    width: 80%;
+  }
+
+  h2 {
+    /* Display & Box Model */
+    max-width: 75%;
+  }
+
+  hr {
+    /* Display & Box Model */
+    padding: 0;
+    margin: 0;
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
+
+  span {
+    /* Other */
+    font-family: var(--font-family-secondary);
+    font-weight: bold;
+    color: $daysTextColor;
+  }
+}
+
+#address-title {
+  /* Display & Box Model */
+  margin-top: 24px;
+  margin-bottom: 8px;
+
+  /* Other */
+  font-family: var(--font-family-primary);
+  color: $addressTextColor;
+  font-weight: bold;
+}
+
+#map {
+  /* Display & Box Model */
+  width: 100%;
+  height: 100%;
+}
+
+#hours-of-operation {
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+
+  /* Other */
+  text-align: right;
+
+  .column {
+    /* Display & Box Model */
+    width: 80%;
+  }
+
+  .hours {
+    /* Display & Box Model */
+    margin-top: 32px;
+
+    /* Other */
+    font-size: $fontSizeP1Mobile;
+  }
+
+  .days {
+    /* Display & Box Model */
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+
+    /* Other */
+    font-size: 24px;
+    font-weight: 700;
+    color: $daysTextColor;
+  }
+
+  img {
+    /* Display & Box Model */
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 681px) {
+  .content {
+    .section {
+      h2 {
+        /* Other */
+        font-size: $fontSizeH2Medium;
+      }
+
+      h3 {
+        /* Other */
+        font-size: $fontSizeH3Medium;
+      }
+
+      p {
+        /* Other */
+        font-size: $fontSizeP2Medium;
+      }
+    }
+  }
+
+  #bread {
+    /* Display & Box Model */
+    padding: 80px 0;
+  }
+
+  #fresh {
+    /* Display & Box Model */
+    padding: 80px 0;
+
+    h3 {
+      /* Display & Box Model */
+      margin-bottom: 16px;
+    }
+  }
+
+  #fresh-images {
+    img {
+      /* Display & Box Model */
+      margin-right: 12px;
+    }
+  }
+
+  #location {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+
+    .column {
+      /* Display & Box Model */
+      width: 40%;
+    }
+
+    hr {
+      /* Display & Box Model */
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  #hours-of-operation {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0;
+
+    /* Other */
+    text-align: left;
+
+    .column {
+      /* Display & Box Model */
+      width: 40%;
+    }
+
+    .hours {
+      /* Display & Box Model */
+      margin-top: 32px;
+
+      /* Other */
+      font-size: $fontSizeP1Medium;
+    }
+
+    .days {
+      /* Display & Box Model */
+      padding: 0;
+      margin: 0;
+      margin-top: 8px;
+
+      /* Other */
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .content {
+    .section {
+      h2 {
+        /* Other */
+        font-size: $fontSizeH2Large;
+      }
+
+      h3 {
+        /* Other */
+        font-size: $fontSizeH3Large;
+      }
+
+      p {
+        /* Other */
+        font-size: $fontSizeP2Large;
+      }
+
+      .row {
+        /* Display & Box Model */
+        max-width: 1440px;
+      }
+    }
+  }
+
+  #bread {
+    /* Display & Box Model */
+    padding: 160px 0;
+
+    h2 {
+      /* Display & Box Model */
+      margin-bottom: 20px;
+    }
+  }
+
+  #fresh {
+    /* Display & Box Model */
+    padding: 160px 0;
+
+    h2 {
+      /* Display & Box Model */
+      margin-bottom: 20px;
+    }
+  }
+
+  #fresh-images {
+    img {
+      /* Display & Box Model */
+      margin-right: 24px;
+    }
+  }
+
+  #location {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .column {
+      /* Display & Box Model */
+      width: 40%;
+    }
+    hr {
+      /* Display & Box Model */
+      margin-top: 95px;
+      margin-bottom: 32px;
+    }
+  }
+
+  #hours-of-operation {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    padding: 160px 0;
+
+    .column {
+      /* Display & Box Model */
+      width: 40%;
+    }
+
+    .hours {
+      /* Display & Box Model */
+      margin-top: 32px;
+
+      /* Other */
+      font-size: $fontSizeP1Large;
+      font-family: var(--font-family-secondary);
+    }
+
+    .days {
+      /* Display & Box Model */
+      padding: 0;
+      margin: 0;
+      margin-top: 8px;
+
+      /* Other */
+      font-size: $fontSizeH3Large;
+    }
+  }
+}
