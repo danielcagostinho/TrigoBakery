@@ -1,6 +1,16 @@
-$footerTextColor: #666;
+/* Mobile Variables */
+$fontSizeH1Mobile: 26px;
+$fontSizeP2Mobile: 18px;
 
-$footerTextFontSizeMobile: 20px;
+/* Medium Variables */
+$fontSizeH1Medium: 36px;
+$fontSizeP2Medium: 26px;
+
+/* Large Variables */
+$fontSizeH1Large: 60px;
+$fontSizeP2Large: 32px;
+
+$footerTextColor: #666;
 
 .footer {
   /* Display & Box Model */
@@ -18,7 +28,7 @@ $footerTextFontSizeMobile: 20px;
     margin-bottom: 40px;
 
     /* Other */
-    font-size: 30px;
+    font-size: $fontSizeH1Mobile;
     line-height: 36px;
     font-weight: var(--font-weight);
   }
@@ -32,12 +42,12 @@ $footerTextFontSizeMobile: 20px;
       /* Display & Box Model */
       padding: 0;
       margin: 0;
-      margin-left: 16px;
+      margin-right: 16px;
       margin-bottom: 16px;
 
       /* Other */
       color: $footerTextColor;
-      font-size: $footerTextFontSizeMobile;
+      font-size: $fontSizeP2Mobile;
       font-weight: var(--font-weight);
 
       a {
@@ -55,5 +65,46 @@ $footerTextFontSizeMobile: 20px;
 }
 
 @media (min-width: 681px) {
-  
+  .footer {
+    /* Display & Box Model */
+    padding: 80px 60px;
+
+    h1 {
+      /* Other */
+      font-size: $fontSizeH1Medium;
+    }
+
+    .footer-links {
+      p {
+        /* Other */
+        font-size: $fontSizeP2Medium;
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .footer {
+    /* Display & Box Model */
+    padding: 120px 80px;
+
+    h1 {
+      /* Display & Box Model */
+      margin-bottom: 80px;
+      margin-right: 16px;
+
+      /* Other */
+      font-size: $fontSizeH1Large;
+    }
+
+    .footer-links {
+      p {
+        /* Display & Box Model */
+        margin-right: 40px;
+
+        /* Other */
+        font-size: $fontSizeP2Large;
+      }
+    }
+  }
 }
