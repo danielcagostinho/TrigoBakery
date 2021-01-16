@@ -17,7 +17,7 @@ import Footer from "../../components/Footer/Footer";
 const MenuPage = () => {
   return (
     <div className="menu-page">
-      <div className="menu-header">
+      {/* <div className="menu-header">
         <h1>Our Menu</h1>
         <p>
           Trigo’s a local family-run bakery specializing in Portuguese breads,
@@ -106,7 +106,7 @@ const MenuPage = () => {
           />
           <MoreCard productType="pastries" />
         </div>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

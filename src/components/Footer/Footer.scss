@@ -1,86 +1,59 @@
+$footerTextColor: #666;
+
+$footerTextFontSizeMobile: 20px;
+
 .footer {
-  width: 100vw;
+  /* Display & Box Model */
+  display: flex;
+  width: 100%;
+  padding: 80px 20px;
+
+  /* Other */
   background-color: #fafafa;
 
-  .footer-content {
-    max-width: 360px;
-    margin: 80px auto;
-  }
-
   h1 {
-    font-weight: var(--font-weight);
+    /* Display & Box Model */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+
+    /* Other */
     font-size: 30px;
     line-height: 36px;
-    width: 400px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 88px;
+    font-weight: var(--font-weight);
   }
 
   .footer-links {
+    /* Display & Box Model */
     display: grid;
-    width: 360px;
     grid-template-columns: 1fr 1fr;
+
     p {
-      margin: 0;
+      /* Display & Box Model */
       padding: 0;
-      line-height: 72px;
+      margin: 0;
+      margin-left: 16px;
+      margin-bottom: 16px;
+
+      /* Other */
+      color: $footerTextColor;
+      font-size: $footerTextFontSizeMobile;
       font-weight: var(--font-weight);
-      color: #666;
-      font-size: 20px;
+
       a {
+        /* Other */
         color: inherit;
         text-decoration: none;
+
         &:visited {
+          /* Other */
           color: inherit;
         }
       }
     }
   }
-}
-@media (min-width: 681px) {
-  
 }
 
-@media (min-width: 1201px) {
-  .footer {
-    width: 100vw;
-    background-color: #fafafa;
+@media (min-width: 681px) {
   
-    .footer-content {
-      max-width: 1240px;
-      margin: 80px auto;
-    }
-  
-    h1 {
-      font-weight: var(--font-weight);
-      font-size: var(--font-size-h1);
-      line-height: 72px;
-      width: 400px;
-      margin: 0;
-      padding: 0;
-      margin-bottom: 88px;
-    }
-  
-    .footer-links {
-      display: grid;
-      width: 640px;
-      grid-template-columns: 1fr 1fr;
-      p {
-        margin: 0;
-        padding: 0;
-        line-height: 72px;
-        font-weight: var(--font-weight);
-        color: #666;
-        font-size: var(--font-size-p1);
-        a {
-          color: inherit;
-          text-decoration: none;
-          &:visited {
-            color: inherit;
-          }
-        }
-      }
-    }
-  }
 }

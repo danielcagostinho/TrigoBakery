@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Header from "../../components/Header/Header";
 import HeaderImage from "../../components/Header/HeaderImage/HeaderImage";
 
-import "./LandingPage2.scss";
+import "./LandingPage.scss";
 
 import ingredientsImage from "../../assets/bakersIngredients.png";
 import landingImage1 from "../../assets/landing1.png";
@@ -37,8 +37,8 @@ const LandingPage = () => {
                 </p>
               </div>
             </div>
-            <div className="column">
-              {/* <img src={ingredientsImage} alt="Various Baker's Ingredients" /> */}
+            <div className="column" id="ingredients">
+              <img src={ingredientsImage} alt="Various Baker's Ingredients"/>
             </div>
           </div>
         </div>
