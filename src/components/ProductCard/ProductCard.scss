@@ -1,9 +1,39 @@
-$cardHeightLarge: 600px;
-$cardHeightCakeLarge: 480px;
-$cardWidthLarge: 400px;
+/* Mobile Variables */
+$cardWidthMobile: 150px;
+$cardHeightMobile: 225px;
+$cardHeightCakeMobile: 180px;
+$cardImageContainerWidthMobile: 80px;
+$cardImageWidthMobile: 40px;
+$fontSizeCardTitleMobile: 18px;
+$fontSizeCardP1Mobile: 10px;
 
-$cardImageContainerSizeLarge: 252px;
-$cardImageSizeLarge: 150px;
+/* Breakpoint 2 Variables */
+$cardWidthB2: 200px;
+$cardHeightB2: 300px;
+$cardHeightCakeB2: 240px;
+$cardImageContainerWidthB2: 120px;
+$cardImageWidthB2: 80px;
+$fontSizeCardTitleB2: 22px;
+$fontSizeCardP1B2: 14px;
+
+/* Breakpoint 3 Variables */
+$cardWidthB3: 250px;
+$cardHeightB3: 375px;
+$cardHeightCakeB3: 300px;
+$cardImageContainerWidthB3: 150px;
+$cardImageWidthB3: 100px;
+$fontSizeCardTitleB3: 24px;
+$fontSizeCardP1B3: 18px;
+
+/* Breakpoint 4 Variables */
+$cardWidthB4: 400px;
+$cardHeightB4: 600px;
+$cardHeightCakeB4: 480px;
+$cardImageContainerWidthB4: 252px;
+$cardImageWidthB4: 150px;
+$fontSizeCardTitleB4: 40px;
+$fontSizeCardP1B4: 20px;
+
 $cardBorderRadius: 8px;
 
 $cardImageBorderColor: #eecdb3;
@@ -11,85 +41,278 @@ $cardDescriptionColor: #8c4e1c;
 $cardBackgroundColor: #fff9f1;
 $cardBorderColor: #f5dcc8;
 
-$cardTitleSize: 40px;
-$cardDescriptionSize: 20px;
 
 .card {
-  width: $cardWidthLarge;
-  height: $cardHeightLarge;
-  margin: 12px;
+  /* Display & Box Model */
+  width: $cardWidthMobile;
+  height: $cardHeightMobile;
+  margin: 6px;
 }
 
 .card-cakes {
-  width: $cardWidthLarge;
-  height: $cardHeightCakeLarge;
-  margin: 12px;
+  /* Display & Box Model */
+  width: $cardWidthMobile;
+  height: $cardHeightCakeMobile;
+  margin: 6px;
 }
 
 .card-texture {
+  /* Positioning */
   position: absolute;
   z-index: -1;
-  width: $cardWidthLarge;
+
+  /* Display & Box Model */
+  width: $cardWidthMobile;
+  height: $cardHeightMobile;
 }
 
 .card-content {
+  /* Display & Box Model */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
+  border: 2px solid $cardBorderColor;
+  border-radius: $cardBorderRadius;
   width: 100%;
   height: 100%;
 
-  border: 2px solid $cardBorderColor;
-  border-radius: $cardBorderRadius;
+  /* Other */
   background-color: inherit;
 
   .card-title {
-    padding: 42px 0 0 0;
+    /* Display & Box Model */
+    padding: 16px 0 0 0;
     margin: 0;
-    font-size: $cardTitleSize;
+
+    /* Other */
+    font-size: $fontSizeCardTitleMobile;
+    line-height: $fontSizeCardTitleMobile * 1.5;
     font-weight: var(--font-weight);
     text-align: center;
-    line-height: 140%;
   }
 
   .card-image-container {
+    /* Display & Box Model */
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width: $cardImageContainerSizeLarge;
-    height: $cardImageContainerSizeLarge;
-
+    width: $cardImageContainerWidthMobile;
+    height: $cardImageContainerWidthMobile;
     background-color: black;
     border-radius: 50%;
     border: $cardBorderRadius solid $cardImageBorderColor;
+
+    .card-image img {
+      /* Display & Box Model */
+      width: $cardImageWidthMobile;
+      height: $cardImageWidthMobile;
+      object-fit: fill;
+      border-radius: 50%;
+    }
   }
 
-  .container-cakes {
-    margin-bottom: 80px;
-  }
-
-  .card-image img {
-    width: $cardImageSizeLarge;
-    height: $cardImageSizeLarge;
-    object-fit: fill;
-  }
-
-  .image-pastries img {
-    width: $cardImageContainerSizeLarge;
-    height: $cardImageContainerSizeLarge;
-    border-radius: 50%;
-    border: $cardBorderRadius solid $cardImageBorderColor;
-  }
   .card-description {
-    padding: 24px;
-    font-size: $cardDescriptionSize;
+    /* Display & Box Model */
+    padding: 8px;
+    border-top: 1px solid $cardImageBorderColor;
+
+    /* Other */
+    font-size: $fontSizeCardP1Mobile;
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight);
     color: $cardDescriptionColor;
     text-align: center;
-    border-top: 1px solid $cardImageBorderColor;
   }
 }
+
+@media (min-width: 801px) {
+  .card {
+    /* Display & Box Model */
+    width: $cardWidthB2;
+    height: $cardHeightB2;
+    margin: 8px;
+  }
+
+  .card-texture {
+    /* Display & Box Model */
+    width: $cardWidthB2;
+    height: $cardHeightB2;
+  }
+
+  .card-content {
+    .card-title {
+      /* Other */
+      font-size: $fontSizeCardTitleB2;
+      line-height: $fontSizeCardTitleB2 * 1.5;
+    }
+
+    .card-image-container {
+      /* Display & Box Model */
+      width: $cardImageContainerWidthB2;
+      height: $cardImageContainerWidthB2;
+
+      .card-image img {
+        /* Display & Box Model */
+        width: $cardImageWidthB2;
+        height: $cardImageWidthB2;
+      }
+    }
+
+    .card-description {
+      /* Display & Box Model */
+      padding: 8px 16px 0 16px;
+
+      /* Other */
+      font-size: $fontSizeCardP1B2;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .card {
+    /* Display & Box Model */
+    width: $cardWidthB3;
+    height: $cardHeightB3;
+    margin: 12px;
+  }
+
+  .card-texture {
+    /* Display & Box Model */
+    width: $cardWidthB3;
+    height: $cardHeightB3;
+  }
+
+  .card-content {
+    .card-title {
+      /* Other */
+      font-size: $fontSizeCardTitleB3;
+      line-height: $fontSizeCardTitleB3 * 1.5;
+    }
+
+    .card-image-container {
+      /* Display & Box Model */
+      width: $cardImageContainerWidthB3;
+      height: $cardImageContainerWidthB3;
+
+      .card-image img {
+        /* Display & Box Model */
+        width: $cardImageWidthB3;
+        height: $cardImageWidthB3;
+      }
+    }
+
+    .card-description {
+      /* Display & Box Model */
+      padding: 8px 16px 0 16px;
+
+      /* Other */
+      font-size: $fontSizeCardP1B3;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .card {
+    /* Display & Box Model */
+    width: $cardWidthB4;
+    height: $cardHeightB4;
+    margin: 12px;
+  }
+
+  .card-texture {
+    /* Display & Box Model */
+    width: $cardWidthB4;
+    height: $cardHeightB4;
+  }
+
+  .card-content {
+    .card-title {
+      /* Other */
+      font-size: $fontSizeCardTitleB4;
+      line-height: $fontSizeCardTitleB4 * 1.5;
+    }
+
+    .card-image-container {
+      /* Display & Box Model */
+      width: $cardImageContainerWidthB4;
+      height: $cardImageContainerWidthB4;
+
+      .card-image img {
+        /* Display & Box Model */
+        width: $cardImageWidthB4;
+        height: $cardImageWidthB4;
+      }
+    }
+
+    .card-description {
+      /* Display & Box Model */
+      padding: 8px 16px 0 16px;
+
+      /* Other */
+      font-size: $fontSizeCardP1B4;
+    }
+  }
+}
+
+// .card-content {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   width: 100%;
+//   height: 100%;
+
+//   border: 2px solid $cardBorderColor;
+//   border-radius: $cardBorderRadius;
+//   background-color: inherit;
+
+//   .card-title {
+//     padding: 42px 0 0 0;
+//     margin: 0;
+//     font-size: $cardTitleSize;
+//     font-weight: var(--font-weight);
+//     text-align: center;
+//     line-height: 140%;
+//   }
+
+//   .card-image-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     width: $cardImageContainerSizeLarge;
+//     height: $cardImageContainerSizeLarge;
+
+//     background-color: black;
+//     border-radius: 50%;
+//     border: $cardBorderRadius solid $cardImageBorderColor;
+//   }
+
+//   .container-cakes {
+//     margin-bottom: 80px;
+//   }
+
+//   .card-image img {
+//     width: $cardImageSizeLarge;
+//     height: $cardImageSizeLarge;
+//     object-fit: fill;
+//   }
+
+//   .image-pastries img {
+//     width: $cardImageContainerSizeLarge;
+//     height: $cardImageContainerSizeLarge;
+//     border-radius: 50%;
+//     border: $cardBorderRadius solid $cardImageBorderColor;
+//   }
+//   .card-description {
+//     padding: 24px;
+//     font-size: $cardDescriptionSize;
+//     font-family: var(--font-family-secondary);
+//     font-weight: var(--font-weight);
+//     color: $cardDescriptionColor;
+//     text-align: center;
+//     border-top: 1px solid $cardImageBorderColor;
+//   }
+// }

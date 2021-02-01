@@ -93,3 +93,14 @@ $navLogoHeightMobile: 56px;
     );
   }
 }
+
+@media (min-width: 681px) {
+  .nav {
+    .nav-bar {
+      .nav-link {
+        /* Other */
+        font-size: var(--nav-font-size-desktop);
+      }
+    }
+  }
+}

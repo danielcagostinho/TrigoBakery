@@ -2,6 +2,7 @@
   text-decoration: none;
   color: inherit;
 }
+
 .header-button {
   display: flex;
   align-items: center;
@@ -9,7 +10,8 @@
 
   width: 94px;
   height: 30px;
-  margin: 0 20px;
+  margin: 0;
+  margin-right: 16px;
 
   border-radius: 16px;
   border: 2px solid black;

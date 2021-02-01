@@ -17,7 +17,7 @@ import Footer from "../../components/Footer/Footer";
 const MenuPage = () => {
   return (
     <div className="menu-page">
-      {/* <div className="menu-header">
+      <div className="menu-header">
         <h1>Our Menu</h1>
         <p>
           Trigo’s a local family-run bakery specializing in Portuguese breads,
@@ -35,7 +35,7 @@ const MenuPage = () => {
           </HeaderButton>
         </div>
       </div>
-      <div className="section">
+      <div className="menu-section">
         <div className="section-header">
           <h1 className="section-title">Breads</h1>
           <p className="section-description">
@@ -50,16 +50,18 @@ const MenuPage = () => {
             description="Think of Pão da Avó as a 'house bread'. Just like your grandmother’s bread."
             productType="breads"
           />
-          <ProductCard
-            productName="Broa de Milho"
-            imgSrc={broaAmarelo}
-            description="Has a hard crust with characteristic cracks on it and keeps for a few days."
-            productType="breads"
-          />
+          {window.innerWidth > 680 ? (
+            <ProductCard
+              productName="Broa de Milho"
+              imgSrc={broaAmarelo}
+              description="Has a hard crust with characteristic cracks on it and keeps for a few days."
+              productType="breads"
+            />
+          ) : null}
           <MoreCard productType="breads" />
         </div>
       </div>
-      <div className="section">
+      {/* <div className="menu-section">
         <div className="section-header">
           <h1 className="section-title">Cakes</h1>
           <p className="section-description">
@@ -83,7 +85,7 @@ const MenuPage = () => {
           <MoreCard productType="cakes" />
         </div>
       </div>
-      <div className="section">
+      <div className="menu-section">
         <div className="section-header">
           <h1 className="section-title">Pastries</h1>
           <p className="section-description">
