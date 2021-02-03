@@ -1,107 +1,202 @@
+@import "../../components/UI/HeaderButton/HeaderButton.scss";
 /* Mobile Variables */
-$fontSizeH2Mobile: 24px;
-$fontSizeH3Mobile: 20px;
+$fontSizeH1Mobile: 24px;
+$fontSizeH2Mobile: 20px;
 $fontSizeP1Mobile: 18px;
 $fontSizeP2Mobile: 14px;
+$pageMaxWidthMobile: 100%;
+$sectionPaddingBottomMobile: 8px;
 
-/* Medium Screen Variables */
-$fontSizeH2Medium: 36px;
-$fontSizeH3Medium: 30px;
-$fontSizeP1Medium: 26px;
-$fontSizeP2Medium: 20px;
+/* B2 Screen Variables */
+$fontSizeH1B2: 36px;
+$fontSizeH2B2: 30px;
+$fontSizeP1B2: 26px;
+$fontSizeP2B2: 20px;
+$pageMaxWidthB2: 70%;
+$sectionPaddingBottomB2: 120px;
 
-/* Large Screen Variables */
-$fontSizeH2Large: 60px;
-$fontSizeH3Large: 48px;
-$fontSizeP1Large: 40px;
-$fontSizeP2Large: 32px;
+/* B4 Screen Variables */
+$fontSizeH1B4: 60px;
+$fontSizeH2B4: 48px;
+$fontSizeP1B4: 40px;
+$fontSizeP2B4: 32px;
+$pageMaxWidthB4: 70%;
+$sectionPaddingBottomB4: 20px;
+
+$pageMaxWidthB5: 70%;
+$pageMaxWidthB6: 60%;
+$pageMaxWidthB7: 55%;
 
 $navHeight: 120px;
 $pageMaxWidth: 1440px;
 
-.menu-page {
-  /* Display & Box Model */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: $pageMaxWidth;
-  padding: 0 20px;
-  padding-top: $navHeight + 16px;
-
-  .menu-header {
-    /* Display & Box Model */
-    width: 100%;
-    max-width: $pageMaxWidth;
-
-    h1 {
-      /* Display & Box Model */
-      padding: 0;
-      margin: 0;
-      margin-bottom: 16px; // TODO responsive 32px lg
-
-      /* Other */
-      font-size: $fontSizeH2Mobile;
-      line-height: $fontSizeH2Mobile * 1.5;
-    }
-
-    p {
-      /* Display & Box Model */
-      width: 80%;
-      padding: 0;
-      margin: 0;
-      margin-bottom: 40px;
-
-      /* Other */
-      font-weight: var(--font-weight);
-      font-size: $fontSizeP2Mobile;
-      font-family: var(--font-family-secondary);
-    }
-
-    .menu-links {
-      /* Display & Box Model */
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      width: 100%;
-      margin-bottom: 80px;
-    }
-  }
-
-  .menu-section {
+@mixin menuPage(
+  $fontSizeH1,
+  $fontSizeH2,
+  $fontSizeP1,
+  $fontSizeP2,
+  $buttonWidth,
+  $buttonGap,
+  $pageMaxWidth,
+  $sectionPaddingBottom
+) {
+  .menu-page {
     /* Display & Box Model */
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: $navHeight + $sectionPaddingBottom * 6;
+    max-width: $pageMaxWidth;
+    margin: 0 auto;
 
-    .section-title {
+    .menu-header {
       /* Display & Box Model */
-      padding: 0;
-      margin: 0;
-      margin-bottom: 16px;
+      width: 100%;
 
-      /* Other */
-      font-size: $fontSizeH3Mobile;
-      line-height: $fontSizeH3Mobile * 1.5;
+      h1 {
+        /* Display & Box Model */
+        padding: 0;
+        margin: 0;
+        margin-bottom: $sectionPaddingBottom * 2;
+
+        /* Other */
+        font-size: $fontSizeH1;
+        line-height: $fontSizeH1 * 1.5;
+      }
+
+      p {
+        /* Display & Box Model */
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: $sectionPaddingBottom * 4; // TODO Variable
+
+        /* Other */
+        font-weight: var(--font-weight);
+        font-size: $fontSizeP2;
+        font-family: var(--font-family-secondary);
+      }
+
+      .menu-links {
+        /* Display & Box Model */
+        display: grid;
+        grid-template-columns: $buttonWidth $buttonWidth $buttonWidth;
+        column-gap: $buttonGap;
+        margin-bottom: $sectionPaddingBottom * 8; // TODO Variable
+      }
     }
 
-    .section-description {
+    .menu-section {
       /* Display & Box Model */
-      width: 80%;
-      padding: 0;
-      margin: 0;
-      margin-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: $sectionPaddingBottom * 8;
 
-      /* Other */
-      font-size: $fontSizeP2Mobile;
-      font-weight: var(--font-weight);
-      font-family: var(--font-family-secondary);
+      .section-title {
+        /* Display & Box Model */
+        padding: 0;
+        margin: 0;
+        margin-bottom: $sectionPaddingBottom; // TODO Variable
+
+        /* Other */
+        font-size: $fontSizeH2;
+        line-height: $fontSizeH2 * 1.5;
+      }
+      .section-description {
+        /* Display & Box Model */
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: $sectionPaddingBottom * 2.4;
+
+        /* Other */
+        font-size: $fontSizeP2;
+        font-weight: var(--font-weight);
+        font-family: var(--font-family-secondary);
+      }
+    }
+
+    .section-cards {
+      //     /* Display & Box Model */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
+}
+@include menuPage(
+  $fontSizeH1Mobile,
+  $fontSizeH2Mobile,
+  $fontSizeP1Mobile,
+  $fontSizeP2Mobile,
+  $buttonWidthMobile,
+  $buttonGapMobile,
+  $pageMaxWidthMobile,
+  $sectionPaddingBottomMobile
+);
 
-  .section-cards {
-    /* Display & Box Model */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+@media (min-width: 801px) {
+  @include menuPage(
+    $fontSizeH1B2,
+    $fontSizeH2B2,
+    $fontSizeP1B2,
+    $fontSizeP2B2,
+    $buttonWidthB2,
+    $buttonGapB2,
+    $pageMaxWidthB2,
+    $sectionPaddingBottomB2
+  );
+}
+
+@media (min-width: 1401px) {
+  @include menuPage(
+    $fontSizeH1B4,
+    $fontSizeH2B4,
+    $fontSizeP1B4,
+    $fontSizeP2B4,
+    $buttonWidthB2,
+    $buttonGapB2,
+    $pageMaxWidthB4,
+    $sectionPaddingBottomB4
+  );
+}
+@media (min-width: 1801px) {
+  @include menuPage(
+    $fontSizeH1B4,
+    $fontSizeH2B4,
+    $fontSizeP1B4,
+    $fontSizeP2B4,
+    $buttonWidthB2,
+    $buttonGapB2,
+    $pageMaxWidthB5,
+    $sectionPaddingBottomB4
+  );
+}
+
+@media (min-width: 2201px) {
+  @include menuPage(
+    $fontSizeH1B4,
+    $fontSizeH2B4,
+    $fontSizeP1B4,
+    $fontSizeP2B4,
+    $buttonWidthB2,
+    $buttonGapB2,
+    $pageMaxWidthB6,
+    $sectionPaddingBottomB4
+  );
+}
+
+@media (min-width: 2501px) {
+  @include menuPage(
+    $fontSizeH1B4,
+    $fontSizeH2B4,
+    $fontSizeP1B4,
+    $fontSizeP2B4,
+    $buttonWidthB2,
+    $buttonGapB2,
+    $pageMaxWidthB7,
+    $sectionPaddingBottomB4
+  );
 }
