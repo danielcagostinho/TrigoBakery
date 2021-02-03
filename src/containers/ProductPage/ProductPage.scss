@@ -102,7 +102,7 @@ $cardGapB5: 24px;
 .products-container {
   /* Display & Box Model */
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr !important;
   column-gap: $cardGapMobile;
   row-gap: $cardGapMobile;
 }
