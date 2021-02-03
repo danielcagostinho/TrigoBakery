@@ -1,47 +1,126 @@
-.products-page {
-  // border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+$navHeight: 120px;
+
+$pageMaxWidthMobile: 100%;
+$fontSizeSectionNameMobile: 14px;
+$fontSizeProductTitleMobile: 24px;
+$fontSizeP1Mobile: 14px;
+$titlePaddingBottomMobile: 8px;
+$cardGapMobile: 10px;
+
+$pageMaxWidthB1: 100%;
+$fontSizeSectionNameB1: 14px;
+$fontSizeProductTitleB1: 24px;
+$fontSizeP1B1: 14px;
+$titlePaddingBottomB1: 8px;
+$cardGapB1: 10px;
+
+$pageMaxWidthB5: 1248px;
+$fontSizeSectionNameB5: 20px;
+$fontSizeProductTitleB5: 60px;
+$fontSizeP1B5: 32px;
+$titlePaddingBottomB5: 40px;
+$cardGapB5: 24px;
+
+@mixin productPage(
+  $pageMaxWidth,
+  $fontSizeSectionName,
+  $fontSizeTitle,
+  $fontSizeP1,
+  $titlePaddingBottom,
+  $cardGap
+) {
+  .products-page {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: $pageMaxWidth;
+    padding-top: $navHeight + $titlePaddingBottom * 3;
+    margin: 0 auto;
+
+    .products-info {
+      /* Display & Box Model */
+      margin: 0 20px;
+
+      /* Other */
+      text-align: left;
+
+      .section-name {
+        /* Display & Box Model */
+        padding: 0;
+        margin: 0;
+
+        /* Other */
+        color: #666;
+        font-family: Ogg;
+        font-size: $fontSizeSectionName;
+      }
+
+      h1 {
+        /* Display & Box Model */
+        padding: 0;
+        padding-bottom: $titlePaddingBottom;
+        margin: 0;
+
+        /* Other */
+        font-size: $fontSizeTitle;
+        text-transform: capitalize;
+      }
+
+      p {
+        width: 90%;
+        padding: 0;
+        padding-bottom: $titlePaddingBottom * 2;
+        margin: 0;
+
+        /* Other */
+        font-size: $fontSizeP1;
+        font-weight: 700;
+        font-family: var(--font-family-secondary);
+      }
+    }
+    .products-container {
+      /* Display & Box Model */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: $cardGap;
+      row-gap: $cardGap;
+    }
+  }
 }
 
-.products-info {
-  width: 1248px;
-  text-align: left;
-  margin-bottom: 68px;
-  margin-top: 84px;
-  h1 {
-    font-size: 60px;
-    font-weight: 700;
-    font-family: Ogg;
-    margin: 0;
-    margin-bottom: 32px;
-    padding: 0;
-    text-transform: capitalize;
-  }
-
-  p {
-    letter-spacing: -0.41%;
-    width: 820px;
-    margin: 0;
-    padding: 0;
-    font-size: 32px;
-    font-weight: 700;
-    font-family: "Akagi Pro Light";
-  }
-  .section-name {
-    color: #666;
-    font-family: Ogg;
-    font-size: 20px;
-  }
-}
-
+@include productPage(
+  $pageMaxWidthMobile,
+  $fontSizeSectionNameMobile,
+  $fontSizeProductTitleMobile,
+  $fontSizeP1Mobile,
+  $titlePaddingBottomMobile,
+  $cardGapMobile
+);
 .products-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  max-width: 1272px;
+  /* Display & Box Model */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: $cardGapMobile;
+  row-gap: $cardGapMobile;
+}
+
+@media (min-width: 1441px) {
+  @include productPage(
+    $pageMaxWidthB5,
+    $fontSizeSectionNameB5,
+    $fontSizeProductTitleB5,
+    $fontSizeP1B5,
+    $titlePaddingBottomB5,
+    $cardGapB5
+  );
+
+  .products-page {
+    .products-info {
+      /* Display & Box Model */
+      margin: 0;
+    }
+  }
 }

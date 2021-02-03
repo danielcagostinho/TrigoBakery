@@ -4,13 +4,11 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 
 import "./ProductPage.scss";
 
-
-
 const ProductPage = ({ products, productType, productDescription }) => {
   const productsGrid = products.map((product) => {
     return (
       <ProductCard
-      productType={productType}
+        productType={productType}
         key={product.imgSrc}
         productName={product.name}
         imgSrc={product.imgSrc}
@@ -27,7 +25,7 @@ const ProductPage = ({ products, productType, productDescription }) => {
         <p>{productDescription}</p>
       </div>
       <div className="products-container">{productsGrid}</div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
