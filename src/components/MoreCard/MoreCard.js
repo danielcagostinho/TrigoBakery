@@ -19,8 +19,8 @@ const MoreCard = ({ productType }) => {
       break;
     case "cakes":
       moreImage = moreCakes;
-      cardStyles = "more-card-cakes";
-      imageStyles = "more-image-cakes";
+      // cardStyles = "more-card-cakes";
+      // imageStyles = "more-image-cakes";
       break;
     case "pastries":
       moreImage = morePastries;

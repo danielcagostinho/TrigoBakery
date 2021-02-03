@@ -61,7 +61,7 @@ const MenuPage = () => {
           <MoreCard productType="breads" />
         </div>
       </div>
-      {/* <div className="menu-section">
+      <div className="menu-section">
         <div className="section-header">
           <h1 className="section-title">Cakes</h1>
           <p className="section-description">
@@ -108,7 +108,7 @@ const MenuPage = () => {
           />
           <MoreCard productType="pastries" />
         </div>
-      </div> */}
+      </div>
       <Footer />
     </div>
   );

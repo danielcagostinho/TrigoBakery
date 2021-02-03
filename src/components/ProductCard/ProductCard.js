@@ -10,10 +10,10 @@ const ProductCard = ({ productName, imgSrc, description, productType }) => {
   
   console.log(productType)
   if (productType === "cakes") {
-    cardStyles = "card-cakes";
-    imageContainerStyles += " container-cakes"
+    // cardStyles = "card-cakes";
+    // imageContainerStyles += " container-cakes"
   } else if (productType === "pastries") {
-    imageStyles += " image-pastries";
+    // imageStyles += " image-pastries";
   } 
 
   return (

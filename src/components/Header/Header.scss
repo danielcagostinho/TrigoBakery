@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 134px;
+  // padding-top: 134px;
 
   h1 {
     font-family: Ogg;
@@ -33,11 +33,10 @@
 
   .nav-links {
     // width: 100%;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
 
     margin: 20px 0 40px 0;
   }
@@ -48,6 +47,8 @@
 
 @media (min-width: 1201px) {
   .header {
+  padding-top: 134px;
+
     h1 {
       font-size: 60px;
       line-height: 72px;
@@ -60,6 +61,8 @@
 
     .nav-links {
       margin: 36px 0 84px 0;
+    column-gap: 40px;
+
     }
   }
 }

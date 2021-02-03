@@ -1,49 +1,37 @@
 /* Mobile Variables */
 $cardWidthMobile: 150px;
 $cardHeightMobile: 225px;
-$cardHeightCakeMobile: 180px;
-$cardImageContainerWidthMobile: 80px;
-$cardImageWidthMobile: 40px;
-$fontSizeCardTitleMobile: 16px;
-$fontSizeCardP1Mobile: 14px;
+$cardCaptionHeightMobile: 120px;
+$fontSizeTitleMobile: 16px;
+$fontSizeP1Mobile: 14px;
+$navButtonSizeMobile: 20px;
+$captionPaddingMobile: 8px;
 
 /* Breakpoint 2 Variables */
 $cardWidthB2: 200px;
 $cardHeightB2: 300px;
-$cardHeightCakeB2: 240px;
-$cardImageContainerWidthB2: 120px;
-$cardImageWidthB2: 80px;
-$fontSizeCardTitleB2: 22px;
-$fontSizeCardP1B2: 14px;
+$fontSizeTitleB2: 22px;
+$fontSizeP1B2: 14px;
+$navButtonSizeB2: 24px;
+$captionPaddingB2: 12px;
 
 /* Breakpoint 3 Variables */
 $cardWidthB3: 250px;
 $cardHeightB3: 375px;
-$cardHeightCakeB3: 300px;
-$cardImageContainerWidthB3: 150px;
-$cardImageWidthB3: 100px;
-$fontSizeCardTitleB3: 24px;
-$fontSizeCardP1B3: 18px;
+$fontSizeTitleB3: 24px;
+$fontSizeP1B3: 18px;
+$navButtonSizeB3: 28px;
+$captionPaddingB3: 16px;
 
 /* Breakpoint 4 Variables */
 $cardWidthB4: 400px;
 $cardHeightB4: 600px;
-$cardHeightCakeB4: 480px;
-$cardImageContainerWidthB4: 252px;
-$cardImageWidthB4: 150px;
-$fontSizeCardTitleB4: 40px;
-$fontSizeCardP1B4: 20px;
+$fontSizeTitleB4: 36px;
+$fontSizeP1B4: 20px;
+$navButtonSizeB4: 32px;
+$captionPaddingB4: 20px;
 
-
-$cardHeightLarge: 600px;
-$cardHeightCakeLarge: 480px;
-$cardWidthLarge: 400px;
-
-$cardImageContainerSizeLarge: 252px;
-$cardImageSizeLarge: 150px;
-$cardCaptionHeightMobile: 120px;
 $cardBorderRadius: 8px;
-
 $cardImageBorderColor: #eecdb3;
 $cardDescriptionColor: #8c4e1c;
 $cardBackgroundColor: #fff9f1;
@@ -52,183 +40,148 @@ $cardBorderColor: #f5dcc8;
 $cardTitleSize: 40px;
 $cardDescriptionSize: 20px;
 
-.more-card {
-  /* Display & Box Model */
-  width: $cardWidthMobile;
-  height: $cardHeightMobile;
-}
-
-.more-card-cakes {
-  /* Display & Box Model */
-  width: $cardWidthMobile;
-  height: $cardHeightCakeLarge;
-}
-
-.more-card-content {
-  /* Display & Box Model */
-  width: 100%;
-  height: 100%;
-  margin: 6px 0;
-  border-radius: $cardBorderRadius;
-
-  .more-image {
+@mixin moreCardStyles(
+  $cardWidth,
+  $cardHeight,
+  $cardCaptionHeight,
+  $fontSizeTitle,
+  $fontSizeP1,
+  $navButtonSize,
+  $captionPadding
+) {
+  .more-card {
     /* Display & Box Model */
-    width: $cardWidthMobile;
-    height: $cardHeightMobile;
-    border: 2px solid $cardBorderColor;
-    border-radius: $cardBorderRadius;
-  }
+    width: $cardWidth;
+    height: $cardHeight;
 
-  .more-image-cakes {
-    width: $cardWidthMobile;
-    height: $cardHeightCakeMobile;
-    border: 2px solid $cardBorderColor;
-    border-radius: $cardBorderRadius;
-  }
-
-  .more-caption {
-    /* Positioning */
-    position: relative;
-    z-index: 2;
-    top: -$cardCaptionHeightMobile;
-
-    /* Display & Box Model */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: $cardCaptionHeightMobile;
-    padding: 0 8px;
-    margin: 0;
-    background-color: $cardBackgroundColor;
-    border: 2px solid $cardBorderColor;
-    border-top: none;
-    border-bottom-left-radius: $cardBorderRadius;
-    border-bottom-right-radius: $cardBorderRadius;
-
-    .more-title {
+    .more-card-content {
       /* Display & Box Model */
-      padding: 0;
-      margin: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0 6px;
+      border-radius: $cardBorderRadius;
 
-      /* Other */
-      font-size: $fontSizeCardTitleMobile;
-      
-      font-family: var(--font-family-primary);
-      font-weight: var(--font-weight);
-      line-height: 140%;
-      color: black;
-    }
-
-    p {
-      /* Display & Box Model */
-      padding: 0;
-      margin: 0;
-      
-      /* Other */
-      font-family: var(--font-family-secondary);
-      font-size: $fontSizeCardP1Mobile;
-      color: #666;
-      text-transform: capitalize;
-    }
-
-    .more-button {
-      height: 32px;
-      width: 32px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background-color: black;
-      border-radius: 50%;
-
-      img {
+      .more-image {
         /* Display & Box Model */
-        height: 20px;
-        width: 20px;
+        width: $cardWidth;
+        height: $cardHeight;
+        border: 2px solid $cardBorderColor;
+        border-radius: $cardBorderRadius;
+      }
+
+      .more-caption {
+        /* Positioning */
+        position: relative;
+        z-index: 2;
+        top: -$cardCaptionHeight;
+
+        /* Display & Box Model */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: $cardCaptionHeight;
+        padding: $captionPadding;
+        margin: 0;
+
+        /* Other */
+        background-color: $cardBackgroundColor;
+        border: 2px solid $cardBorderColor;
+        border-top: none;
+        border-bottom-left-radius: $cardBorderRadius;
+        border-bottom-right-radius: $cardBorderRadius;
+
+        .more-title {
+          /* Display & Box Model */
+          padding: 0;
+          margin: 0;
+
+          /* Other */
+          font-size: $fontSizeTitle;
+
+          font-family: var(--font-family-primary);
+          font-weight: var(--font-weight);
+          line-height: 140%;
+          color: black;
+        }
+
+        p {
+          /* Display & Box Model */
+          padding: 0;
+          margin: 0;
+
+          /* Other */
+          font-family: var(--font-family-secondary);
+          font-size: $fontSizeP1;
+          color: #666;
+          text-transform: capitalize;
+        }
+
+        .more-button {
+          height: $navButtonSize * 1.6;
+          width: $navButtonSize * 1.6;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          background-color: black;
+          border-radius: 50%;
+
+          img {
+            /* Display & Box Model */
+            height: $navButtonSize;
+            width: $navButtonSize;
+          }
+        }
       }
     }
   }
+}
+
+@include moreCardStyles(
+  $cardWidthMobile,
+  $cardHeightMobile,
+  $cardCaptionHeightMobile,
+  $fontSizeTitleMobile,
+  $fontSizeP1Mobile,
+  $navButtonSizeMobile,
+  $captionPaddingMobile
+);
+
+@media (min-width: 801px) {
+  @include moreCardStyles(
+    $cardWidthB2,
+    $cardHeightB2,
+    $cardCaptionHeightMobile,
+    $fontSizeTitleB2,
+    $fontSizeP1B2,
+    $navButtonSizeB2,
+    $captionPaddingB2
+  );
 }
 
 @media (min-width: 1201px) {
-  .more-card {
-    /* Display & Box Model */
-    width: $cardWidthB3;
-    height: $cardHeightB3;
-    margin: 12px;
-  }
-
-  .more-card-content {
-    .card-title {
-      /* Other */
-      font-size: $fontSizeCardTitleB3;
-      line-height: $fontSizeCardTitleB3 * 1.5;
-    }
-
-    .card-image-container {
-      /* Display & Box Model */
-      width: $cardImageContainerWidthB3;
-      height: $cardImageContainerWidthB3;
-
-      .card-image img {
-        /* Display & Box Model */
-        width: $cardImageWidthB3;
-        height: $cardImageWidthB3;
-      }
-    }
-
-    .card-description {
-      /* Display & Box Model */
-      padding: 8px 16px 0 16px;
-
-      /* Other */
-      font-size: $fontSizeCardP1B3;
-    }
-  }
+  @include moreCardStyles(
+    $cardWidthB3,
+    $cardHeightB3,
+    $cardCaptionHeightMobile,
+    $fontSizeTitleB3,
+    $fontSizeP1B3,
+    $navButtonSizeB3,
+    $captionPaddingB3
+  );
 }
 
 @media (min-width: 1441px) {
-  .card {
-    /* Display & Box Model */
-    width: $cardWidthB4;
-    height: $cardHeightB4;
-    margin: 12px;
-  }
-
-  .card-texture {
-    /* Display & Box Model */
-    width: $cardWidthB4;
-    height: $cardHeightB4;
-  }
-
-  .card-content {
-    .card-title {
-      /* Other */
-      font-size: $fontSizeCardTitleB4;
-      line-height: $fontSizeCardTitleB4 * 1.5;
-    }
-
-    .card-image-container {
-      /* Display & Box Model */
-      width: $cardImageContainerWidthB4;
-      height: $cardImageContainerWidthB4;
-
-      .card-image img {
-        /* Display & Box Model */
-        width: $cardImageWidthB4;
-        height: $cardImageWidthB4;
-      }
-    }
-
-    .card-description {
-      /* Display & Box Model */
-      padding: 8px 16px 0 16px;
-
-      /* Other */
-      font-size: $fontSizeCardP1B4;
-    }
-  }
+  @include moreCardStyles(
+    $cardWidthB4,
+    $cardHeightB4,
+    $cardCaptionHeightMobile,
+    $fontSizeTitleB4,
+    $fontSizeP1B4,
+    $navButtonSizeB4,
+    $captionPaddingB4
+  );
 }

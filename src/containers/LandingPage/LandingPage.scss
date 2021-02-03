@@ -1,3 +1,4 @@
+@import '../../design-tokens/scss-variables'; 
 /* Mobile Variables */
 $fontSizeH2Mobile: 24px;
 $fontSizeH3Mobile: 20px;
@@ -38,7 +39,7 @@ $imageTopOffsetLarge: -120px;
 .content {
   /* Display and Box Model */
   width: 100%;
-  padding-top: 200px; // TODO Edit to be nav height
+  padding-top: $navHeight; // TODO Edit to be nav height
 
   .section {
     /* Display and Box Model */
@@ -97,7 +98,7 @@ $imageTopOffsetLarge: -120px;
 
   p {
     /* Other */
-    max-width: 60%;
+    // max-width: 60%;
   }
 
   .column {
@@ -106,21 +107,47 @@ $imageTopOffsetLarge: -120px;
   }
 }
 
-#ingredients {
-  /* Positioning */
-  position: absolute;
-  bottom: 0px;
-  right: -80px;
+#ingredients-row {
+  position: relative;
+  // width: 100%;
+  // border: 1px solid red;
+}
 
-  /* Display & Box Model */
-  width: 260px;
-  max-width: 260px;
-  overflow: hidden;
+#ingredients-text {
+  position: relative;
+  // z-index: 2;
+  // top: -40px;
+  left: 40px;
+  // border: 1px solid red;
+}
+
+#ingredients {
+  // position: relative;
+  // /* Positioning */
+  // width: 100%;
+  // border: 1px solid green;
+  // // bottom: 0px;
+  // // right: -80px;
+
+  // /* Display & Box Model */
+  // // width: 260px;
+  // // max-width: 260px;
+  // overflow: hidden;
 
   img {
-    /* Display & Box Model */
-    width: 300px;
-    opacity: 0.3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+
+  // right: 0;
+
+  //   /* Display & Box Model */
+  //   width: 300px;
+  //   height: 300px;
+    opacity: 0.2;
+  // border: 1px solid blue;
+
   }
 }
 
@@ -324,26 +351,23 @@ $imageTopOffsetLarge: -120px;
 
     .column {
       /* Display & Box Model */
-      width: 90%;
-      border: 1px solid red;
+      width: 70%;
+      // border: 1px solid red;
     }
   }
 
+  #ingredients-text {
+    position: relative;
+    top: -2em;
+  }
+  
   #ingredients {
-    /* Positioning */
-    position: absolute;
-    bottom: 0px;
-    right: -80px;
-
-    /* Display & Box Model */
-    width: 400px !important;
-    height: 100%;
-    overflow: hidden;
-
+    position: relative;
+  
     img {
-      /* Display & Box Model */
-      width: 400px;
-      opacity: 0.3;
+    right: 0;
+      opacity: 0.8;
+  
     }
   }
 

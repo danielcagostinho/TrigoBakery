@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { isMobile } from "react-device-detect";
 
 import Header from "../../components/Header/Header";
 import HeaderImage from "../../components/Header/HeaderImage/HeaderImage";
@@ -24,10 +25,10 @@ const LandingPage = () => {
     <div>
       <div className="content">
         <Header />
-        <HeaderImage />
+        {!isMobile ? <HeaderImage /> : null}
         <div className="section color" id="bread">
-          <div className="row">
-            <div className="column">
+          <div className="row" id="ingredients-row">
+            <div className="column" id="ingredients-text">
               <div>
                 <h2>Bread</h2>
                 <p>
@@ -38,7 +39,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="column" id="ingredients">
-              <img src={ingredientsImage} alt="Various Baker's Ingredients"/>
+              <img src={ingredientsImage} alt="Various Baker's Ingredients" />
             </div>
           </div>
         </div>
