@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import LandingPage from "./containers/LandingPage/LandingPage";
 import MenuPage from "./containers/MenuPage/MenuPage";
@@ -304,7 +304,7 @@ const cakes = [
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <ScrollToTop>
           <NavBar />
           <Switch>
