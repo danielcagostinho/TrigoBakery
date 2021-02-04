@@ -11,22 +11,30 @@ $screenWidthB5: 1401px;
 $screenWidthB6: 1921px;
 
 $cardWidthMobile: 135px;
+$cardHeightMobile: 200px;
 $cardGapMobile: 10px;
 
 $cardWidthB1: 200px;
+$cardHeightB1: 300px;
 $cardGapB1: 20px;
 
 $cardWidthB2: 200px;
+$cardHeightB2: 300px;
 $cardGapB2: 20px;
 
 $cardWidthB3: 250px;
+$cardHeightB3: 375px;
 $cardGapB3: 20px;
 
 $cardWidthB4: 300px;
+$cardHeightB4: 450px;
 $cardGapB4: 20px;
 
 $cardWidthB5: 400px;
+$cardHeightB5: 600px;
 $cardGapB5: 24px;
+
+$cardGapB6: 24px;
 
 $contentMaxWidthMobile: $cardWidthMobile * 2 + $cardGapMobile * 1;
 $contentMaxWidthB1: $cardWidthB1 * 3 + $cardGapB1 * 2;
@@ -34,3 +42,30 @@ $contentMaxWidthB2: $cardWidthB2 * 3 + $cardGapB2 * 2;
 $contentMaxWidthB3: $cardWidthB3 * 3 + $cardGapB3 * 2;
 $contentMaxWidthB4: $cardWidthB4 * 3 + $cardGapB4 * 2;
 $contentMaxWidthB5: $cardWidthB5 * 3 + $cardGapB5 * 2;
+$contentMaxWidthB6: $cardWidthB5 * 3 + $cardGapB5 * 2;
+
+
+@mixin globalFonts(
+  $font-size-h1,
+  $font-size-h2,
+  $font-size-h3,
+) {
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: $font-size-h1;
+    // color: red;
+  }
+  h2 {
+    padding: 0;
+    margin: 0;
+    font-size: $font-size-h2;
+    // color: blue;
+  }
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-size: $font-size-h3;
+    // color: green;
+  }
+}

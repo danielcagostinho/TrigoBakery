@@ -8,42 +8,42 @@ const Footer = ({landing}) => {
       <div className="footer-content">
        { !landing ? <h1>Check out Trigo on...</h1> : null}
         <div className="footer-links">
-          <p>
+          <h2>
             <span>-</span>{" "}
             <a
               target="_blank"
               rel="noreferrer"
               href="https://www.instagram.com/trigobakeryinc/"
             >
-              Instagram Page
+              Instagram
             </a>
-          </p>
-          <p>
+          </h2>
+          <h2>
             <span>-</span>{" "}
             <a
               target="_blank"
               rel="noreferrer"
               href="mailto:someone@yoursite.com"
             >
-              Email Trigo
+              Email
             </a>
-          </p>
-          <p>
+          </h2>
+          <h2>
             <span>-</span>{" "}
             <a
               target="_blank"
               rel="noreferrer"
               href="https://www.facebook.com/Trigo-Bakery-2001114193522615"
             >
-              Facebook Page
+              Facebook
             </a>
-          </p>
-          <p>
+          </h2>
+          <h2>
             <span>-</span>{" "}
             <a target="_blank" rel="noreferrer" href="tel:905-896-7245">
               Call Trigo
             </a>
-          </p>
+          </h2>
         </div>
       </div>
     </div>

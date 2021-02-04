@@ -1,37 +1,50 @@
-$buttonWidthMobile: 94px;
-$buttonHeightMobile: 30px;
-$buttonGapMobile: 16px;
-$buttonWidthB2: 156px;
-$buttonHeightB2: 50px;
-$buttonGapB2: 32px;
+@import '../../../design-tokens/scss-variables';
 
-.link {
-  text-decoration: none;
-  color: inherit;
-}
+/* Mobile Breakpoint Variables*/
+$buttonWidthMobile: 82px;
+$buttonHeightMobile: 26px;
+$buttonGapMobile: 8px;
+$fontSizeButtonMobile: 12px;
 
-.header-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* B1 Variables */
+$buttonWidthB1: 94px;
+$buttonHeightB1: 30px;
+$buttonGapB1: 16px;
+$fontSizeButtonB1: 16px;
 
-  width: $buttonWidthMobile;
-  height: $buttonHeightMobile;
-  margin: 0;
+/* B2 Variables */
+$buttonWidthB2: 120px;
+$buttonHeightB2: 36px;
+$buttonGapB2: 20px;
+$fontSizeButtonB2: 18px;
 
-  border-radius: 16px;
-  border: 2px solid black;
+/* B3 Variables */
+$buttonWidthB3: 134px;
+$buttonHeightB3: 40px;
+$buttonGapB3: 24px;
+$fontSizeButtonB3: 20px;
 
-  .link-text {
-    text-decoration: none;
-    color: inherit;
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight);
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0;
-  }
-}
+/* B4 Variables */
+$buttonWidthB4: 144px;
+$buttonHeightB4: 44px;
+$buttonGapB4: 28px;
+$fontSizeButtonB4: 22px;
+
+/* B5 Variables */
+$buttonWidthB5: 156px;
+$buttonHeightB5: 50px;
+$buttonGapB5: 32px;
+$fontSizeButtonB5: 24px;
+
+/* B6 Variables */
+$buttonWidthB6: 156px;
+$buttonHeightB6: 50px;
+$buttonGapB6: 32px;
+$fontSizeButtonB6: 24px;
+
+
+
+
 
 .light {
   color: black;
@@ -43,18 +56,72 @@ $buttonGapB2: 32px;
   background-color: black;
 }
 
-@media (min-width: 681px) {
-}
+@mixin buttonStyles($buttonWidth, $buttonHeight, $fontSizeButton){
+  .link {
+    text-decoration: none;
+    color: inherit;
+    width: $buttonWidth;
+  }
 
-@media (min-width: 1201px) {
   .header-button {
-    width: $buttonWidthB2;
-    height: $buttonHeightB2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: $buttonWidth;
+    height: $buttonHeight;
     margin: 0;
-    border-radius: 60px;
-
+  
+    border-radius: $buttonWidth * 0.4;
+    border: 2px solid black;
+  
     .link-text {
-      font-size: 24px;
+      text-decoration: none;
+      color: inherit;
+      font-family: var(--font-family-primary);
+      font-weight: var(--font-weight);
+      font-size: $fontSizeButton;
+      // line-height: 24px;
+      letter-spacing: 0;
     }
   }
 }
+
+@include buttonStyles($buttonWidthMobile, $buttonHeightMobile, $fontSizeButtonMobile);
+
+@media (min-width: $screenWidthB1) {
+  @include buttonStyles($buttonWidthB1, $buttonHeightB1, $fontSizeButtonB1);
+}
+
+@media (min-width: $screenWidthB2) {
+  @include buttonStyles($buttonWidthB2, $buttonHeightB2, $fontSizeButtonB2);
+}
+
+@media (min-width: $screenWidthB3) {
+  @include buttonStyles($buttonWidthB3, $buttonHeightB3, $fontSizeButtonB3);
+}
+
+@media (min-width: $screenWidthB4) {
+  @include buttonStyles($buttonWidthB4, $buttonHeightB4, $fontSizeButtonB4);
+}
+
+@media (min-width: $screenWidthB5) {
+  @include buttonStyles($buttonWidthB5, $buttonHeightB5, $fontSizeButtonB5);
+}
+
+@media (min-width: $screenWidthB6) {
+  @include buttonStyles($buttonWidthB6, $buttonHeightB6, $fontSizeButtonB6);
+}
+
+// @media (min-width: 1201px) {
+//   .header-button {
+//     width: $buttonWidthB2;
+//     height: $buttonHeightB2;
+//     margin: 0;
+//     border-radius: 60px;
+
+//     .link-text {
+//       font-size: 24px;
+//     }
+//   }
+// }

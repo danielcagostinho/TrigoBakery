@@ -5,57 +5,41 @@
 $cardHeightMobile: 200px;
 $cardImageContainerWidthMobile: 80px;
 $cardImageWidthMobile: 40px;
-$fontSizeTitleMobile: 18px;
 $fontSizeP1Mobile: 10px;
 $titlePaddingMobile: 16px;
 $descriptionPaddingMobile: 8px;
 
 /* Breakpoint 2 Variables */
-$cardWidthB1: 200px;
-$cardHeightB1: 300px;
 $cardImageContainerWidthB1: 120px;
 $cardImageWidthB1: 80px;
-$fontSizeTitleB1: 22px;
 $fontSizeP1B1: 14px;
 $titlePaddingB1: 24px;
 $descriptionPaddingB1: 12px;
 
 /* Breakpoint 2 Variables */
-$cardWidthB2: 200px;
-$cardHeightB2: 300px;
 $cardImageContainerWidthB2: 120px;
 $cardImageWidthB2: 80px;
-$fontSizeTitleB2: 22px;
 $fontSizeP1B2: 14px;
 $titlePaddingB2: 24px;
 $descriptionPaddingB2: 12px;
 
 /* Breakpoint 3 Variables */
-// $cardWidthB3: 250px;
-$cardHeightB3: 375px;
 $cardImageContainerWidthB3: 150px;
 $cardImageWidthB3: 100px;
-$fontSizeTitleB3: 24px;
 $fontSizeP1B3: 18px;
 $titlePaddingB3: 32px;
 $descriptionPaddingB3: 16px;
 
 /* Breakpoint 4 Variables */
-// $cardWidthB4: 300px;
-$cardHeightB4: 450px;
 $cardImageContainerWidthB4: 180px;
 $cardImageWidthB4: 120px;
-$fontSizeTitleB4: 32px;
 $fontSizeP1B4: 18px;
 $titlePaddingB4: 32px;
 $descriptionPaddingB4: 16px;
 
 /* Breakpoint 5 Variables */
-// $cardWidthB5: 400px;
-$cardHeightB5: 600px;
 $cardImageContainerWidthB5: 252px;
 $cardImageWidthB5: 150px;
-$fontSizeTitleB5: 40px;
 $fontSizeP1B5: 20px;
 $titlePaddingB5: 40px;
 $descriptionPaddingB5: 20px;
@@ -72,7 +56,6 @@ $cardBorderColor: #f5dcc8;
   $cardHeight,
   $cardImageContainerWidth,
   $cardImageWidth,
-  $fontSizeTitle,
   $fontSizeP1,
   $titlePadding,
   $descriptionPadding
@@ -114,8 +97,6 @@ $cardBorderColor: #f5dcc8;
       max-width: $cardWidth;
 
       /* Other */
-      font-size: $fontSizeTitle;
-      line-height: $fontSizeTitle * 1.5;
       font-weight: var(--font-weight);
       text-align: center;      
     }
@@ -161,7 +142,6 @@ $cardBorderColor: #f5dcc8;
   $cardHeightMobile,
   $cardImageContainerWidthMobile,
   $cardImageWidthMobile,
-  $fontSizeTitleMobile,
   $fontSizeP1Mobile,
   $titlePaddingMobile,
   $descriptionPaddingMobile
@@ -173,7 +153,6 @@ $cardBorderColor: #f5dcc8;
     $cardHeightB1,
     $cardImageContainerWidthB1,
     $cardImageWidthB1,
-    $fontSizeTitleB1,
     $fontSizeP1B1,
     $titlePaddingB1,
     $descriptionPaddingB1
@@ -186,7 +165,6 @@ $cardBorderColor: #f5dcc8;
     $cardHeightB2,
     $cardImageContainerWidthB2,
     $cardImageWidthB2,
-    $fontSizeTitleB2,
     $fontSizeP1B2,
     $titlePaddingB2,
     $descriptionPaddingB2
@@ -199,7 +177,6 @@ $cardBorderColor: #f5dcc8;
     $cardHeightB3,
     $cardImageContainerWidthB3,
     $cardImageWidthB3,
-    $fontSizeTitleB3,
     $fontSizeP1B3,
     $titlePaddingB3,
     $descriptionPaddingB3
@@ -212,7 +189,6 @@ $cardBorderColor: #f5dcc8;
     $cardHeightB4,
     $cardImageContainerWidthB4,
     $cardImageWidthB4,
-    $fontSizeTitleB4,
     $fontSizeP1B4,
     $titlePaddingB4,
     $descriptionPaddingB4
@@ -225,7 +201,6 @@ $cardBorderColor: #f5dcc8;
     $cardHeightB5,
     $cardImageContainerWidthB5,
     $cardImageWidthB5,
-    $fontSizeTitleB5,
     $fontSizeP1B5,
     $titlePaddingB5,
     $descriptionPaddingB5

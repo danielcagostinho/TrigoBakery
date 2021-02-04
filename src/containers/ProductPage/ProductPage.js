@@ -25,7 +25,7 @@ const ProductPage = ({ products, productType, productDescription }) => {
         <p>{productDescription}</p>
       </div>
       <div className="products-container">{productsGrid}</div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };

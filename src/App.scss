@@ -1,3 +1,4 @@
+@import "./design-tokens/scss-variables";
 * {
   box-sizing: border-box;
   font-family: Ogg;
@@ -9,15 +10,74 @@
 
 .route-wrapper {
   position: relative;
-
 }
 
 .App {
   width: 100%;
-  
 }
 
 .route-wrapper > div {
   position: absolute;
   width: 100%;
+}
+
+/* Mobile Font Sizes*/
+$fontSizeH1Mobile: 24px;
+$fontSizeH2Mobile: 20px;
+$fontSizeH3Mobile: 18px;
+
+/* B1 Font Sizes*/
+$fontSizeH1B1: 36px;
+$fontSizeH2B1: 30px;
+$fontSizeH3B1: 22px;
+
+/* B2 Font Sizes*/
+$fontSizeH1B2: 36px;
+$fontSizeH2B2: 30px;
+$fontSizeH3B2: 22px;
+
+/* B3 Font Sizes*/
+$fontSizeH1B3: 40px;
+$fontSizeH2B3: 36px;
+$fontSizeH3B3: 24px;
+
+/* B4 Font Sizes*/
+$fontSizeH1B4: 44px;
+$fontSizeH2B4: 36px;
+$fontSizeH3B4: 32px;
+
+/* B5 Font Sizes*/
+$fontSizeH1B5: 52px;
+$fontSizeH2B5: 44px;
+$fontSizeH3B5: 40px;
+
+/* B6 Font Sizes*/
+$fontSizeH1B6: 60px;
+$fontSizeH2B6: 48px;
+$fontSizeH3B6: 40px;
+
+@include globalFonts($fontSizeH1Mobile, $fontSizeH2Mobile, $fontSizeH3Mobile);
+
+@media (min-width: $screenWidthB1) {
+  @include globalFonts($fontSizeH1B1, $fontSizeH2B1, $fontSizeH3B1);
+}
+
+@media (min-width: $screenWidthB2) {
+  @include globalFonts($fontSizeH1B2, $fontSizeH2B2, $fontSizeH3B2);
+}
+
+@media (min-width: $screenWidthB3) {
+  @include globalFonts($fontSizeH1B3, $fontSizeH2B3, $fontSizeH3B3);
+}
+
+@media (min-width: $screenWidthB4) {
+  @include globalFonts($fontSizeH1B4, $fontSizeH2B4, $fontSizeH3B4);
+}
+
+@media (min-width: $screenWidthB5) {
+  @include globalFonts($fontSizeH1B5, $fontSizeH2B5, $fontSizeH3B5);
+}
+
+@media (min-width: $screenWidthB6) {
+  @include globalFonts($fontSizeH1B6, $fontSizeH2B6, $fontSizeH3B6);
 }

@@ -1,110 +1,114 @@
-/* Mobile Variables */
-$fontSizeH1Mobile: 26px;
-$fontSizeP2Mobile: 18px;
-
-/* Medium Variables */
-$fontSizeH1Medium: 36px;
-$fontSizeP2Medium: 26px;
-
-/* Large Variables */
-$fontSizeH1Large: 60px;
-$fontSizeP2Large: 32px;
+@import "../../design-tokens/scss-variables";
 
 $footerTextColor: #666;
 
-.footer {
-  /* Display & Box Model */
-  display: flex;
-  width: 100%;
-  padding: 80px 20px;
+$paddingFooterMobile: 20px;
+$linkGapMobile: 16px;
 
-  /* Other */
-  background-color: #fafafa;
+$paddingFooterB1: 20px;
+$linkGapB1: 16px;
 
-  h1 {
+$paddingFooterB2: 28px;
+$linkGapB2: 20px;
+
+$paddingFooterB3: 32px;
+$linkGapB3: 20px;
+
+$paddingFooterB4: 40px;
+$linkGapB4: 24px;
+
+$paddingFooterB5: 48px;
+$linkGapB5: 28px;
+
+$paddingFooterB6: 52px;
+$linkGapB6: 32px;
+
+@mixin footerStyles($contentMaxWidth, $paddingFooter, $linkGap) {
+  .footer {
     /* Display & Box Model */
-    padding: 0;
-    margin: 0;
-    margin-bottom: 40px;
+    width: 100vw;
 
     /* Other */
-    font-size: $fontSizeH1Mobile;
-    line-height: 36px;
-    font-weight: var(--font-weight);
-  }
+    background-color: #fafafa;
 
-  .footer-links {
-    /* Display & Box Model */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    p {
+    .footer-content {
       /* Display & Box Model */
-      padding: 0;
-      margin: 0;
-      margin-right: 16px;
-      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      width: $contentMaxWidth;
+      padding: $paddingFooter * 2 0;
+      margin: 0 auto;
 
-      /* Other */
-      color: $footerTextColor;
-      font-size: $fontSizeP2Mobile;
-      font-weight: var(--font-weight);
+      h1 {
+        /* Display & Box Model */
+        padding: 0;
+        margin: 0;
+        margin-bottom: $paddingFooter;
 
-      a {
         /* Other */
-        color: inherit;
-        text-decoration: none;
+        line-height: 36px;
+        font-weight: var(--font-weight);
+      }
 
-        &:visited {
+      .footer-links {
+        /* Display & Box Model */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: $linkGap;
+        column-gap: $linkGap;
+
+        h2 {
+          /* Display & Box Model */
+          padding: 0;
+          margin: 0;
+
           /* Other */
-          color: inherit;
+          color: $footerTextColor;
+          font-weight: var(--font-weight);
+
+          a {
+            /* Other */
+            color: inherit;
+            text-decoration: none;
+
+            &:visited {
+              /* Other */
+              color: inherit;
+            }
+          }
         }
       }
     }
   }
 }
 
-@media (min-width: 681px) {
-  .footer {
-    /* Display & Box Model */
-    padding: 80px 60px;
+@include footerStyles(
+  $contentMaxWidthMobile,
+  $paddingFooterMobile,
+  $linkGapMobile
+);
 
-    h1 {
-      /* Other */
-      font-size: $fontSizeH1Medium;
-    }
-
-    .footer-links {
-      p {
-        /* Other */
-        font-size: $fontSizeP2Medium;
-      }
-    }
-  }
+@media (min-width: $screenWidthB1) {
+  @include footerStyles($contentMaxWidthB1, $paddingFooterB1, $linkGapB1);
 }
 
-@media (min-width: 1201px) {
-  .footer {
-    /* Display & Box Model */
-    padding: 120px 80px;
+@media (min-width: $screenWidthB2) {
+  @include footerStyles($contentMaxWidthB2, $paddingFooterB2, $linkGapB2);
+}
 
-    h1 {
-      /* Display & Box Model */
-      margin-bottom: 80px;
-      margin-right: 16px;
+@media (min-width: $screenWidthB3) {
+  @include footerStyles($contentMaxWidthB3, $paddingFooterB3, $linkGapB3);
+}
 
-      /* Other */
-      font-size: $fontSizeH1Large;
-    }
+@media (min-width: $screenWidthB4) {
+  @include footerStyles($contentMaxWidthB4, $paddingFooterB4, $linkGapB4);
+}
 
-    .footer-links {
-      p {
-        /* Display & Box Model */
-        margin-right: 40px;
+@media (min-width: $screenWidthB5) {
+  @include footerStyles($contentMaxWidthB5, $paddingFooterB5, $linkGapB5);
+}
 
-        /* Other */
-        font-size: $fontSizeP2Large;
-      }
-    }
-  }
+@media (min-width: $screenWidthB6) {
+  @include footerStyles($contentMaxWidthB6, $paddingFooterB6, $linkGapB6);
 }

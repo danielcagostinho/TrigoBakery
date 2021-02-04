@@ -1,46 +1,39 @@
 @import "../../design-tokens/scss-variables";
-@import '../../components/ProductCard/ProductCard.scss';
+@import "../../components/ProductCard/ProductCard.scss";
 
 $navHeight: 120px;
 $fontSizeSectionNameMobile: 14px;
-$fontSizeProductTitleMobile: 24px;
 $fontSizeP1Mobile: 14px;
 $titlePaddingBottomMobile: 8px;
 
 /* Breakpoint 1 Variables */
 $fontSizeSectionNameB1: 14px;
-$fontSizeProductTitleB1: 24px;
 $fontSizeP1B1: 14px;
 $titlePaddingBottomB1: 8px;
 
 /* Breakpoint 2 Variables */
 $fontSizeSectionNameB2: 16px;
-$fontSizeProductTitleB2: 32px;
 $fontSizeP1B2: 18px;
 $titlePaddingBottomB2: 40px;
 
 /* Breakpoint 3 Variables */
 $fontSizeSectionNameB3: 16px;
-$fontSizeProductTitleB3: 40px;
 $fontSizeP1B3: 22px;
 $titlePaddingBottomB3: 40px;
 
 /* Breakpoint 4 Variables */
 $fontSizeSectionNameB4: 18px;
-$fontSizeProductTitleB4: 48px;
 $fontSizeP1B4: 28px;
 $titlePaddingBottomB4: 40px;
 
 /* Breakpoint 5 Variables */
 $fontSizeSectionNameB5: 20px;
-$fontSizeProductTitleB5: 60px;
 $fontSizeP1B5: 32px;
 $titlePaddingBottomB5: 40px;
 
 @mixin productPage(
   $pageMaxWidth,
   $fontSizeSectionName,
-  $fontSizeTitle,
   $fontSizeP1,
   $titlePaddingBottom,
   $cardGap
@@ -57,7 +50,6 @@ $titlePaddingBottomB5: 40px;
     margin: 0 auto;
 
     .products-info {
-      /* Display & Box Model */
       /* Other */
       text-align: left;
 
@@ -79,7 +71,6 @@ $titlePaddingBottomB5: 40px;
         margin: 0;
 
         /* Other */
-        font-size: $fontSizeTitle;
         text-transform: capitalize;
       }
 
@@ -101,6 +92,7 @@ $titlePaddingBottomB5: 40px;
       grid-template-columns: 1fr 1fr;
       column-gap: $cardGap;
       row-gap: $cardGap;
+      margin-bottom: $titlePaddingBottom;
     }
   }
 }
@@ -108,7 +100,6 @@ $titlePaddingBottomB5: 40px;
 @include productPage(
   $contentMaxWidthMobile,
   $fontSizeSectionNameMobile,
-  $fontSizeProductTitleMobile,
   $fontSizeP1Mobile,
   $titlePaddingBottomMobile,
   $cardGapMobile
@@ -118,7 +109,6 @@ $titlePaddingBottomB5: 40px;
   @include productPage(
     $contentMaxWidthB1,
     $fontSizeSectionNameB1,
-    $fontSizeProductTitleB1,
     $fontSizeP1B1,
     $titlePaddingBottomB1,
     $cardGapB1
@@ -140,7 +130,6 @@ $titlePaddingBottomB5: 40px;
   @include productPage(
     $contentMaxWidthB2,
     $fontSizeSectionNameB2,
-    $fontSizeProductTitleB2,
     $fontSizeP1B2,
     $titlePaddingBottomB2,
     $cardGapB2
@@ -151,7 +140,6 @@ $titlePaddingBottomB5: 40px;
   @include productPage(
     $contentMaxWidthB3,
     $fontSizeSectionNameB3,
-    $fontSizeProductTitleB3,
     $fontSizeP1B3,
     $titlePaddingBottomB3,
     $cardGapB3
@@ -162,7 +150,6 @@ $titlePaddingBottomB5: 40px;
   @include productPage(
     $contentMaxWidthB4,
     $fontSizeSectionNameB4,
-    $fontSizeProductTitleB4,
     $fontSizeP1B4,
     $titlePaddingBottomB4,
     $cardGapB4
@@ -173,7 +160,6 @@ $titlePaddingBottomB5: 40px;
   @include productPage(
     $contentMaxWidthB5,
     $fontSizeSectionNameB5,
-    $fontSizeProductTitleB5,
     $fontSizeP1B5,
     $titlePaddingBottomB5,
     $cardGapB5

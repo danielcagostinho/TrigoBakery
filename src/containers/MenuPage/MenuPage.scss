@@ -1,53 +1,59 @@
 @import "../../components/UI/HeaderButton/HeaderButton.scss";
+@import "../../design-tokens/scss-variables";
+
 /* Mobile Variables */
-$fontSizeH1Mobile: 24px;
-$fontSizeH2Mobile: 20px;
-$fontSizeP1Mobile: 18px;
-$fontSizeP2Mobile: 14px;
-$pageMaxWidthMobile: 100%;
+$fontSizeP1Mobile: 16px;
+$fontSizeP2Mobile: 12px;
 $sectionPaddingBottomMobile: 8px;
 
+/* B1 Screen Variables */
+$fontSizeP1B1: 18px;
+$fontSizeP2B1: 14px;
+$sectionPaddingBottomB1: 12px;
+
 /* B2 Screen Variables */
-$fontSizeH1B2: 36px;
-$fontSizeH2B2: 30px;
-$fontSizeP1B2: 26px;
-$fontSizeP2B2: 20px;
-$pageMaxWidthB2: 70%;
-$sectionPaddingBottomB2: 120px;
+$fontSizeP1B2: 20px;
+$fontSizeP2B2: 16px;
+$sectionPaddingBottomB2: 14px;
+
+/* B3 Screen Variables */
+$fontSizeP1B3: 22px;
+$fontSizeP2B3: 20px;
+$sectionPaddingBottomB3: 16px;
 
 /* B4 Screen Variables */
-$fontSizeH1B4: 60px;
-$fontSizeH2B4: 48px;
-$fontSizeP1B4: 40px;
-$fontSizeP2B4: 32px;
-$pageMaxWidthB4: 70%;
-$sectionPaddingBottomB4: 20px;
+$fontSizeP1B4: 24px;
+$fontSizeP2B4: 22px;
+$sectionPaddingBottomB4: 18px;
 
-$pageMaxWidthB5: 70%;
-$pageMaxWidthB6: 60%;
-$pageMaxWidthB7: 55%;
+/* B5 Screen Variables */
+$fontSizeP1B5: 28px;
+$fontSizeP2B5: 24px;
+$sectionPaddingBottomB5: 20px;
+
+/* B6 Screen Variables */
+$fontSizeP1B6: 32px;
+$fontSizeP2B6: 28px;
+$sectionPaddingBottomB6: 20px;
 
 $navHeight: 120px;
-$pageMaxWidth: 1440px;
 
 @mixin menuPage(
-  $fontSizeH1,
-  $fontSizeH2,
   $fontSizeP1,
   $fontSizeP2,
   $buttonWidth,
   $buttonGap,
-  $pageMaxWidth,
-  $sectionPaddingBottom
+  $contentMaxWidth,
+  $sectionPaddingBottom,
+  $cardGap
 ) {
   .menu-page {
     /* Display & Box Model */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
     padding-top: $navHeight + $sectionPaddingBottom * 6;
-    max-width: $pageMaxWidth;
+    width: $contentMaxWidth;
     margin: 0 auto;
 
     .menu-header {
@@ -61,8 +67,6 @@ $pageMaxWidth: 1440px;
         margin-bottom: $sectionPaddingBottom * 2;
 
         /* Other */
-        font-size: $fontSizeH1;
-        line-height: $fontSizeH1 * 1.5;
       }
 
       p {
@@ -70,11 +74,11 @@ $pageMaxWidth: 1440px;
         width: 80%;
         padding: 0;
         margin: 0;
-        margin-bottom: $sectionPaddingBottom * 4; // TODO Variable
+        margin-bottom: $sectionPaddingBottom * 4;
 
         /* Other */
         font-weight: var(--font-weight);
-        font-size: $fontSizeP2;
+        font-size: $fontSizeP1;
         font-family: var(--font-family-secondary);
       }
 
@@ -82,8 +86,8 @@ $pageMaxWidth: 1440px;
         /* Display & Box Model */
         display: grid;
         grid-template-columns: $buttonWidth $buttonWidth $buttonWidth;
-        column-gap: $buttonGap;
-        margin-bottom: $sectionPaddingBottom * 8; // TODO Variable
+        grid-column-gap: $buttonGap;
+        margin-bottom: $sectionPaddingBottom * 8;
       }
     }
 
@@ -98,11 +102,7 @@ $pageMaxWidth: 1440px;
         /* Display & Box Model */
         padding: 0;
         margin: 0;
-        margin-bottom: $sectionPaddingBottom; // TODO Variable
-
-        /* Other */
-        font-size: $fontSizeH2;
-        line-height: $fontSizeH2 * 1.5;
+        margin-bottom: $sectionPaddingBottom;
       }
       .section-description {
         /* Display & Box Model */
@@ -119,84 +119,164 @@ $pageMaxWidth: 1440px;
     }
 
     .section-cards {
-      //     /* Display & Box Model */
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      /* Display & Box Model */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: $cardGap;
+      row-gap: $cardGap;
     }
   }
 }
 @include menuPage(
-  $fontSizeH1Mobile,
-  $fontSizeH2Mobile,
   $fontSizeP1Mobile,
   $fontSizeP2Mobile,
   $buttonWidthMobile,
   $buttonGapMobile,
-  $pageMaxWidthMobile,
-  $sectionPaddingBottomMobile
+  $contentMaxWidthMobile,
+  $sectionPaddingBottomMobile,
+  $cardGapMobile
 );
 
-@media (min-width: 801px) {
+@media (min-width: $screenWidthB1) {
   @include menuPage(
-    $fontSizeH1B2,
-    $fontSizeH2B2,
+    $fontSizeP1B1,
+    $fontSizeP2B1,
+    $buttonWidthB1,
+    $buttonGapB1,
+    $contentMaxWidthB1,
+    $sectionPaddingBottomB1,
+    $cardGapB1
+  );
+  .menu-page {
+    .menu-header {
+      p {
+        width: $contentMaxWidthB1 * 0.66;
+      }
+      .menu-section {
+        .section-description {
+          width: $contentMaxWidthB1 * 0.66;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB2) {
+  @include menuPage(
     $fontSizeP1B2,
     $fontSizeP2B2,
     $buttonWidthB2,
     $buttonGapB2,
-    $pageMaxWidthB2,
-    $sectionPaddingBottomB2
+    $contentMaxWidthB2,
+    $sectionPaddingBottomB2,
+    $cardGapB2
   );
+  .menu-page {
+    .menu-header {
+      p {
+        width: $contentMaxWidthB2 * 0.66;
+      }
+      .menu-section {
+        .section-description {
+          width: $contentMaxWidthB2 * 0.66;
+        }
+      }
+    }
+  }
 }
 
-@media (min-width: 1401px) {
+@media (min-width: $screenWidthB3) {
   @include menuPage(
-    $fontSizeH1B4,
-    $fontSizeH2B4,
-    $fontSizeP1B4,
-    $fontSizeP2B4,
-    $buttonWidthB2,
-    $buttonGapB2,
-    $pageMaxWidthB4,
-    $sectionPaddingBottomB4
+    $fontSizeP1B3,
+    $fontSizeP2B3,
+    $buttonWidthB3,
+    $buttonGapB3,
+    $contentMaxWidthB3,
+    $sectionPaddingBottomB3,
+    $cardGapB3
   );
-}
-@media (min-width: 1801px) {
-  @include menuPage(
-    $fontSizeH1B4,
-    $fontSizeH2B4,
-    $fontSizeP1B4,
-    $fontSizeP2B4,
-    $buttonWidthB2,
-    $buttonGapB2,
-    $pageMaxWidthB5,
-    $sectionPaddingBottomB4
-  );
-}
-
-@media (min-width: 2201px) {
-  @include menuPage(
-    $fontSizeH1B4,
-    $fontSizeH2B4,
-    $fontSizeP1B4,
-    $fontSizeP2B4,
-    $buttonWidthB2,
-    $buttonGapB2,
-    $pageMaxWidthB6,
-    $sectionPaddingBottomB4
-  );
+  .menu-page {
+    .menu-header {
+      p {
+        width: $contentMaxWidthB3 * 0.66;
+      }
+      .menu-section {
+        .section-description {
+          width: $contentMaxWidthB3 * 0.66;
+        }
+      }
+    }
+  }
 }
 
-@media (min-width: 2501px) {
+@media (min-width: $screenWidthB4) {
   @include menuPage(
-    $fontSizeH1B4,
-    $fontSizeH2B4,
     $fontSizeP1B4,
     $fontSizeP2B4,
-    $buttonWidthB2,
-    $buttonGapB2,
-    $pageMaxWidthB7,
-    $sectionPaddingBottomB4
+    $buttonWidthB4,
+    $buttonGapB4,
+    $contentMaxWidthB4,
+    $sectionPaddingBottomB4,
+    $cardGapB4
   );
+  .menu-page {
+    .menu-header {
+      p {
+        width: $contentMaxWidthB4 * 0.66;
+      }
+      .menu-section {
+        .section-description {
+          width: $contentMaxWidthB4 * 0.66;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB5) {
+  @include menuPage(
+    $fontSizeP1B5,
+    $fontSizeP2B5,
+    $buttonWidthB5,
+    $buttonGapB5,
+    $contentMaxWidthB5,
+    $sectionPaddingBottomB5,
+    $cardGapB5
+  );
+  .menu-page {
+    .menu-header {
+      p {
+        width: $contentMaxWidthB5 * 0.66;
+      }
+      .menu-section {
+        .section-description {
+          width: $contentMaxWidthB5 * 0.66;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB6) {
+  @include menuPage(
+    $fontSizeP1B6,
+    $fontSizeP2B6,
+    $buttonWidthB6,
+    $buttonGapB6,
+    $contentMaxWidthB6,
+    $sectionPaddingBottomB6,
+    $cardGapB6
+  );
+  .menu-page {
+    .menu-header {
+      p {
+        width: $contentMaxWidthB6 * 0.66;
+      }
+      .menu-section {
+        .section-description {
+          width: $contentMaxWidthB6 * 0.66;
+        }
+      }
+    }
+  }
 }

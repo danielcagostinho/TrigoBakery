@@ -21,7 +21,7 @@ const ProductCard = ({ productName, imgSrc, description, productType }) => {
       <img src={cardTexture} alt="grains" className="card-texture"/>
       <div className="card-content">
         <div className="card-title-container">
-          <p className="card-title">{productName}</p>
+          <h3 className="card-title">{productName}</h3>
         </div>
         <div className={imageContainerStyles}>
           <div className={imageStyles}>

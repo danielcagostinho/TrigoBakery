@@ -1,35 +1,46 @@
+@import '../../design-tokens/scss-variables';
+
 /* Mobile Variables */
-$cardWidthMobile: 135px;
-$cardHeightMobile: 200px;
 $cardCaptionHeightMobile: 68px;
 $fontSizeTitleMobile: 16px;
 $fontSizeP1Mobile: 14px;
 $navButtonSizeMobile: 20px;
 $captionPaddingMobile: 8px;
 
+/* Breakpoint 1 Variables */
+$cardCaptionHeightB1: 88px;
+$fontSizeTitleB1: 22px;
+$fontSizeP1B1: 14px;
+$navButtonSizeB1: 24px;
+$captionPaddingB1: 12px;
+
 /* Breakpoint 2 Variables */
-$cardWidthB2: 200px;
-$cardHeightB2: 300px;
+$cardCaptionHeightB2: 80px;
 $fontSizeTitleB2: 22px;
 $fontSizeP1B2: 14px;
 $navButtonSizeB2: 24px;
 $captionPaddingB2: 12px;
 
 /* Breakpoint 3 Variables */
-$cardWidthB3: 250px;
-$cardHeightB3: 375px;
+$cardCaptionHeightB3: 108px;
 $fontSizeTitleB3: 24px;
 $fontSizeP1B3: 18px;
 $navButtonSizeB3: 28px;
 $captionPaddingB3: 16px;
 
 /* Breakpoint 4 Variables */
-$cardWidthB4: 400px;
-$cardHeightB4: 600px;
-$fontSizeTitleB4: 36px;
-$fontSizeP1B4: 20px;
-$navButtonSizeB4: 32px;
-$captionPaddingB4: 20px;
+$cardCaptionHeightB4: 108px;
+$fontSizeTitleB4: 24px;
+$fontSizeP1B4: 18px;
+$navButtonSizeB4: 28px;
+$captionPaddingB4: 16px;
+
+/* Breakpoint 4 Variables */
+$cardCaptionHeightB5: 96px;
+$fontSizeTitleB5: 36px;
+$fontSizeP1B5: 20px;
+$navButtonSizeB5: 32px;
+$captionPaddingB5: 20px;
 
 $cardBorderRadius: 8px;
 $cardImageBorderColor: #eecdb3;
@@ -98,12 +109,12 @@ $cardDescriptionSize: 20px;
           margin: 0;
 
           /* Other */
-          font-size: $fontSizeTitle;
+          text-transform: capitalize;
 
           font-family: var(--font-family-primary);
           font-weight: var(--font-weight);
           line-height: 140%;
-          color: black;
+          // color: black;
         }
 
         p {
@@ -149,11 +160,24 @@ $cardDescriptionSize: 20px;
   $captionPaddingMobile
 );
 
-@media (min-width: 801px) {
+@media (min-width: $screenWidthB1) {
+@include moreCardStyles(
+  $cardWidthB1,
+  $cardHeightB1,
+  $cardCaptionHeightB1,
+  $fontSizeTitleB1,
+  $fontSizeP1B1,
+  $navButtonSizeB1,
+  $captionPaddingB1
+);
+}
+
+
+@media (min-width: $screenWidthB2) {
   @include moreCardStyles(
     $cardWidthB2,
     $cardHeightB2,
-    $cardCaptionHeightMobile,
+    $cardCaptionHeightB2,
     $fontSizeTitleB2,
     $fontSizeP1B2,
     $navButtonSizeB2,
@@ -161,11 +185,11 @@ $cardDescriptionSize: 20px;
   );
 }
 
-@media (min-width: 1201px) {
+@media (min-width: $screenWidthB3) {
   @include moreCardStyles(
     $cardWidthB3,
     $cardHeightB3,
-    $cardCaptionHeightMobile,
+    $cardCaptionHeightB3,
     $fontSizeTitleB3,
     $fontSizeP1B3,
     $navButtonSizeB3,
@@ -173,14 +197,26 @@ $cardDescriptionSize: 20px;
   );
 }
 
-@media (min-width: 1441px) {
+@media (min-width: $screenWidthB4) {
   @include moreCardStyles(
     $cardWidthB4,
     $cardHeightB4,
-    $cardCaptionHeightMobile,
+    $cardCaptionHeightB4,
     $fontSizeTitleB4,
     $fontSizeP1B4,
     $navButtonSizeB4,
     $captionPaddingB4
+  );
+}
+
+@media (min-width: $screenWidthB5) {
+  @include moreCardStyles(
+    $cardWidthB5,
+    $cardHeightB5,
+    $cardCaptionHeightB5,
+    $fontSizeTitleB5,
+    $fontSizeP1B5,
+    $navButtonSizeB5,
+    $captionPaddingB5
   );
 }
