@@ -1,4 +1,36 @@
 $headingfontsize: 90px;
 $primaryFontColor: white;
-$secondaryFontColor: rgba(255,255,255,0.5);
+$secondaryFontColor: rgba(255, 255, 255, 0.5);
 $navHeight: 120px;
+
+$screenWidthB1: 681px;
+$screenWidthB2: 801px;
+$screenWidthB3: 1001px;
+$screenWidthB4: 1201px;
+$screenWidthB5: 1401px;
+$screenWidthB6: 1921px;
+
+$cardWidthMobile: 135px;
+$cardGapMobile: 10px;
+
+$cardWidthB1: 200px;
+$cardGapB1: 20px;
+
+$cardWidthB2: 200px;
+$cardGapB2: 20px;
+
+$cardWidthB3: 250px;
+$cardGapB3: 20px;
+
+$cardWidthB4: 300px;
+$cardGapB4: 20px;
+
+$cardWidthB5: 400px;
+$cardGapB5: 24px;
+
+$contentMaxWidthMobile: $cardWidthMobile * 2 + $cardGapMobile * 1;
+$contentMaxWidthB1: $cardWidthB1 * 3 + $cardGapB1 * 2;
+$contentMaxWidthB2: $cardWidthB2 * 3 + $cardGapB2 * 2;
+$contentMaxWidthB3: $cardWidthB3 * 3 + $cardGapB3 * 2;
+$contentMaxWidthB4: $cardWidthB4 * 3 + $cardGapB4 * 2;
+$contentMaxWidthB5: $cardWidthB5 * 3 + $cardGapB5 * 2;

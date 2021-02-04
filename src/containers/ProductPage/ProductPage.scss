@@ -1,25 +1,41 @@
-$navHeight: 120px;
+@import "../../design-tokens/scss-variables";
+@import '../../components/ProductCard/ProductCard.scss';
 
-$pageMaxWidthMobile: 100%;
+$navHeight: 120px;
 $fontSizeSectionNameMobile: 14px;
 $fontSizeProductTitleMobile: 24px;
 $fontSizeP1Mobile: 14px;
 $titlePaddingBottomMobile: 8px;
-$cardGapMobile: 10px;
 
-$pageMaxWidthB1: 100%;
+/* Breakpoint 1 Variables */
 $fontSizeSectionNameB1: 14px;
 $fontSizeProductTitleB1: 24px;
 $fontSizeP1B1: 14px;
 $titlePaddingBottomB1: 8px;
-$cardGapB1: 10px;
 
-$pageMaxWidthB5: 1248px;
+/* Breakpoint 2 Variables */
+$fontSizeSectionNameB2: 16px;
+$fontSizeProductTitleB2: 32px;
+$fontSizeP1B2: 18px;
+$titlePaddingBottomB2: 40px;
+
+/* Breakpoint 3 Variables */
+$fontSizeSectionNameB3: 16px;
+$fontSizeProductTitleB3: 40px;
+$fontSizeP1B3: 22px;
+$titlePaddingBottomB3: 40px;
+
+/* Breakpoint 4 Variables */
+$fontSizeSectionNameB4: 18px;
+$fontSizeProductTitleB4: 48px;
+$fontSizeP1B4: 28px;
+$titlePaddingBottomB4: 40px;
+
+/* Breakpoint 5 Variables */
 $fontSizeSectionNameB5: 20px;
 $fontSizeProductTitleB5: 60px;
 $fontSizeP1B5: 32px;
 $titlePaddingBottomB5: 40px;
-$cardGapB5: 24px;
 
 @mixin productPage(
   $pageMaxWidth,
@@ -42,8 +58,6 @@ $cardGapB5: 24px;
 
     .products-info {
       /* Display & Box Model */
-      margin: 0 20px;
-
       /* Other */
       text-align: left;
 
@@ -84,7 +98,7 @@ $cardGapB5: 24px;
     .products-container {
       /* Display & Box Model */
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       column-gap: $cardGap;
       row-gap: $cardGap;
     }
@@ -92,29 +106,22 @@ $cardGapB5: 24px;
 }
 
 @include productPage(
-  $pageMaxWidthMobile,
+  $contentMaxWidthMobile,
   $fontSizeSectionNameMobile,
   $fontSizeProductTitleMobile,
   $fontSizeP1Mobile,
   $titlePaddingBottomMobile,
   $cardGapMobile
 );
-.products-container {
-  /* Display & Box Model */
-  display: grid;
-  grid-template-columns: 1fr 1fr !important;
-  column-gap: $cardGapMobile;
-  row-gap: $cardGapMobile;
-}
 
-@media (min-width: 1441px) {
+@media (min-width: $screenWidthB1) {
   @include productPage(
-    $pageMaxWidthB5,
-    $fontSizeSectionNameB5,
-    $fontSizeProductTitleB5,
-    $fontSizeP1B5,
-    $titlePaddingBottomB5,
-    $cardGapB5
+    $contentMaxWidthB1,
+    $fontSizeSectionNameB1,
+    $fontSizeProductTitleB1,
+    $fontSizeP1B1,
+    $titlePaddingBottomB1,
+    $cardGapB1
   );
 
   .products-page {
@@ -122,5 +129,53 @@ $cardGapB5: 24px;
       /* Display & Box Model */
       margin: 0;
     }
+
+    .products-container {
+      grid-template-columns: 1fr 1fr 1fr !important;
+    }
   }
+}
+
+@media (min-width: $screenWidthB2) {
+  @include productPage(
+    $contentMaxWidthB2,
+    $fontSizeSectionNameB2,
+    $fontSizeProductTitleB2,
+    $fontSizeP1B2,
+    $titlePaddingBottomB2,
+    $cardGapB2
+  );
+}
+
+@media (min-width: $screenWidthB3) {
+  @include productPage(
+    $contentMaxWidthB3,
+    $fontSizeSectionNameB3,
+    $fontSizeProductTitleB3,
+    $fontSizeP1B3,
+    $titlePaddingBottomB3,
+    $cardGapB3
+  );
+}
+
+@media (min-width: $screenWidthB4) {
+  @include productPage(
+    $contentMaxWidthB4,
+    $fontSizeSectionNameB4,
+    $fontSizeProductTitleB4,
+    $fontSizeP1B4,
+    $titlePaddingBottomB4,
+    $cardGapB4
+  );
+}
+
+@media (min-width: $screenWidthB5) {
+  @include productPage(
+    $contentMaxWidthB5,
+    $fontSizeSectionNameB5,
+    $fontSizeProductTitleB5,
+    $fontSizeP1B5,
+    $titlePaddingBottomB5,
+    $cardGapB5
+  );
 }

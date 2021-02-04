@@ -117,7 +117,7 @@ const breads = [
     description: "Id sit adipisicing non veniam ea proident commodo magna.",
   },
   {
-    name: "Pao de Milho Pequeno",
+    name: "Broa Pequena",
     imgSrc: paoDeMilhoPequeno,
     description: "Id sit adipisicing non veniam ea proident commodo magna.",
   },
