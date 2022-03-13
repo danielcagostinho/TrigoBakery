@@ -8,10 +8,13 @@ const ProductCard = ({ productName, imgSrc, description, productType }) => {
   let imageStyles ="card-image";
   let imageContainerStyles = "card-image-container";
   
-  console.log(productType)
   if (productType === "cakes") {
+    console.log("Product Type", productType)
     // cardStyles = "card-cakes";
     // imageContainerStyles += " container-cakes"
+    imageStyles += " card-image--no-border";
+    console.log("image styles", imageStyles)
+
   } else if (productType === "pastries") {
     // imageStyles += " image-pastries";
   } 
@@ -24,9 +27,7 @@ const ProductCard = ({ productName, imgSrc, description, productType }) => {
           <h3 className="card-title">{productName}</h3>
         </div>
         <div className={imageContainerStyles}>
-          <div className={imageStyles}>
-            <img src={imgSrc} alt="White Cornbread" />
-          </div>
+            <img src={imgSrc} alt="White Cornbread" className={imageStyles}/>
         </div>
         {productType === "cakes" ? null : (
           <div className="card-description-container">

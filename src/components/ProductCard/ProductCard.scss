@@ -112,12 +112,18 @@ $cardBorderColor: #f5dcc8;
       border-radius: 50%;
       border: $cardBorderRadius solid $cardImageBorderColor;
 
-      .card-image img {
+      .card-image {
         /* Display & Box Model */
         width: $cardImageWidth;
         height: $cardImageWidth;
         object-fit: fill;
         border-radius: 50%;
+        
+        &.card-image--no-border {
+          /* Display & Box Model */
+          width: calc($cardImageContainerWidth - $cardBorderRadius);
+          height: calc($cardImageContainerWidth - $cardBorderRadius);
+        }
       }
     }
 
