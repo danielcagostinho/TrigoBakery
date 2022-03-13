@@ -22,3 +22,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .eslintcache
+asset-jsons/Breads-data.json
+asset-jsons/Breads-imports.json
+asset-jsons/Cakes-data.json
+asset-jsons/Cakes-imports.json
+asset-jsons/Desserts-data.json
+asset-jsons/Desserts-imports.json
+asset-jsons/Hot-Table-data.json
+asset-jsons/Hot-Table-imports.json
+readfiles.sh
