@@ -42,10 +42,6 @@ $buttonHeightB6: 50px;
 $buttonGapB6: 32px;
 $fontSizeButtonB6: 24px;
 
-
-
-
-
 .light {
   color: black;
   background-color: white;
@@ -61,6 +57,7 @@ $fontSizeButtonB6: 24px;
     text-decoration: none;
     color: inherit;
     width: $buttonWidth;
+    display: block;
   }
 
   .header-button {
