@@ -14,11 +14,7 @@ import carousel1 from "../../assets/carousel/carousel1.png";
 import carousel2 from "../../assets/carousel/carousel2.png";
 import carousel3 from "../../assets/carousel/carousel3.png";
 import carousel4 from "../../assets/carousel/carousel4.png";
-import WheatBackground from '../../assets/Wheat-Background.svg';
-import LeftGrain from '../../assets/Left-Grain.PNG';
-import RightGrain from '../../assets/Right-Grain.PNG';
 import Footer from "../../components/Footer/Footer";
-import grains from "../../assets/Grains.png";
 
 const LandingPage = () => {
   let mapWidth = window.innerWidth * (window.innerWidth < 681 ? 0.8 : 0.4);

@@ -1,45 +1,42 @@
-@import '../../../design-tokens/scss-variables';
-// $i: 5;
+@import "../../../design-tokens/scss-variables";
+
 .header-img {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  @for $i from 1 through 5 {
+    .header-parallax:nth-child(#{$i}) {
+      width: 18%;
+      margin: 0 10px;
+      border-radius: 8px;
+      @if $i == 1 {
+        margin-bottom: 100px;
+      } @else if $i == 2 {
+        margin-top: 80px;
+        margin-bottom: 20px;
+      } @else if $i == 3 {
+        margin-top: 40px;
+        margin-bottom: 60px;
+      } @else if $i == 4 {
+        margin-top: 80px;
+        margin-bottom: 20px;
+      } @else if $i == 5 {
+        margin-bottom: 100px;
+      }
+
+      /* The image used */
+      background-image: url("../../../assets/headerImage.JPG");
+
+      /* Set a specific height */
+      min-height: 700px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
 }
-
-
-// @media (min-width: 681px) {
-// }
-
-// @media (min-width: 1920px) {
-//   .header-img {
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-content: center;
-//     height: 860px;
-//     width: 1440px;
-//     margin: 0 auto;
-//     margin-bottom: 188px;
-//     @for $i from 1 through 5 {
-//       .header-mask:nth-child(#{$i}) {
-//         position: absolute;
-//         object-fit: cover;
-//         width: 1440px;
-//         height: 860px;
-//         border-radius: 8px;
-//         @if $i == 2 {
-//           top: 160px;
-//         } @else if $i == 3 {
-//           top: 80px;
-//         } @else if $i == 4 {
-//           top: 160px; 
-//         }
-//         clip-path: polygon(
-//           calc((18% * (#{$i} - 1)) + (#{$i} -1) * 2%) 0,
-//           calc((18% * #{$i}) + #{$i} * 2%) 0,
-//           calc((18% * #{$i}) + #{$i} * 2%) 100%,
-//           calc((18% * (#{$i} - 1)) + (#{$i} -1) * 2%) 100%
-//         );
-//       }
-//     }
-//   }
-// }
-
