@@ -6,7 +6,8 @@ import "./MoreCard.scss";
 
 import moreBreads from "../../assets/menu/more-bread.png";
 import moreCakes from "../../assets/menu/more-cakes.png";
-import morePastries from "../../assets/menu/more-pastries.png";
+import moreHotTable from "../../assets/menu/more-hot-table.jpg";
+import moreDesserts from "../../assets/menu/more-desserts.png";
 import arrow from "../../assets/icons/Arrow.png";
 
 const MoreCard = ({ productType }) => {
@@ -23,8 +24,11 @@ const MoreCard = ({ productType }) => {
       // cardStyles = "more-card-cakes";
       // imageStyles = "more-image-cakes";
       break;
-    case "pastries":
-      moreImage = morePastries;
+    case "desserts":
+      moreImage = moreDesserts;
+      break;
+    case "hot-table":
+      moreImage = moreHotTable;
       break;
     default:
       moreImage = moreBreads;

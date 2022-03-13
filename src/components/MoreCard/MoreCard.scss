@@ -78,6 +78,7 @@ $cardDescriptionSize: 20px;
         height: $cardHeight;
         border: 2px solid $cardBorderColor;
         border-radius: $cardBorderRadius;
+        object-fit: cover;
       }
 
       .more-caption {

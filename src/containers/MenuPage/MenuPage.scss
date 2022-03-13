@@ -85,7 +85,7 @@ $navHeight: 120px;
       .menu-links {
         /* Display & Box Model */
         display: grid;
-        grid-template-columns: $buttonWidth $buttonWidth $buttonWidth;
+        grid-template-columns: $buttonWidth $buttonWidth $buttonWidth $buttonWidth;
         grid-column-gap: $buttonGap;
         margin-bottom: $sectionPaddingBottom * 8;
       }
