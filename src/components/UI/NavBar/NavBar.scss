@@ -1,3 +1,5 @@
+@import '../../../design-tokens/css-variables.scss';
+
 /* Mobile Variables */
 $navHeightMobile: 120px;
 $navLogoContainerWidthMobile: 106px;
@@ -18,7 +20,6 @@ $navLogoHeightMobile: 56px;
   height: $navHeightMobile;
 
   /* Other */
-  background-color: white;
 
   .nav-bar {
     /* Display & Box Model */
@@ -38,8 +39,8 @@ $navLogoHeightMobile: 56px;
       /* Other */
       text-decoration: none;
       font-size: var(--nav-font-size-mobile);
-      font-weight: var(--font-weight);
       color: black;
+      font-family: var(--font-family-primary);
 
       a { color: inherit; } 
 

@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.25px;
+  // letter-spacing: -0.25px;
 }
 
 code {
@@ -15,12 +15,6 @@ code {
     monospace;
 }
 
-@font-face {
-  font-family: "Ogg";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./assets/fonts/Ogg-Roman.ttf");
-}
 
 @font-face {
   font-family: "Akagi Pro";
@@ -34,4 +28,18 @@ code {
   font-style: normal;
   font-weight: 400;
   src: url("./assets/fonts/AkagiPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "Mirage-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Mirage-Bold.otf");
+}
+
+@font-face {
+  font-family: "Mirage-Medium";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Mirage-Medium.otf");
 }

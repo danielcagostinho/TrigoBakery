@@ -65,6 +65,9 @@ import weddingCake from "./assets/products/cakes/wedding-cake.jpg";
 import whiteCake from "./assets/products/cakes/white-cake.jpg";
 import whiteFlower from "./assets/products/cakes/white-flower-cake.png";
 
+import LeftGrain from './assets/Left-Grain.PNG';
+import RightGrain from './assets/Right-Grain.PNG';
+
 const breads = [
   {
     name: "Pao da Avo",
@@ -300,13 +303,14 @@ const cakes = [
     imgSrc: whiteFlower,
   },
 ];
-
 function App() {
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <ScrollToTop>
           <NavBar />
+          <img src={LeftGrain} alt="trigo" className="HeaderAccent"/>
+          <img src={RightGrain} alt="trigo" className="HeaderAccent"/>
           <Switch>
             <Route path="/breads" exact>
               <ProductPage

@@ -1,7 +1,8 @@
+@import "./design-tokens/css-variables.scss";
 @import "./design-tokens/scss-variables";
 * {
   box-sizing: border-box;
-  font-family: Ogg;
+  font-family: var(--font-family-primary);
 
   img {
     vertical-align: middle;
@@ -19,6 +20,17 @@
 .route-wrapper > div {
   position: absolute;
   width: 100%;
+}
+
+.HeaderAccent {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  height: 400px;
+
+  &:nth-child(2) {
+    left: 0;
+  }
 }
 
 /* Mobile Font Sizes*/

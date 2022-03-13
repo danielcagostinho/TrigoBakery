@@ -9,14 +9,14 @@ const NavBar = () => {
   return (
     <div className="nav">
       <div className="nav-bar">
-        <Link to="/menu" className="nav-link">
-          Menu
+        <Link to="/" className="nav-link">
+          Home
         </Link>
         <div className="nav-logo-container">
           <img src={Logo} className="nav-logo" alt="Trigo Logo" />
         </div>
-        <Link to="/" className="nav-link">
-          Visit Us
+        <Link to="/menu" className="nav-link">
+          Menu
         </Link>
       </div>
       <div className="nav-gradient"></div>
