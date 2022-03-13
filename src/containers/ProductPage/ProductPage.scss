@@ -77,7 +77,7 @@ $titlePaddingBottomB5: 40px;
       p {
         width: 90%;
         padding: 0;
-        padding-bottom: $titlePaddingBottom * 2;
+        padding-bottom: $titlePaddingBottom;
         margin: 0;
 
         /* Other */
@@ -85,6 +85,11 @@ $titlePaddingBottomB5: 40px;
         font-weight: 700;
         font-family: var(--font-family-secondary);
       }
+
+      .button--back {
+        margin-bottom: $titlePaddingBottom * 2;
+      }
+
     }
     .products-container {
       /* Display & Box Model */
