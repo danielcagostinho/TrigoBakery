@@ -17,7 +17,7 @@ const Header = () => {
         <HeaderButton className="link" variant="light" url="/menu">
           Menu
         </HeaderButton>
-        <HeaderButton className="link" variant="dark" url="/menu">
+        <HeaderButton className="link" variant="dark" url="/">
           Visit Us
         </HeaderButton>
       </div>
