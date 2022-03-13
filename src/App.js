@@ -653,7 +653,7 @@ var Hot_Table = [
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.REACT_APP_PUBLIC_URL}>
         <ScrollToTop>
           <NavBar />
           <img src={LeftGrain} alt="trigo" className="HeaderAccent" />

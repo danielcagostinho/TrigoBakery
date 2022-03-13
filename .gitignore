@@ -31,3 +31,4 @@ asset-jsons/Desserts-imports.json
 asset-jsons/Hot-Table-data.json
 asset-jsons/Hot-Table-imports.json
 readfiles.sh
+.env
