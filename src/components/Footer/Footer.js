@@ -6,7 +6,7 @@ const Footer = ({landing}) => {
   return (
     <div className="footer">
       <div className="footer-content">
-       { !landing ? <h1>Check out Trigo on...</h1> : null}
+       { !landing ? <h1 className="footer__title">Check out Trigo on...</h1> : null}
         <div className="footer-links">
           <h2>
             <span>-</span>{" "}

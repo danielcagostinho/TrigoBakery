@@ -25,33 +25,27 @@ $linkGapB6: 32px;
 
 @mixin footerStyles($contentMaxWidth, $paddingFooter, $linkGap) {
   .footer {
-    /* Display & Box Model */
     width: 100vw;
 
-    /* Other */
     background-color: #fafafa;
 
     .footer-content {
-      /* Display & Box Model */
       display: flex;
       flex-direction: column;
       width: $contentMaxWidth;
       padding: $paddingFooter * 2 0;
       margin: 0 auto;
 
-      h1 {
-        /* Display & Box Model */
+      .footer__title {
         padding: 0;
         margin: 0;
         margin-bottom: $paddingFooter;
 
-        /* Other */
         line-height: 36px;
-        font-weight: var(--font-weight);
+        font-weight: $fontWeightBold;
       }
 
       .footer-links {
-        /* Display & Box Model */
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -59,21 +53,17 @@ $linkGapB6: 32px;
         column-gap: $linkGap;
 
         h2 {
-          /* Display & Box Model */
           padding: 0;
           margin: 0;
 
-          /* Other */
           color: $footerTextColor;
-          font-weight: var(--font-weight);
+          font-weight: $fontWeightBold;
 
           a {
-            /* Other */
             color: inherit;
             text-decoration: none;
 
             &:visited {
-              /* Other */
               color: inherit;
             }
           }

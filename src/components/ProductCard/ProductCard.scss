@@ -1,7 +1,5 @@
 @import '../../design-tokens/scss-variables';
 
-/* Mobile Variables */
-// $cardWidthMobile: 135px;
 $cardHeightMobile: 200px;
 $cardImageContainerWidthMobile: 80px;
 $cardImageWidthMobile: 40px;
@@ -9,35 +7,30 @@ $fontSizeP1Mobile: 10px;
 $titlePaddingMobile: 16px;
 $descriptionPaddingMobile: 8px;
 
-/* Breakpoint 2 Variables */
 $cardImageContainerWidthB1: 120px;
 $cardImageWidthB1: 80px;
 $fontSizeP1B1: 14px;
 $titlePaddingB1: 24px;
 $descriptionPaddingB1: 12px;
 
-/* Breakpoint 2 Variables */
 $cardImageContainerWidthB2: 120px;
 $cardImageWidthB2: 80px;
 $fontSizeP1B2: 14px;
 $titlePaddingB2: 24px;
 $descriptionPaddingB2: 12px;
 
-/* Breakpoint 3 Variables */
 $cardImageContainerWidthB3: 150px;
 $cardImageWidthB3: 100px;
 $fontSizeP1B3: 18px;
 $titlePaddingB3: 32px;
 $descriptionPaddingB3: 16px;
 
-/* Breakpoint 4 Variables */
 $cardImageContainerWidthB4: 180px;
 $cardImageWidthB4: 120px;
 $fontSizeP1B4: 18px;
 $titlePaddingB4: 32px;
 $descriptionPaddingB4: 16px;
 
-/* Breakpoint 5 Variables */
 $cardImageContainerWidthB5: 252px;
 $cardImageWidthB5: 150px;
 $fontSizeP1B5: 20px;
@@ -61,24 +54,19 @@ $cardBorderColor: #f5dcc8;
   $descriptionPadding
 ) {
   .card {
-    /* Display & Box Model */
     width: $cardWidth;
     height: $cardHeight;
-    // margin: 0 6px;
   }
 
   .card-texture {
-    /* Positioning */
     position: absolute;
     z-index: -1;
 
-    /* Display & Box Model */
     width: $cardWidth;
     height: $cardHeight;
   }
 
   .card-content {
-    /* Display & Box Model */
     display: grid;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr;
@@ -91,18 +79,15 @@ $cardBorderColor: #f5dcc8;
     border-radius: $cardBorderRadius;
 
     .card-title {
-      /* Display & Box Model */
       padding-top: $titlePadding;
       margin: 0;
       max-width: $cardWidth;
 
-      /* Other */
-      font-weight: var(--font-weight);
+      font-weight: $fontWeightMedium;
       text-align: center;      
     }
 
     .card-image-container {
-      /* Display & Box Model */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -113,14 +98,12 @@ $cardBorderColor: #f5dcc8;
       border: $cardBorderRadius solid $cardImageBorderColor;
 
       .card-image {
-        /* Display & Box Model */
         width: $cardImageWidth;
         height: $cardImageWidth;
         object-fit: fill;
         border-radius: 50%;
         
         &.card-image--no-border {
-          /* Display & Box Model */
           width: calc($cardImageContainerWidth - $cardBorderRadius);
           height: calc($cardImageContainerWidth - $cardBorderRadius);
         }
@@ -128,15 +111,13 @@ $cardBorderColor: #f5dcc8;
     }
 
     .card-description {
-      /* Display & Box Model */
       padding: $descriptionPadding;
       padding-bottom: 0;
       border-top: 1px solid $cardImageBorderColor;
 
-      /* Other */
       font-size: $fontSizeP1;
-      font-family: var(--font-family-secondary);
-      font-weight: var(--font-weight);
+      font-family: $fontFamilySecondary;
+      font-weight: $fontWeightMedium;
       color: $cardDescriptionColor;
       text-align: center;
     }

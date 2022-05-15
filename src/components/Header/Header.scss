@@ -1,29 +1,35 @@
+@import "../../design-tokens/scss-variables";
+
+$headerFontSizeMobile: 22px;
+$headerFontSizeDesktop: 52px;
+$descriptionFontSizeMobile: 16px;
+$descriptionFontSizeDesktop: 28px;
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  // padding-top: 134px;
 
-  h1 {
-    font-family: var(--font-family-primary-bold);
+  &__title {
+    font-family: $fontFamilyPrimaryBold;
     font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 22px;
+    font-weight: $fontWeightBold;
+    font-size: $headerFontSizeMobile;
+    line-height: $headerFontSizeMobile;
 
     text-align: center;
     letter-spacing: -0.0041em;
 
-    color: #000000;
+    color: $fontColorPrimary;
 
     margin: 0 0 20px 0;
     padding: 0;
   }
 
-  p {
-    font-family: "Akagi Pro Light";
-    font-size: 16px;
+  &__description {
+    font-family: $fontFamilySecondary;
+    font-size: $descriptionFontSizeMobile;
     margin: 0;
     padding: 0;
     width: 300px;
@@ -32,7 +38,6 @@
   }
 
   .nav-links {
-    // width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -42,27 +47,23 @@
   }
 }
 
-@media (min-width: 681px) {
-}
-
-@media (min-width: 1201px) {
+@media (min-width: $screenWidthB4) {
   .header {
-  padding-top: 60px;
+    padding-top: 60px;
 
-    h1 {
-      font-size: 52px;
+    &__title {
+      font-size: $headerFontSizeDesktop;
       line-height: 72px;
     }
 
-    p {
-      font-size: 28px;
+    &__description {
+      font-size: $descriptionFontSizeDesktop;
       width: 760px;
     }
 
     .nav-links {
       margin: 36px 0 84px 0;
-    column-gap: 40px;
-
+      column-gap: 40px;
     }
   }
 }

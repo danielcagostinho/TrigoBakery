@@ -1,37 +1,30 @@
 @import "../../components/UI/HeaderButton/HeaderButton.scss";
 @import "../../design-tokens/scss-variables";
 
-/* Mobile Variables */
 $fontSizeP1Mobile: 16px;
 $fontSizeP2Mobile: 12px;
 $sectionPaddingBottomMobile: 8px;
 
-/* B1 Screen Variables */
 $fontSizeP1B1: 18px;
 $fontSizeP2B1: 14px;
 $sectionPaddingBottomB1: 12px;
 
-/* B2 Screen Variables */
 $fontSizeP1B2: 20px;
 $fontSizeP2B2: 16px;
 $sectionPaddingBottomB2: 14px;
 
-/* B3 Screen Variables */
 $fontSizeP1B3: 22px;
 $fontSizeP2B3: 20px;
 $sectionPaddingBottomB3: 16px;
 
-/* B4 Screen Variables */
 $fontSizeP1B4: 24px;
 $fontSizeP2B4: 22px;
 $sectionPaddingBottomB4: 18px;
 
-/* B5 Screen Variables */
 $fontSizeP1B5: 28px;
 $fontSizeP2B5: 24px;
 $sectionPaddingBottomB5: 20px;
 
-/* B6 Screen Variables */
 $fontSizeP1B6: 32px;
 $fontSizeP2B6: 28px;
 $sectionPaddingBottomB6: 20px;
@@ -48,7 +41,6 @@ $navHeight: 120px;
   $cardGap
 ) {
   .menu-page {
-    /* Display & Box Model */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,33 +49,25 @@ $navHeight: 120px;
     margin: 0 auto;
 
     .menu-header {
-      /* Display & Box Model */
       width: 100%;
 
       h1 {
-        /* Display & Box Model */
         padding: 0;
         margin: 0;
         margin-bottom: $sectionPaddingBottom * 2;
-
-        /* Other */
       }
 
       p {
-        /* Display & Box Model */
         width: 80%;
         padding: 0;
         margin: 0;
         margin-bottom: $sectionPaddingBottom * 4;
-
-        /* Other */
-        font-weight: var(--font-weight);
+        font-weight: $fontWeightMedium;
         font-size: $fontSizeP1;
-        font-family: var(--font-family-secondary);
+        font-family: $fontFamilySecondary;
       }
 
       .menu-links {
-        /* Display & Box Model */
         display: grid;
         grid-template-columns: $buttonWidth $buttonWidth $buttonWidth $buttonWidth;
         grid-column-gap: $buttonGap;
@@ -92,34 +76,28 @@ $navHeight: 120px;
     }
 
     .menu-section {
-      /* Display & Box Model */
       display: flex;
       flex-direction: column;
       width: 100%;
       margin-bottom: $sectionPaddingBottom * 8;
 
       .section-title {
-        /* Display & Box Model */
         padding: 0;
         margin: 0;
         margin-bottom: $sectionPaddingBottom;
       }
       .section-description {
-        /* Display & Box Model */
         width: 80%;
         padding: 0;
         margin: 0;
         margin-bottom: $sectionPaddingBottom * 2.4;
-
-        /* Other */
         font-size: $fontSizeP2;
-        font-weight: var(--font-weight);
-        font-family: var(--font-family-secondary);
+        font-weight: $fontWeightMedium;
+        font-family: $fontFamilySecondary;
       }
     }
 
     .section-cards {
-      /* Display & Box Model */
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: $cardGap;

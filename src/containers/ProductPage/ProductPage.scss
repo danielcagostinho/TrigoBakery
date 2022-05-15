@@ -6,40 +6,28 @@ $fontSizeSectionNameMobile: 14px;
 $fontSizeP1Mobile: 14px;
 $titlePaddingBottomMobile: 8px;
 
-/* Breakpoint 1 Variables */
 $fontSizeSectionNameB1: 14px;
 $fontSizeP1B1: 14px;
 $titlePaddingBottomB1: 8px;
 
-/* Breakpoint 2 Variables */
 $fontSizeSectionNameB2: 16px;
 $fontSizeP1B2: 18px;
 $titlePaddingBottomB2: 40px;
 
-/* Breakpoint 3 Variables */
 $fontSizeSectionNameB3: 16px;
 $fontSizeP1B3: 22px;
 $titlePaddingBottomB3: 40px;
 
-/* Breakpoint 4 Variables */
 $fontSizeSectionNameB4: 18px;
 $fontSizeP1B4: 28px;
 $titlePaddingBottomB4: 40px;
 
-/* Breakpoint 5 Variables */
 $fontSizeSectionNameB5: 20px;
 $fontSizeP1B5: 32px;
 $titlePaddingBottomB5: 40px;
 
-@mixin productPage(
-  $pageMaxWidth,
-  $fontSizeSectionName,
-  $fontSizeP1,
-  $titlePaddingBottom,
-  $cardGap
-) {
+@mixin productPage($pageMaxWidth, $fontSizeSectionName, $fontSizeP1, $titlePaddingBottom, $cardGap) {
   .products-page {
-    /* Display & Box Model */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,49 +38,40 @@ $titlePaddingBottomB5: 40px;
     margin: 0 auto;
 
     .products-info {
-      /* Other */
       text-align: left;
+    }
 
-      .section-name {
-        /* Display & Box Model */
+    .section {
+      &__name {
         padding: 0;
         margin: 0;
-
-        /* Other */
         color: #666;
-        font-family: var(--font-family-primary);
+        font-family: $fontFamilyPrimary;
         font-size: $fontSizeSectionName;
       }
 
-      h1 {
-        /* Display & Box Model */
+      &__title {
         padding: 0;
         padding-bottom: $titlePaddingBottom;
         margin: 0;
-
-        /* Other */
         text-transform: capitalize;
       }
 
-      p {
+      &__description {
         width: 90%;
         padding: 0;
         padding-bottom: $titlePaddingBottom;
         margin: 0;
-
-        /* Other */
         font-size: $fontSizeP1;
         font-weight: 700;
-        font-family: var(--font-family-secondary);
+        font-family: $fontFamilySecondary;
       }
 
       .button--back {
         margin-bottom: $titlePaddingBottom * 2;
       }
-
     }
     .products-container {
-      /* Display & Box Model */
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: $cardGap;
@@ -111,17 +90,10 @@ $titlePaddingBottomB5: 40px;
 );
 
 @media (min-width: $screenWidthB1) {
-  @include productPage(
-    $contentMaxWidthB1,
-    $fontSizeSectionNameB1,
-    $fontSizeP1B1,
-    $titlePaddingBottomB1,
-    $cardGapB1
-  );
+  @include productPage($contentMaxWidthB1, $fontSizeSectionNameB1, $fontSizeP1B1, $titlePaddingBottomB1, $cardGapB1);
 
   .products-page {
     .products-info {
-      /* Display & Box Model */
       margin: 0;
     }
 
@@ -132,41 +104,17 @@ $titlePaddingBottomB5: 40px;
 }
 
 @media (min-width: $screenWidthB2) {
-  @include productPage(
-    $contentMaxWidthB2,
-    $fontSizeSectionNameB2,
-    $fontSizeP1B2,
-    $titlePaddingBottomB2,
-    $cardGapB2
-  );
+  @include productPage($contentMaxWidthB2, $fontSizeSectionNameB2, $fontSizeP1B2, $titlePaddingBottomB2, $cardGapB2);
 }
 
 @media (min-width: $screenWidthB3) {
-  @include productPage(
-    $contentMaxWidthB3,
-    $fontSizeSectionNameB3,
-    $fontSizeP1B3,
-    $titlePaddingBottomB3,
-    $cardGapB3
-  );
+  @include productPage($contentMaxWidthB3, $fontSizeSectionNameB3, $fontSizeP1B3, $titlePaddingBottomB3, $cardGapB3);
 }
 
 @media (min-width: $screenWidthB4) {
-  @include productPage(
-    $contentMaxWidthB4,
-    $fontSizeSectionNameB4,
-    $fontSizeP1B4,
-    $titlePaddingBottomB4,
-    $cardGapB4
-  );
+  @include productPage($contentMaxWidthB4, $fontSizeSectionNameB4, $fontSizeP1B4, $titlePaddingBottomB4, $cardGapB4);
 }
 
 @media (min-width: $screenWidthB5) {
-  @include productPage(
-    $contentMaxWidthB5,
-    $fontSizeSectionNameB5,
-    $fontSizeP1B5,
-    $titlePaddingBottomB5,
-    $cardGapB5
-  );
+  @include productPage($contentMaxWidthB5, $fontSizeSectionNameB5, $fontSizeP1B5, $titlePaddingBottomB5, $cardGapB5);
 }

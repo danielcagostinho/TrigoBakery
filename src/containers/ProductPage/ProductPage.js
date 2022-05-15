@@ -20,10 +20,10 @@ const ProductPage = ({ products, productType, productDescription }) => {
 
   return (
     <div className="products-page">
-      <div className="products-info">
-        <p className="section-name">Menu |</p>
-        <h1>{productType}</h1>
-        <p>{productDescription}</p>
+      <div className="products-info section">
+        <p className="section__name">Menu |</p>
+        <h1 className="section__title">{productType}</h1>
+        <p className="section__description">{productDescription}</p>
         <div className="button--back">
           <HeaderButton variant="dark" url="/menu" >
             Menu

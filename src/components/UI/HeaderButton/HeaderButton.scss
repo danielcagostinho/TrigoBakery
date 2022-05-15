@@ -1,42 +1,35 @@
-@import '../../../design-tokens/scss-variables';
+@import "../../../design-tokens/scss-variables";
 
-/* Mobile Breakpoint Variables*/
 $buttonWidthMobile: 82px;
 $buttonHeightMobile: 26px;
 $buttonGapMobile: 8px;
 $fontSizeButtonMobile: 12px;
 
-/* B1 Variables */
 $buttonWidthB1: 94px;
 $buttonHeightB1: 30px;
 $buttonGapB1: 16px;
 $fontSizeButtonB1: 16px;
 
-/* B2 Variables */
 $buttonWidthB2: 120px;
 $buttonHeightB2: 36px;
 $buttonGapB2: 20px;
 $fontSizeButtonB2: 18px;
 
-/* B3 Variables */
 $buttonWidthB3: 134px;
 $buttonHeightB3: 40px;
 $buttonGapB3: 24px;
 $fontSizeButtonB3: 20px;
 
-/* B4 Variables */
 $buttonWidthB4: 144px;
 $buttonHeightB4: 44px;
 $buttonGapB4: 28px;
 $fontSizeButtonB4: 22px;
 
-/* B5 Variables */
 $buttonWidthB5: 156px;
 $buttonHeightB5: 50px;
 $buttonGapB5: 32px;
 $fontSizeButtonB5: 24px;
 
-/* B6 Variables */
 $buttonWidthB6: 156px;
 $buttonHeightB6: 50px;
 $buttonGapB6: 32px;
@@ -45,6 +38,7 @@ $fontSizeButtonB6: 24px;
 .light {
   color: black;
   background-color: white;
+  transition: all 100ms ease-in-out;
 }
 
 .dark {
@@ -52,7 +46,7 @@ $fontSizeButtonB6: 24px;
   background-color: black;
 }
 
-@mixin buttonStyles($buttonWidth, $buttonHeight, $fontSizeButton){
+@mixin buttonStyles($buttonWidth, $buttonHeight, $fontSizeButton) {
   .link {
     text-decoration: none;
     color: inherit;
@@ -64,21 +58,20 @@ $fontSizeButtonB6: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-  
+
     width: $buttonWidth;
     height: $buttonHeight;
     margin: 0;
-  
+
     border-radius: $buttonWidth * 0.4;
     border: 2px solid black;
-  
+
     .link-text {
       text-decoration: none;
       color: inherit;
-      font-family: var(--font-family-primary);
-      font-weight: var(--font-weight);
+      font-family: $fontFamilyPrimary;
+      font-weight: $fontWeightMedium;
       font-size: $fontSizeButton;
-      // line-height: 24px;
       letter-spacing: 0;
     }
   }
@@ -109,16 +102,3 @@ $fontSizeButtonB6: 24px;
 @media (min-width: $screenWidthB6) {
   @include buttonStyles($buttonWidthB6, $buttonHeightB6, $fontSizeButtonB6);
 }
-
-// @media (min-width: 1201px) {
-//   .header-button {
-//     width: $buttonWidthB2;
-//     height: $buttonHeightB2;
-//     margin: 0;
-//     border-radius: 60px;
-
-//     .link-text {
-//       font-size: 24px;
-//     }
-//   }
-// }

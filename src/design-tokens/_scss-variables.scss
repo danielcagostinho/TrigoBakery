@@ -1,8 +1,4 @@
-$headingfontsize: 90px;
-$primaryFontColor: white;
-$secondaryFontColor: rgba(255, 255, 255, 0.5);
-$navHeight: 120px;
-
+// Breakpoint and Width Variables
 $screenWidthB1: 681px;
 $screenWidthB2: 801px;
 $screenWidthB3: 1001px;
@@ -44,6 +40,17 @@ $contentMaxWidthB4: $cardWidthB4 * 3 + $cardGapB4 * 2;
 $contentMaxWidthB5: $cardWidthB5 * 3 + $cardGapB5 * 2;
 $contentMaxWidthB6: $cardWidthB5 * 3 + $cardGapB5 * 2;
 
+// Colors and Fonts
+$fontColorPrimary: #000;
+$fontColorSecondary: rgba(255, 153, 0, 0.06);
+$navHeight: 120px;
+$fontFamilyPrimaryBold: 'Mirage-Bold';
+$fontFamilyPrimary: 'Mirage-Medium';
+$fontFamilySecondary: 'Akagi Pro Light';
+$fontWeightBold: 700;
+$fontWeightMedium: 400;
+$navFontSizeMobile: 16px;
+$navFontSizeDesktop: 20px;
 
 @mixin globalFonts(
   $font-size-h1,
@@ -54,18 +61,15 @@ $contentMaxWidthB6: $cardWidthB5 * 3 + $cardGapB5 * 2;
     padding: 0;
     margin: 0;
     font-size: $font-size-h1;
-    // color: red;
   }
   h2 {
     padding: 0;
     margin: 0;
     font-size: $font-size-h2;
-    // color: blue;
   }
   h3 {
     padding: 0;
     margin: 0;
     font-size: $font-size-h3;
-    // color: green;
   }
 }

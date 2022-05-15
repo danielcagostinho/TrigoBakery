@@ -1,8 +1,7 @@
-@import "./design-tokens/css-variables.scss";
 @import "./design-tokens/scss-variables";
 * {
   box-sizing: border-box;
-  font-family: var(--font-family-primary);
+  font-family: $fontFamilyPrimary;
 
   img {
     vertical-align: middle;

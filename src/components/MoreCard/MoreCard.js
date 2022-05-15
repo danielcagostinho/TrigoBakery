@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { isMobile } from 'react-device-detect';
 
 import "./MoreCard.scss";
 
@@ -44,7 +43,6 @@ const MoreCard = ({ productType }) => {
             <h3 className="more-title">
               View All <span>{productType}</span>
             </h3>
-            {/* {window.innerWidth > 1000 && <p>12+ Unique {productType}</p> } */}
           </div>
           <Link to={productType}>
             <div className="more-button">

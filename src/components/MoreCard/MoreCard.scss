@@ -1,41 +1,35 @@
 @import '../../design-tokens/scss-variables';
 
-/* Mobile Variables */
 $cardCaptionHeightMobile: 68px;
 $fontSizeTitleMobile: 16px;
 $fontSizeP1Mobile: 14px;
 $navButtonSizeMobile: 20px;
 $captionPaddingMobile: 8px;
 
-/* Breakpoint 1 Variables */
 $cardCaptionHeightB1: 88px;
 $fontSizeTitleB1: 22px;
 $fontSizeP1B1: 14px;
 $navButtonSizeB1: 24px;
 $captionPaddingB1: 12px;
 
-/* Breakpoint 2 Variables */
 $cardCaptionHeightB2: 80px;
 $fontSizeTitleB2: 22px;
 $fontSizeP1B2: 14px;
 $navButtonSizeB2: 24px;
 $captionPaddingB2: 12px;
 
-/* Breakpoint 3 Variables */
 $cardCaptionHeightB3: 108px;
 $fontSizeTitleB3: 24px;
 $fontSizeP1B3: 18px;
 $navButtonSizeB3: 28px;
 $captionPaddingB3: 16px;
 
-/* Breakpoint 4 Variables */
 $cardCaptionHeightB4: 108px;
 $fontSizeTitleB4: 24px;
 $fontSizeP1B4: 18px;
 $navButtonSizeB4: 28px;
 $captionPaddingB4: 16px;
 
-/* Breakpoint 4 Variables */
 $cardCaptionHeightB5: 96px;
 $fontSizeTitleB5: 36px;
 $fontSizeP1B5: 20px;
@@ -61,19 +55,15 @@ $cardDescriptionSize: 20px;
   $captionPadding
 ) {
   .more-card {
-    /* Display & Box Model */
     width: $cardWidth;
     height: $cardHeight;
 
     .more-card-content {
-      /* Display & Box Model */
       width: 100%;
       height: 100%;
-      // margin: 0 6px;
       border-radius: $cardBorderRadius;
 
       .more-image {
-        /* Display & Box Model */
         width: $cardWidth;
         height: $cardHeight;
         border: 2px solid $cardBorderColor;
@@ -82,12 +72,10 @@ $cardDescriptionSize: 20px;
       }
 
       .more-caption {
-        /* Positioning */
         position: relative;
         z-index: 2;
         top: -$cardCaptionHeight;
 
-        /* Display & Box Model */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -97,7 +85,6 @@ $cardDescriptionSize: 20px;
         padding: $captionPadding;
         margin: 0;
 
-        /* Other */
         background-color: $cardBackgroundColor;
         border: 2px solid $cardBorderColor;
         border-top: none;
@@ -105,33 +92,27 @@ $cardDescriptionSize: 20px;
         border-bottom-right-radius: $cardBorderRadius;
 
         .more-title {
-          /* Display & Box Model */
           padding: 0;
           margin: 0;
 
-          /* Other */
           text-transform: capitalize;
 
-          font-family: var(--font-family-primary);
-          font-weight: var(--font-weight);
+          font-family: $fontFamilyPrimary;
+          font-weight: $fontWeightBold;
           line-height: 140%;
-          // color: black;
         }
 
         p {
-          /* Display & Box Model */
           padding: 0;
           margin: 0;
 
-          /* Other */
-          font-family: var(--font-family-secondary);
+          font-family: $fontFamilySecondary;
           font-size: $fontSizeP1;
           color: #666;
           text-transform: capitalize;
         }
 
         .more-button {
-          /* Display & Box Model */
           display: flex;
           align-items: center;
           justify-content: center;
@@ -141,7 +122,6 @@ $cardDescriptionSize: 20px;
           border-radius: 50%;
 
           img {
-            /* Display & Box Model */
             height: $navButtonSize;
             width: $navButtonSize;
           }

@@ -7,10 +7,10 @@ import "./Header.scss";
 const Header = () => {
   return (
     <div className="header">
-      <h1>Portuguese baking right to your table</h1>
-      <p>
+      <h1 className="header__title">Portuguese baking right to your table</h1>
+      <p className="header__description">
         Trigo’s a local family-run bakery specializing in Portuguese bread,
-        cake, and pastries. Located in Mississuaga, Ontario.
+        cakes, and pastries. Located in Mississuaga, Ontario.
       </p>
 
       <div className="nav-links">

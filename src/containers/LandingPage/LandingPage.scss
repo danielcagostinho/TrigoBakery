@@ -28,7 +28,7 @@ $imageTopOffsetLarge: -120px;
 
 .color {
   /* Other */
-  background-color: var(--color-bg-primary);
+  background-color: fontColorSecondary;
 }
 
 .white {
@@ -69,7 +69,7 @@ $imageTopOffsetLarge: -120px;
 
       /* Other */
       font-size: $fontSizeP2Mobile;
-      font-family: var(--font-family-secondary);
+      font-family: $fontFamilySecondary;
     }
 
     .row {
@@ -220,7 +220,7 @@ $imageTopOffsetLarge: -120px;
 
   span {
     /* Other */
-    font-family: var(--font-family-secondary);
+    font-family: $fontFamilySecondary;
     font-weight: bold;
     color: $daysTextColor;
   }
@@ -231,7 +231,7 @@ $imageTopOffsetLarge: -120px;
   margin: 8px 0;
 
   /* Other */
-  font-family: var(--font-family-primary);
+  font-family: $fontFamilyPrimary;
   color: $addressTextColor;
   font-weight: bold;
 }
@@ -595,7 +595,7 @@ $imageTopOffsetLarge: -120px;
 
       /* Other */
       font-size: $fontSizeP1Large;
-      font-family: var(--font-family-secondary);
+      font-family: $fontFamilySecondary;
     }
 
     .days {
