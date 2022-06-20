@@ -12,26 +12,23 @@ import LeftGrain from './assets/Left-Grain.PNG';
 import RightGrain from './assets/Right-Grain.PNG';
 
 // Breads 
-import Bolo_Livedo from './assets/new-products/Breads/Bolo-Livedo.jpg';
-import Broa_Amarelo from './assets/new-products/Breads/Broa-Amarelo.jpg';
-import Broa_Branco from './assets/new-products/Breads/Broa-Branco.jpg';
-import Calabrese_Large from './assets/new-products/Breads/Calabrese-Large.jpg';
-import Calabrese_Small from './assets/new-products/Breads/Calabrese-Small.jpg';
-import Grandpa_Bread from './assets/new-products/Breads/Grandpa-Bread.jpg';
-import Large_Bread from './assets/new-products/Breads/Large-Bread.jpg';
-import Large_Bread_2 from './assets/new-products/Breads/Large-Bread-2.jpg';
-import Large_Bread_3 from './assets/new-products/Breads/Large-Bread-3.jpg';
-import Large_Bread_4 from './assets/new-products/Breads/Large-Bread-4.jpg';
-import Large_Bread_5 from './assets/new-products/Breads/Large-Bread-5.jpg';
-import Large_Bread_6 from './assets/new-products/Breads/Large-Bread-6.jpg';
-import Nine_Grain_Bun from './assets/new-products/Breads/Nine-Grain-Bun.jpg';
-import Padas from './assets/new-products/Breads/Padas.jpg';
-import Pao_Com_Chorico from './assets/new-products/Breads/Pao-Com-Chorico.jpg';
-import Pao_Davo from './assets/new-products/Breads/Pao-Davo.jpg';
-import Papo_Seco from './assets/new-products/Breads/Papo-Seco.jpg';
-import Papo_Seco_Small from './assets/new-products/Breads/Papo-Seco-Small.jpg';
-import Ring_Bread from './assets/new-products/Breads/Ring-Bread.jpg';
-import Vienna from './assets/new-products/Breads/Vienna.jpg';
+import Yellow_Corn_Bread from './assets/new-products-bg-removed/Breads/Yellow-Corn-Bread.jpg';
+import White_Corn_Bread from './assets/new-products-bg-removed/Breads/White-Corn-Bread.jpg';
+import Calabrese from './assets/new-products-bg-removed/Breads/Calabrese.jpg';
+import Water_Bread_Loaf from './assets/new-products-bg-removed/Breads/Water-Bread-Loaf.jpg';
+import Carcaca from './assets/new-products-bg-removed/Breads/Carcaca.jpg';
+import Nine_Grain_Loaf from './assets/new-products-bg-removed/Breads/Nine-Grain-Loaf.jpg';
+import Rye_Loaf from './assets/new-products-bg-removed/Breads/Rye-Loaf.jpg';
+import Water_Bread_Round_Loaf from './assets/new-products-bg-removed/Breads/Water-Bread-Round-Loaf.jpg';
+import Round_Loaf from './assets/new-products-bg-removed/Breads/Round-Loaf.jpg';
+import Chapata from './assets/new-products-bg-removed/Breads/Chapata.jpg';
+import Nine_Grain_Bun from './assets/new-products-bg-removed/Breads/Nine-Grain-Bun.jpg';
+import Pada from './assets/new-products-bg-removed/Breads/Pada.jpg';
+import Pao_Com_Chorico from './assets/new-products/Savoury-Foods/Pao-Com-Chorico.jpg';
+import Water_Bread from './assets/new-products-bg-removed/Breads/Water-Bread.jpg';
+import Papo_Seco from './assets/new-products-bg-removed/Breads/Papo-Seco.jpg';
+  import Ring_Loaf from './assets/new-products-bg-removed/Breads/Ring-Loaf.jpg';
+import Vienna_Stick from './assets/new-products-bg-removed/Breads/Vienna-Stick.jpg';
 
 // Cakes
 import Bear_Cake from './assets/new-products/Cakes/Bear-Cake.jpg';
@@ -110,77 +107,67 @@ import Torta_Da_Laranja from './assets/new-products/Desserts/Torta-Da-Laranja.jp
 import Walnut_Cheesecake from './assets/new-products/Desserts/Walnut-Cheesecake.jpg';
 
 // Hot Table
-import Beef_Croquette from './assets/new-products/Hot-Table/Beef-Croquette.jpg';
-import Bifana from './assets/new-products/Hot-Table/Bifana.jpg';
-import Bifana_2 from './assets/new-products/Hot-Table/Bifana-2.jpg';
-import Bifana_3 from './assets/new-products/Hot-Table/Bifana-3.jpg';
-import Bolo_de_Bacalhau from './assets/new-products/Hot-Table/Bolo-de-Bacalhau.jpg';
-import Caldo_Verde from './assets/new-products/Hot-Table/Caldo-Verde.jpg';
-import Deli_Sandwich from './assets/new-products/Hot-Table/Deli-Sandwich.jpg';
-import Rissois_De_Camarao from './assets/new-products/Hot-Table/Rissois-De-Camarao.jpg';
-import Rissol_De_Atum from './assets/new-products/Hot-Table/Rissol-De-Atum.jpg';
-import Sopa_De_Spinafres from './assets/new-products/Hot-Table/Sopa-De-Spinafres.jpg';
-import Sopa_Do_Marisco from './assets/new-products/Hot-Table/Sopa-Do-Marisco.jpg';
+import Beef_Croquette from './assets/new-products/Savoury-Foods/Beef-Croquette.jpg';
+import Bifana from './assets/new-products/Savoury-Foods/Bifana.jpg';
+import Bifana_2 from './assets/new-products/Savoury-Foods/Bifana-2.jpg';
+import Bifana_3 from './assets/new-products/Savoury-Foods/Bifana-3.jpg';
+import Bolo_de_Bacalhau from './assets/new-products/Savoury-Foods/Bolo-de-Bacalhau.jpg';
+import Caldo_Verde from './assets/new-products/Savoury-Foods/Caldo-Verde.jpg';
+import Deli_Sandwich from './assets/new-products/Savoury-Foods/Deli-Sandwich.jpg';
+import Rissois_De_Camarao from './assets/new-products/Savoury-Foods/Rissois-De-Camarao.jpg';
+import Rissol_De_Atum from './assets/new-products/Savoury-Foods/Rissol-De-Atum.jpg';
+import Sopa_De_Spinafres from './assets/new-products/Savoury-Foods/Sopa-De-Spinafres.jpg';
+import Sopa_Do_Marisco from './assets/new-products/Savoury-Foods/Sopa-Do-Marisco.jpg';
 
 var Breads = [
   {
-    name: 'Bolo Livedo',
-    imgSrc: Bolo_Livedo,
+    name: 'Yellow Corn Bread',
+    imgSrc: Yellow_Corn_Bread,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Broa Amarelo',
-    imgSrc: Broa_Amarelo,
+    name: 'White Corn Bread',
+    imgSrc: White_Corn_Bread,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Broa Branco',
-    imgSrc: Broa_Branco,
+    name: 'Calabrese',
+    imgSrc: Calabrese,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Calabrese Large',
-    imgSrc: Calabrese_Large,
+    name: 'Water Bread Loaf',
+    imgSrc: Water_Bread_Loaf,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Calabrese Small',
-    imgSrc: Calabrese_Small,
+    name: 'Carcaça',
+    imgSrc: Carcaca,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Grandpa Bread',
-    imgSrc: Grandpa_Bread,
+    name: 'Nine Grain Loaf',
+    imgSrc: Nine_Grain_Loaf,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Large Bread',
-    imgSrc: Large_Bread,
+    name: 'Rye Loaf',
+    imgSrc: Rye_Loaf,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Large Bread 2',
-    imgSrc: Large_Bread_2,
+    name: 'Water Bread Round Loaf',
+    imgSrc: Water_Bread_Round_Loaf,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Large Bread 3',
-    imgSrc: Large_Bread_3,
+    name: 'Round Loaf',
+    imgSrc: Round_Loaf,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Large Bread 4',
-    imgSrc: Large_Bread_4,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
-  },
-  {
-    name: 'Large Bread 5',
-    imgSrc: Large_Bread_5,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
-  },
-  {
-    name: 'Large Bread 6',
-    imgSrc: Large_Bread_6,
+    name: 'Chapata',
+    imgSrc: Chapata,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
@@ -189,18 +176,13 @@ var Breads = [
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Padas',
-    imgSrc: Padas,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
-  },
-  {
-    name: 'Pao Com Chorico',
-    imgSrc: Pao_Com_Chorico,
+    name: 'Pada',
+    imgSrc: Pada,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
     name: 'Pao Davo',
-    imgSrc: Pao_Davo,
+    imgSrc: Water_Bread,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
@@ -209,18 +191,13 @@ var Breads = [
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Papo Seco Small',
-    imgSrc: Papo_Seco_Small,
+    name: 'Ring Loaf',
+    imgSrc: Ring_Loaf,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
-    name: 'Ring Bread',
-    imgSrc: Ring_Bread,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
-  },
-  {
-    name: 'Vienna',
-    imgSrc: Vienna,
+    name: 'Vienna Stick',
+    imgSrc: Vienna_Stick,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
 ];
@@ -648,6 +625,11 @@ var Hot_Table = [
     imgSrc: Sopa_Do_Marisco,
     description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
+  {
+    name: 'Pao Com Chorico',
+    imgSrc: Pao_Com_Chorico,
+    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+  }
 ];
 
 function App() {
