@@ -45,9 +45,9 @@ import Bolo_De_Maca from './assets/new-products/Cakes/Bolo-De-Maca.jpg';
 import Bolo_De_Mango from './assets/new-products/Cakes/Bolo-De-Mango.jpg';
 import Bolo_De_Marble from './assets/new-products/Cakes/Bolo-De-Marble.jpg';
 import Bolo_De_Noz from './assets/new-products/Cakes/Bolo-De-Noz.jpg';
-import Caramel_Cake from './assets/new-products/Cakes/Caramel-Cake.jpg';
+import Caramel_Cake from './assets/new-products/Cakes/Caramel-Cake.JPG';
 import Carrot_Cake from './assets/new-products/Cakes/Carrot-Cake.jpg';
-import Chanel_Cake from './assets/new-products/Cakes/Chanel-Cake.jpg';
+import Chanel_Cake from './assets/new-products/Cakes/Chanel-Cake.JPG';
 import Chocolate_Cake from './assets/new-products/Cakes/Chocolate-Cake.jpg';
 import Communion_Cake from './assets/new-products/Cakes/Communion-Cake.jpg';
 import Communion_Cake_2 from './assets/new-products/Cakes/Communion-Cake-2.jpg';
@@ -69,7 +69,7 @@ import Pink_Cake_3 from './assets/new-products/Cakes/Pink-Cake-3.jpg';
 import Present_Cake from './assets/new-products/Cakes/Present-Cake.jpg';
 import Purple_Cake from './assets/new-products/Cakes/Purple-Cake.jpg';
 import Rocket_Cake from './assets/new-products/Cakes/Rocket-Cake.jpg';
-import Rose_Cake from './assets/new-products/Cakes/Rose-Cake.jpg';
+import Rose_Cake from './assets/new-products/Cakes/Rose-Cake.JPG';
 import Rose_Cake_2 from './assets/new-products/Cakes/Rose-Cake-2.jpg';
 import Rose_Cake_3 from './assets/new-products/Cakes/Rose-Cake-3.jpg';
 import Strawberry_Cake from './assets/new-products/Cakes/Strawberry-Cake.jpg';
@@ -89,7 +89,7 @@ import Bolo_De_Coco_2 from './assets/new-products/Desserts/Bolo-De-Coco-2.jpg';
 import Bolos_De_Berlim from './assets/new-products/Desserts/Bolos-De-Berlim.jpg';
 import Broa_De_Noz from './assets/new-products/Desserts/Broa-De-Noz.jpg';
 import Broa_De_Noz_2 from './assets/new-products/Desserts/Broa-De-Noz-2.jpg';
-import Cavacas from './assets/new-products/Desserts/Cavacas.jpg';
+import Cavacas from './assets/new-products/Desserts/Cavacas.JPG';
 import Chocolate_Mousse from './assets/new-products/Desserts/Chocolate-Mousse.jpg';
 import Coconut_Pastry from './assets/new-products/Desserts/Coconut-Pastry.jpg';
 import Croissant_Chocolate from './assets/new-products/Desserts/Croissant-Chocolate.jpg';
@@ -107,7 +107,7 @@ import Sicilian_Cannoli from './assets/new-products/Desserts/Sicilian-Cannoli.jp
 import Strawberry_Cheesecake from './assets/new-products/Desserts/Strawberry-Cheesecake.jpg';
 import Tiramisu from './assets/new-products/Desserts/Tiramisu.jpg';
 import Torta_Da_Laranja from './assets/new-products/Desserts/Torta-Da-Laranja.jpg';
-import Walnut_Cheesecake from './assets/new-products/Desserts/Walnut-Cheesecake.jpg';
+import Walnut_Cheesecake from './assets/new-products/Desserts/Walnut-Cheesecake.JPG';
 
 // Hot Table
 import Beef_Croquette from './assets/new-products/Hot-Table/Beef-Croquette.jpg';
