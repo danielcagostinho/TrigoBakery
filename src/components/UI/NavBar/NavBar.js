@@ -13,7 +13,8 @@ const NavBar = () => {
     setScrollPosition(position);
   };
 
-  let navClasses = scrollPosition > 450 ? "nav nav--bg-solid" : "nav nav--bg-clear";
+  const scrollPositionHeight = 100;
+  let navClasses = scrollPosition > scrollPositionHeight ? "nav nav--bg-solid" : "nav nav--bg-clear";
 
 useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
