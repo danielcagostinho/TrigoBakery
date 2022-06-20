@@ -45,9 +45,9 @@ import Bolo_De_Maca from './assets/new-products/Cakes/Bolo-De-Maca.jpg';
 import Bolo_De_Mango from './assets/new-products/Cakes/Bolo-De-Mango.jpg';
 import Bolo_De_Marble from './assets/new-products/Cakes/Bolo-De-Marble.jpg';
 import Bolo_De_Noz from './assets/new-products/Cakes/Bolo-De-Noz.jpg';
-import Caramel_Cake from './assets/new-products/Cakes/Caramel-Cake.jpg';
+import Caramel_Cake from './assets/new-products/Cakes/Caramel-Cake.JPG';
 import Carrot_Cake from './assets/new-products/Cakes/Carrot-Cake.jpg';
-import Chanel_Cake from './assets/new-products/Cakes/Chanel-Cake.jpg';
+import Chanel_Cake from './assets/new-products/Cakes/Chanel-Cake.JPG';
 import Chocolate_Cake from './assets/new-products/Cakes/Chocolate-Cake.jpg';
 import Communion_Cake from './assets/new-products/Cakes/Communion-Cake.jpg';
 import Communion_Cake_2 from './assets/new-products/Cakes/Communion-Cake-2.jpg';
@@ -69,7 +69,7 @@ import Pink_Cake_3 from './assets/new-products/Cakes/Pink-Cake-3.jpg';
 import Present_Cake from './assets/new-products/Cakes/Present-Cake.jpg';
 import Purple_Cake from './assets/new-products/Cakes/Purple-Cake.jpg';
 import Rocket_Cake from './assets/new-products/Cakes/Rocket-Cake.jpg';
-import Rose_Cake from './assets/new-products/Cakes/Rose-Cake.jpg';
+import Rose_Cake from './assets/new-products/Cakes/Rose-Cake.JPG';
 import Rose_Cake_2 from './assets/new-products/Cakes/Rose-Cake-2.jpg';
 import Rose_Cake_3 from './assets/new-products/Cakes/Rose-Cake-3.jpg';
 import Strawberry_Cake from './assets/new-products/Cakes/Strawberry-Cake.jpg';
@@ -89,7 +89,7 @@ import Bolo_De_Coco_2 from './assets/new-products/Desserts/Bolo-De-Coco-2.jpg';
 import Bolos_De_Berlim from './assets/new-products/Desserts/Bolos-De-Berlim.jpg';
 import Broa_De_Noz from './assets/new-products/Desserts/Broa-De-Noz.jpg';
 import Broa_De_Noz_2 from './assets/new-products/Desserts/Broa-De-Noz-2.jpg';
-import Cavacas from './assets/new-products/Desserts/Cavacas.jpg';
+import Cavacas from './assets/new-products/Desserts/Cavacas.JPG';
 import Chocolate_Mousse from './assets/new-products/Desserts/Chocolate-Mousse.jpg';
 import Coconut_Pastry from './assets/new-products/Desserts/Coconut-Pastry.jpg';
 import Croissant_Chocolate from './assets/new-products/Desserts/Croissant-Chocolate.jpg';
@@ -107,7 +107,7 @@ import Sicilian_Cannoli from './assets/new-products/Desserts/Sicilian-Cannoli.jp
 import Strawberry_Cheesecake from './assets/new-products/Desserts/Strawberry-Cheesecake.jpg';
 import Tiramisu from './assets/new-products/Desserts/Tiramisu.jpg';
 import Torta_Da_Laranja from './assets/new-products/Desserts/Torta-Da-Laranja.jpg';
-import Walnut_Cheesecake from './assets/new-products/Desserts/Walnut-Cheesecake.jpg';
+import Walnut_Cheesecake from './assets/new-products/Desserts/Walnut-Cheesecake.JPG';
 
 // Hot Table
 import Beef_Croquette from './assets/new-products/Hot-Table/Beef-Croquette.jpg';
@@ -126,330 +126,285 @@ var Breads = [
   {
     name: 'Bolo Livedo',
     imgSrc: Bolo_Livedo,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Broa Amarelo',
     imgSrc: Broa_Amarelo,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Broa Branco',
     imgSrc: Broa_Branco,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Calabrese Large',
     imgSrc: Calabrese_Large,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Calabrese Small',
     imgSrc: Calabrese_Small,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Grandpa Bread',
     imgSrc: Grandpa_Bread,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Large Bread',
     imgSrc: Large_Bread,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Large Bread 2',
     imgSrc: Large_Bread_2,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Large Bread 3',
     imgSrc: Large_Bread_3,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Large Bread 4',
     imgSrc: Large_Bread_4,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Large Bread 5',
     imgSrc: Large_Bread_5,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Large Bread 6',
     imgSrc: Large_Bread_6,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Nine Grain Bun',
     imgSrc: Nine_Grain_Bun,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Padas',
     imgSrc: Padas,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Pao Com Chorico',
     imgSrc: Pao_Com_Chorico,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Pao Davo',
     imgSrc: Pao_Davo,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Papo Seco',
     imgSrc: Papo_Seco,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Papo Seco Small',
     imgSrc: Papo_Seco_Small,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Ring Bread',
     imgSrc: Ring_Bread,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Vienna',
     imgSrc: Vienna,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
 ];
 
 var Cakes = [
 {
 name: 'Bear Cake',
-imgSrc: Bear_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Bear_Cake
 },
 {
 name: 'Bird Cake',
-imgSrc: Bird_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Bird_Cake
 },
 {
 name: 'Birthday Cake',
-imgSrc: Birthday_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Birthday_Cake
 },
 {
 name: 'Blossom Cake',
-imgSrc: Blossom_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Blossom_Cake
 },
 {
 name: 'Blue Cake',
-imgSrc: Blue_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Blue_Cake
 },
 {
 name: 'Bolo De Cafe',
-imgSrc: Bolo_De_Cafe,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Bolo_De_Cafe
 },
 {
 name: 'Bolo De Caramel',
-imgSrc: Bolo_De_Caramel,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Bolo_De_Caramel
 },
 {
 name: 'Bolo De Maca',
-imgSrc: Bolo_De_Maca,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Bolo_De_Maca
 },
 {
 name: 'Bolo De Mango',
-imgSrc: Bolo_De_Mango,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Bolo_De_Mango
 },
 {
 name: 'Bolo De Marble',
-imgSrc: Bolo_De_Marble,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Bolo_De_Marble
 },
 {
 name: 'Bolo De Noz',
-imgSrc: Bolo_De_Noz,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Bolo_De_Noz
 },
 {
 name: 'Caramel Cake',
-imgSrc: Caramel_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Caramel_Cake
 },
 {
 name: 'Carrot Cake',
-imgSrc: Carrot_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Carrot_Cake
 },
 {
 name: 'Chanel Cake',
-imgSrc: Chanel_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Chanel_Cake
 },
 {
 name: 'Chocolate Cake',
-imgSrc: Chocolate_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Chocolate_Cake
 },
 {
 name: 'Communion Cake',
-imgSrc: Communion_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Communion_Cake
 },
 {
 name: 'Communion Cake 2',
-imgSrc: Communion_Cake_2,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Communion_Cake_2
 },
 {
 name: 'Dragon Cake',
-imgSrc: Dragon_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Dragon_Cake
 },
 {
 name: 'Flower Cake',
-imgSrc: Flower_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Flower_Cake
 },
 {
 name: 'Flower Cake 2',
-imgSrc: Flower_Cake_2,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Flower_Cake_2
 },
 {
 name: 'Flower Cake 3',
-imgSrc: Flower_Cake_3,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Flower_Cake_3
 },
 {
 name: 'Fortnite Cake',
-imgSrc: Fortnite_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Fortnite_Cake
 },
 {
 name: 'Frozen Cake',
-imgSrc: Frozen_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Frozen_Cake
 },
 {
 name: 'Macaron Cake',
-imgSrc: Macaron_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Macaron_Cake
 },
 {
 name: 'Macaron Cake 2',
-imgSrc: Macaron_Cake_2,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Macaron_Cake_2
 },
 {
 name: 'Mickey Mouse Cake',
-imgSrc: Mickey_Mouse_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Mickey_Mouse_Cake
 },
 {
 name: 'M M Cake',
-imgSrc: M_M_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: M_M_Cake
 },
 {
 name: 'Panda Cake',
-imgSrc: Panda_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Panda_Cake
 },
 {
 name: 'Paris Cake',
-imgSrc: Paris_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Paris_Cake
 },
 {
 name: 'Pink Cake',
-imgSrc: Pink_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Pink_Cake
 },
 {
 name: 'Pink Cake 2',
-imgSrc: Pink_Cake_2,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Pink_Cake_2
 },
 {
 name: 'Pink Cake 3',
-imgSrc: Pink_Cake_3,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Pink_Cake_3
 },
 {
 name: 'Present Cake',
-imgSrc: Present_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Present_Cake
 },
 {
 name: 'Purple Cake',
-imgSrc: Purple_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Purple_Cake
 },
 {
 name: 'Rocket Cake',
-imgSrc: Rocket_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Rocket_Cake
 },
 {
 name: 'Rose Cake',
-imgSrc: Rose_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Rose_Cake
 },
 {
 name: 'Rose Cake 2',
-imgSrc: Rose_Cake_2,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Rose_Cake_2
 },
 {
 name: 'Rose Cake 3',
-imgSrc: Rose_Cake_3,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Rose_Cake_3
 },
 {
 name: 'Strawberry Cake',
-imgSrc: Strawberry_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Strawberry_Cake
 },
 {
 name: 'Strawberry Chocolate Cake',
-imgSrc: Strawberry_Chocolate_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Strawberry_Chocolate_Cake
 },
 {
 name: 'Sunflower Cupcake',
-imgSrc: Sunflower_Cupcake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Sunflower_Cupcake
 },
 {
 name: 'Sweet 16 Cake',
-imgSrc: Sweet_16_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Sweet_16_Cake
 },
 {
 name: 'White Chocolate Cake',
-imgSrc: White_Chocolate_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: White_Chocolate_Cake
 },
 {
 name: 'White Flower Cake',
-imgSrc: White_Flower_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: White_Flower_Cake
 },
 {
 name: 'Wine Cake',
-imgSrc: Wine_Cake,
-description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+imgSrc: Wine_Cake
 },
 ];
 
@@ -457,137 +412,110 @@ var Desserts = [
   {
   name: 'Arroz Doce',
   imgSrc: Arroz_Doce,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Bolo De Arroz',
   imgSrc: Bolo_De_Arroz,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Bolo De Berlim Custard',
   imgSrc: Bolo_De_Berlim_Custard,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Bolo De Berlim Nutella',
   imgSrc: Bolo_De_Berlim_Nutella,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Bolo De Coco 2',
   imgSrc: Bolo_De_Coco_2,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Bolos De Berlim',
   imgSrc: Bolos_De_Berlim,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Broa De Noz',
   imgSrc: Broa_De_Noz,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Broa De Noz 2',
   imgSrc: Broa_De_Noz_2,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Cavacas',
   imgSrc: Cavacas,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Chocolate Mousse',
   imgSrc: Chocolate_Mousse,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Coconut Pastry',
   imgSrc: Coconut_Pastry,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Croissant Chocolate',
   imgSrc: Croissant_Chocolate,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Malassadas',
   imgSrc: Malassadas,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Natas',
   imgSrc: Natas,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Natas Com Nutella',
   imgSrc: Natas_Com_Nutella,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Natas Do Ceu',
   imgSrc: Natas_Do_Ceu,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Pastry 1',
   imgSrc: Pastry_1,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Pastry Almond Tart',
   imgSrc: Pastry_Almond_Tart,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Pastry Feijao',
   imgSrc: Pastry_Feijao,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Pastry Feijao 2',
   imgSrc: Pastry_Feijao_2,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Portuguese Mille Feuille',
   imgSrc: Portuguese_Mille_Feuille,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Pudim Flan',
   imgSrc: Pudim_Flan,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Sicilian Cannoli',
   imgSrc: Sicilian_Cannoli,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Strawberry Cheesecake',
   imgSrc: Strawberry_Cheesecake,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Tiramisu',
   imgSrc: Tiramisu,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Torta Da Laranja',
   imgSrc: Torta_Da_Laranja,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   {
   name: 'Walnut Cheesecake',
   imgSrc: Walnut_Cheesecake,
-  description: 'Id sit adipisicing non veniam ea proident commodo magna.'
   },
   ];
   
@@ -596,57 +524,57 @@ var Hot_Table = [
   {
     name: 'Beef Croquette',
     imgSrc: Beef_Croquette,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Bifana',
     imgSrc: Bifana,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Bifana 2',
     imgSrc: Bifana_2,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Bifana 3',
     imgSrc: Bifana_3,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Bolo de Bacalhau',
     imgSrc: Bolo_de_Bacalhau,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Caldo Verde',
     imgSrc: Caldo_Verde,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Deli Sandwich',
     imgSrc: Deli_Sandwich,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Rissois De Camarao',
     imgSrc: Rissois_De_Camarao,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Rissol De Atum',
     imgSrc: Rissol_De_Atum,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Sopa De Spinafres',
     imgSrc: Sopa_De_Spinafres,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
   {
     name: 'Sopa Do Marisco',
     imgSrc: Sopa_Do_Marisco,
-    description: 'Id sit adipisicing non veniam ea proident commodo magna.'
+
   },
 ];
 
