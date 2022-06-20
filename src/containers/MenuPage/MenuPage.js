@@ -6,13 +6,13 @@ import HeaderButton from "../../components/UI/HeaderButton/HeaderButton";
 import Footer from "../../components/Footer/Footer";
 
 import paoDaAvo from "../../assets/new-products/Breads/Pao-Davo.jpg";
-import broaAmarelo from "../../assets/new-products/Breads/Broa-Amarelo.jpg";
+import yellowCornBread from "../../assets/new-products/Breads/Yellow-Corn-Bread.jpg";
 import Bear_Cake from "../../assets/new-products/Cakes/Bear-Cake.jpg";
 import Blossom_Cake from "../../assets/new-products/Cakes/Blossom-Cake.jpg";
 import broaPinhao from "../../assets/new-products/Desserts/Broa-De-Noz.jpg";
 import bolaDeBerlim from "../../assets/new-products/Desserts/Bolo-De-Berlim-Nutella.jpg";
-import Caldo_Verde from '../../assets/new-products/Hot-Table/Caldo-Verde.jpg';
-import Bifana from '../../assets/new-products/Hot-Table/Bifana-3.jpg';
+import Caldo_Verde from '../../assets/new-products/Savoury-Foods/Caldo-Verde.jpg';
+import Bifana from '../../assets/new-products/Savoury-Foods/Bifana-3.jpg';
 
 import "./MenuPage.scss";
 
@@ -58,8 +58,8 @@ const MenuPage = () => {
             />
             {window.innerWidth > 680 ? (
               <ProductCard
-                productName="Broa de Milho"
-                imgSrc={broaAmarelo}
+                productName="Yellow Corn Bread"
+                imgSrc={yellowCornBread}
                 description="Has a hard crust with characteristic cracks on it and keeps for a few days."
                 productType="breads"
               />
