@@ -1,9 +1,9 @@
 @import "../../design-tokens/scss-variables";
 
 $headerFontSizeMobile: 22px;
-$headerFontSizeDesktop: 52px;
+$headerFontSizeDesktop: 36px;
 $descriptionFontSizeMobile: 16px;
-$descriptionFontSizeDesktop: 28px;
+$descriptionFontSizeDesktop: 18px;
 
 .header {
   display: flex;
@@ -53,7 +53,7 @@ $descriptionFontSizeDesktop: 28px;
 
     &__title {
       font-size: $headerFontSizeDesktop;
-      line-height: 72px;
+      line-height: 40px;
     }
 
     &__description {
