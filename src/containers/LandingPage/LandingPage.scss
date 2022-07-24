@@ -1,15 +1,15 @@
-@import '../../design-tokens/scss-variables'; 
+@import "../../design-tokens/scss-variables";
 /* Mobile Variables */
-$fontSizeH2Mobile: 24px;
-$fontSizeH3Mobile: 20px;
-$fontSizeP1Mobile: 18px;
-$fontSizeP2Mobile: 14px;
+$fontSizeH2Mobile: 16px;
+$fontSizeH3Mobile: 12px;
+$fontSizeP1Mobile: 14px;
+$fontSizeP2Mobile: 12px;
 
 /* Medium Screen Variables */
-$fontSizeH2Medium: 36px;
-$fontSizeH3Medium: 30px;
-$fontSizeP1Medium: 26px;
-$fontSizeP2Medium: 20px;
+$fontSizeH2Medium: 24px;
+$fontSizeH3Medium: 20px;
+$fontSizeP1Medium: 16px;
+$fontSizeP2Medium: 14px;
 
 /* Large Screen Variables */
 $fontSizeH2Large: 40px;
@@ -26,54 +26,46 @@ $imageTopOffsetMobile: -60px;
 $imageTopOffsetMedium: -80px;
 $imageTopOffsetLarge: -120px;
 
+$contentWidthMobile: 60%;
+$contentWidthMedium: 60%;
+$contentWidthLarge: 70%;
+
 .color {
-  /* Other */
   background-color: fontColorSecondary;
 }
 
 .white {
-  /* Other */
   background-color: white;
 }
 
-
-
 .content {
-  /* Display and Box Model */
   width: 100%;
-  padding-top: $navHeight; // TODO Edit to be nav height
+  padding-top: $navHeight;
 
   .section {
-    /* Display and Box Model */
     width: 100%;
 
     h2 {
-      /* Display & Box Model */
       padding: 0;
       margin: 0;
 
-      /* Other */
       font-size: $fontSizeH2Mobile;
       line-height: $fontSizeH2Mobile * 1.5;
     }
 
     h3 {
-      /* Other */
       font-size: $fontSizeH3Mobile;
     }
 
     p {
-      /* Display and Box Model */
       padding: 0;
       margin: 0;
 
-      /* Other */
       font-size: $fontSizeP2Mobile;
       font-family: $fontFamilySecondary;
     }
 
     .row {
-      /* Display & Box Model */
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -82,7 +74,6 @@ $imageTopOffsetLarge: -120px;
       margin: 0 auto;
 
       .column {
-        /* Display and Box Model */
         width: 40%;
       }
     }
@@ -90,21 +81,17 @@ $imageTopOffsetLarge: -120px;
 }
 
 #bread {
-  /* Display & Box Model */
   padding: 40px 0 100px 0;
 
   h2 {
-    /* Display and Box Model */
     margin-bottom: 8px;
   }
 
   p {
-    /* Other */
     // max-width: 60%;
   }
 
   .column {
-    /* Display & Box Model */
     width: 80%;
   }
 }
@@ -112,7 +99,6 @@ $imageTopOffsetLarge: -120px;
 #ingredients-row {
   position: relative;
   // width: 100%;
-  // border: 1px solid red;
 }
 
 #ingredients-text {
@@ -125,50 +111,42 @@ $imageTopOffsetLarge: -120px;
 
 #ingredients {
   // position: relative;
-  // /* Positioning */
   // width: 100%;
   // border: 1px solid green;
   // // bottom: 0px;
   // // right: -80px;
 
-  // /* Display & Box Model */
   // // width: 260px;
   // // max-width: 260px;
   // overflow: hidden;
 
   img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
 
-  // right: 0;
+    // right: 0;
 
-  //   /* Display & Box Model */
-  //   width: 300px;
-  //   height: 300px;
+    //   width: 300px;
+    //   height: 300px;
     opacity: 0.2;
-  // border: 1px solid blue;
-
+    // border: 1px solid blue;
   }
 }
 
 #fresh {
-  /* Display & Box Model */
   padding-bottom: 40px;
 
   h2 {
-    /* Display & Box Model */
     margin-bottom: 8px;
   }
 }
 
 #fresh-images {
-  /* Positioning */
   position: relative;
   top: $imageTopOffsetMobile;
 
-  /* Display & Box Model */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -176,7 +154,6 @@ $imageTopOffsetLarge: -120px;
   width: 100%;
 
   img {
-    /* Display & Box Model */
     width: 40%;
     height: 100%; // TODO change to px
     height: 200px; // TODO change to px
@@ -362,14 +339,13 @@ $imageTopOffsetLarge: -120px;
     position: relative;
     top: -2em;
   }
-  
+
   #ingredients {
     position: relative;
-  
+
     img {
-    right: 0;
+      right: 0;
       opacity: 0.8;
-  
     }
   }
 
@@ -481,6 +457,9 @@ $imageTopOffsetLarge: -120px;
 
 @media (min-width: 1201px) {
   .content {
+    width: $contentWidthLarge;
+    border: 1px solid red;
+    margin: 0 auto;
     .section {
       h2 {
         /* Other */
